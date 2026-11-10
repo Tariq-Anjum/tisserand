@@ -565,7 +565,7 @@ reuse = "mechanism"
 
 [[text]]
 path = "skills/decision-interview/SKILL.md"
-digest = "9da8abc6b8e57dbcd6abbe73b2c2d2d4d1809dfa525bb57d878975eda994304f"
+digest = "05ce163ecfe0ce500305e4de9de112dc85a4de36751011f878320286a40c28a2"
 idea_cards = ["mattpocock-01", "gstack-04", "pwf-01"]
 reuse = "mechanism"
 

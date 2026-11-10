@@ -4,8 +4,8 @@
 # Landed with the migrations-validator amendment and the renames.
 # Validated in a scratch copy with the amended validator:
 # - no key is a live id (old dirs removed);
-# - the five [aliases.*] keys are live capability aliases whose owner equals
-#   the resolved target (grill-me, grill-with-docs -> decision-interview;
+# - the four [aliases.*] keys are live capability aliases whose owner equals
+#   the resolved target (grill-me -> decision-interview;
 #   wayfinder -> bounded-plan; context-fundamentals -> context-design;
 #   serena-code-intelligence -> code-intelligence), the only coexistence the
 #   amendment allows; the unamended validator rejects them;
@@ -15,11 +15,6 @@ schema = 1
 [aliases.grill-me]
 target = "decision-interview"
 reason = "merged with grill-with-docs into decision-interview, interview mode (upstream skill name removed; coherence plan final section 3)"
-date = "2026-11-09"
-
-[aliases.grill-with-docs]
-target = "decision-interview"
-reason = "merged into decision-interview; this name opens record mode for one release (coherence plan final section 3)"
 date = "2026-11-09"
 
 [aliases.wayfinder]
@@ -54,3 +49,8 @@ date = "2026-11-09"
 target = "session-reconcile"
 reason = "retired with skill-memory (its alias); owner decision D4"
 date = "2026-11-09"
+
+[retired_by.grill-with-docs]
+target = "decision-interview"
+reason = "old-name alias retired after one release; record mode is opened by naming decision-interview"
+date = "2026-11-11"

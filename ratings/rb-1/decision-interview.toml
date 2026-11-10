@@ -2,11 +2,11 @@ id = "decision-interview"
 version = "0.1.0"
 tt = "tt-1.1.0"
 rb = "rb-1.1.0"
-revision = 6
+revision = 7
 rater = "source-proposal"
 date = "2026-11-10"
 source = "ev:rate:h-hygiene"
-metadata_digest = "314e2175e3288a900c5855a6b5fd54c4d3742d0a79260df077862a7db90217e3"
+metadata_digest = "d0c56e58f61a57209a34413db5c6d83ecb2f75fa3333c0059c4a4e702b28ee1b"
 
 [[cell]]
 task_type = "clarify"
@@ -20,7 +20,7 @@ raw = 23
 score = 58
 evidence = "Description names settling each open branch of a plan or decision (`SKILL.md:3`); steps 1-5 produce a branch ledger and a status (`:27-40`). Scope narrower than clarify (named plans only, no contract), so F3. v1 caps B at 2. Mechanisms: read before asking (`:27-30`), one question per turn with a recommended answer (`:31-32`), bare assent never resolves (`:33-34`), total first-match status (`:37-40`). intent-contract is separated by activation and reciprocal NOT FOR (`:3,18`; intent-contract `SKILL.md:3,17-19`). openspec and bmad clarify are also explicit with no reciprocal NOT FOR, so S1. 2996 B, no dependency, writes only its own records, so C3. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
 flags = ["e"]
-digest = "9da8abc6b8e57dbcd6abbe73b2c2d2d4d1809dfa525bb57d878975eda994304f"
+digest = "05ce163ecfe0ce500305e4de9de112dc85a4de36751011f878320286a40c28a2"
 
 [[cell]]
 task_type = "document"
@@ -34,4 +34,4 @@ raw = 23
 score = 58
 evidence = "Record mode is a sub-case, not a documentation workflow (`SKILL.md:42-58`), so F2. Mechanisms: safe target or a fail-closed reply (`:44-49`), pinned terms only (`:51`), three-bar decisions (`:52-54`), nothing pinned writes nothing, append only (`:55`). Neighbour session-reconcile [docs, agent] is contextual, so activation separates; bmad document is F1. Exclusions stated (`capability.toml:31`), no shared trigger, so S3. C3 as clarify. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
 flags = ["e"]
-digest = "9da8abc6b8e57dbcd6abbe73b2c2d2d4d1809dfa525bb57d878975eda994304f"
+digest = "05ce163ecfe0ce500305e4de9de112dc85a4de36751011f878320286a40c28a2"

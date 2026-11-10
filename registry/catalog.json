@@ -392,10 +392,9 @@
       },
       "activation": "explicit",
       "aliases": [
-        "grill-me",
-        "grill-with-docs"
+        "grill-me"
       ],
-      "body_bytes": 2948,
+      "body_bytes": 2968,
       "category": "planning",
       "cost": {
         "latency": "low"
@@ -452,7 +451,7 @@
         ],
         "requires": []
       },
-      "sha256": "9da8abc6b8e57dbcd6abbe73b2c2d2d4d1809dfa525bb57d878975eda994304f",
+      "sha256": "05ce163ecfe0ce500305e4de9de112dc85a4de36751011f878320286a40c28a2",
       "type": "skill",
       "version": "0.1.0"
     },

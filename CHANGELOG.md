@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Removed
+- **grill-with-docs** old-name alias retired. Name decision-interview and ask for record mode instead.
+
 ## Unreleased: typed routing and skill rewrite (G1 + G2)
 
 Experimental; not activated. Behavioural benefit unmeasured.

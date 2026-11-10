@@ -14,8 +14,8 @@ version = "0.1.0"
 # One release only. Kept so the frozen router's name detector still routes the
 # old name; registry/migrations.toml holds the permanent record (validator:
 # a live alias is allowed only when its owner equals the resolved target).
-# Order is meaningful: the first opens interview mode, the second record mode.
-aliases = ["grill-me", "grill-with-docs"]
+# The alias opens interview mode. grill-with-docs is retired (migrations.toml).
+aliases = ["grill-me"]
 
 task_types = ["clarify", "document"]
 

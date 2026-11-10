@@ -1,7 +1,6 @@
-"""Proposed tests (T2 batch 1) for the migrations live-alias rule and named routing.
+"""Tests for the migrations live-alias rule and named old-name routing.
 
-Synthetic data only; the last class reads the live registry. Sol places this
-under tests/ together with the validator change.
+Synthetic data only, except the last class, which reads the live registry.
 """
 import json
 import unittest
@@ -56,7 +55,6 @@ class NamedOldNameRoutingTests(unittest.TestCase):
     frozen name detector (capability aliases), not only via host links."""
     cases = (
         ('grill me on the migration plan before we start', 'decision-interview'),
-        ('grill-with-docs this repo plan for the rewrite', 'decision-interview'),
         ('use wayfinder for the data move over multiple milestones', 'bounded-plan'),
         ('apply context-fundamentals to our skill registry loading', 'context-design'),
         ('use serena-code-intelligence to find references to parse_config', 'code-intelligence'),

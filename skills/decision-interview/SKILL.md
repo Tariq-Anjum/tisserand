@@ -19,8 +19,8 @@ Not this skill when nobody named it (unnamed clarify work), the open
 question is a shape (design), an agreed goal needs ordering (plan), or the
 work is building. It never edits code, plans or specs.
 
-Old names, kept for one release: `grill-me` opens interview mode;
-`grill-with-docs` opens record mode.
+Old name, kept for one release: `grill-me` opens interview mode. For record
+mode, name this skill and ask for record mode.
 
 ## Interview
 
