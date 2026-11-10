@@ -1,0 +1,33 @@
+schema = 1
+id = "final-audit"
+kind = "judgment"
+type = "skill"
+category = "engineering"
+activation = "contextual"
+risk = "low"
+version = "0.1.1"
+
+task_types = ["review"]  # verify (F1, ineligible) dropped in T2 b2; own-change proof is proof-gate
+
+[routing]
+provides = ["code-review", "implementation-audit", "production-readiness", "verification"]
+intents = ["verify completed implementation", "independent code review", "audit production readiness", "check a patch before merge"]
+phrases = ["second opinion", "production ready", "ready to merge", "completed work"]
+exclusions = ["ordinary implementation"]
+composes_with = ["research-first", "code-intelligence"]
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "read"
+network = "none"
+shell = "none"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+origin = "original"
+license = "MIT"
+verified = "2026-11-10"

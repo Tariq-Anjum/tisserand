@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "frontmatter",
+  "description": "SKILL.md frontmatter after strict line parsing (manifest v1, section 2).",
+  "type": "object",
+  "required": ["name", "description", "disable-model-invocation"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {"type": "string", "minLength": 1, "maxLength": 64},
+    "description": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "disable-model-invocation": {"type": "boolean"}
+  }
+}

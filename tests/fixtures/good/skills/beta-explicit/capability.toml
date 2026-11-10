@@ -1,0 +1,23 @@
+schema = 1
+id = "beta-explicit"
+kind = "judgment"
+type = "skill"
+category = "testing"
+activation = "explicit"
+risk = "low"
+
+[routing]
+provides = ["explicit-work"]
+intents = ["do-explicit-work"]
+conflicts_with = ["gamma-manual"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

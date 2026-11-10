@@ -1,0 +1,37 @@
+id = "context-design"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "cfeccf6f77caaced13de2c68931a9680920a34b7d4f6885bf2e9790133bfa1f7"
+
+[[cell]]
+task_type = "design"
+scope = ["agent"]
+when = {}
+F = 4
+B = 2
+S = 3
+C = 3
+raw = 31
+score = 78
+evidence = "Description names deciding what an agent loads, as a load map (`SKILL.md:3`); steps 1-8 produce the map and a status (`:24-53`); Boundaries (`:17-20`) match the design NOT-this (why -> clarify) plus setup, other design and document; artifact-scoped F4 as interface-design [interface]. v1 caps B at 2. Mechanisms: measured inventory (`:24-27`), smallest decision unit (`:28-30`), lowest tier with gated promotion (`:31-37`), authority in tools (`:38-39`), durable state in files (`:40-41`), per-tier caps with checks (`:42-43`), total fail-closed status (`:49-53`). Alone in design [agent] (interface-design and bmad scopes are disjoint; openspec design is UNSCORED), exclusions stated (`capability.toml:30`), so S3. 2975 B, no dependency, writes only its map (`:12`), so C3. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = []
+digest = "ccb4ef8be8c70d7325b9cd4eb2768c6431a552b56f35fa3d3ef1c3b7f3278822"
+
+[[cell]]
+task_type = "debug"
+scope = ["agent"]
+when = {}
+F = 2
+B = 2
+S = 1
+C = 3
+raw = 19
+score = 48
+evidence = "Step 7 traces a context failure to its first divergence and hands it to debug work (`SKILL.md:19-20,44-48`); it does not produce the fix, so F2. B: load trace measured against the map (`:44-46`), count carried (`:47-48`). Neighbour fault-loop (debug, any scope) overlaps on agent; the boundary is one-way, so S1. C3 as design. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = []
+digest = "ccb4ef8be8c70d7325b9cd4eb2768c6431a552b56f35fa3d3ef1c3b7f3278822"

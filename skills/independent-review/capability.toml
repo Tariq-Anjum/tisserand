@@ -1,0 +1,64 @@
+schema = 1
+id = "independent-review"
+# reviewer: schema enum value matching its role (taxonomy §3.4 REVIEWER).
+# No tool reads `kind` for routing; "judgment" is the drop-in fallback.
+kind = "reviewer"
+type = "skill"
+category = "engineering"
+# contextual (model-invoked), not explicit: review is inferred from task text
+# (taxonomy A2 cues "independent review", "audit it"; A3 finished_work) and the
+# skill must fill the REVIEWER role of review steps (taxonomy §3.4). Explicit
+# would make every non-code review row named-only (rubric §4.4).
+activation = "contextual"
+# low: never changes the work under review (SKILL.md Quick Index, step 4,
+# Stop); runs only authorized existing checks. Same class as final-audit.
+risk = "low"
+version = "0.1.0"
+
+task_types = ["review"]
+
+[routing]
+provides = ["independent-judgment", "claim-states", "coverage-ledger", "rule-based-verdict"]
+# Authored from capability text; no source
+# phrasing. Avoids every final-audit intent, phrase and provides term.
+intents = ["judge whether work is ready", "review a done claim", "review finished docs or config", "check work another party did"]
+phrases = ["claimed done", "review verdict", "findings by severity", "is it really done"]
+# limit 2: the taxonomy review row's NOT-this (own change -> verify) and the
+# read-only rule (no fixing). debug/implement stay in SKILL.md Boundaries.
+exclusions = ["proving own change", "fixing the findings"]
+composes_with = ["final-audit", "research-first"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+# hands-off: tracked files of the reviewed work are never changed. Checks run
+# project code (shell write) and may leave untracked caches, builds and
+# reports in ignored paths or scratch (fs write-scoped); SKILL.md step 4.
+fs = "write-scoped"
+network = "none"
+shell = "write"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "INDEPENDENT"
+evidence_ref = "ev:lic:compare.h4-rewrite"
+# Inspired by mechanisms from tob-01 (verif-05 merge), tob-02, tob-03,
+# mattpocock-03, addy-06 and ondrej-02; extends final-audit.
+# Named comparison only: trailofbits/skills at the revision below;
+# H=0.4167, zero shared 8/6/5-grams. No text copied in that comparison;
+# this does not attest historical originality or grant licence clearance.
+# Evidence: ev:lic:compare.h4-rewrite.
+origin = "original"
+license = "MIT"
+verified = "2026-11-10"
+notes_ref = "ev:note:s4"
+
+[[provenance.inspired_by]]
+name = "trailofbits/skills"
+url = "https://github.com/trailofbits/skills"
+sha = "e4dd0bb5b15535f7c5a0834187dffba6ac37e4ff"
+licence = "CC-BY-SA-4.0"
+date = "2026-11-10"

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "skill-router",
+    "msg": "disposition not cleared",
+    "path": "skills/skill-router/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "target",
+    "msg": "/: missing required property 'disable-model-invocation'",
+    "path": "skills/target/SKILL.md",
+    "rule": "schema.frontmatter",
+    "severity": "error"
+  }
+]

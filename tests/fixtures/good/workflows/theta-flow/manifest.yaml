@@ -1,0 +1,23 @@
+id: theta-flow
+name: Theta Flow
+type: workflow
+category: testing
+capabilities:
+- fixture-workflow
+activation: contextual
+requires: []
+conflicts: []
+risk: low
+upstream:
+  repo: https://example.org/upstream/theta
+  license: MIT
+  ref: v1.2.3
+  verified_on: 2026-11-05
+install:
+  kind: skills-cli
+  command: npx skills add example/theta
+  note: Pointer only; the note continues
+    on a second line.
+summary: Fixture workflow pointer.
+notes: Not installed by default.
+description: Fixture workflow pointer entry.

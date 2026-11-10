@@ -1,0 +1,48 @@
+# Neutrality zones (manifest spec 5.1 / 11.8). Ordered; the first matching
+# [[zone]] wins. Text files that match no zone are `ratchet` (unlisted is
+# never exempt); binary files are never scanned.
+#   hard    any term hit is an error (waivers are not honoured)
+#   ratchet per-file hit count may not rise above policy/neutrality-baseline.json
+#   exempt  not checked
+
+# The term list is the one place such names may appear.
+[[zone]]
+name = "exempt"
+globs = ["policy/neutrality-terms.toml", "policy/privacy-allow.toml"]
+
+# These exact scripts discover, bind or remove supported user-level hosts.
+# Host names are interface data here; other identifiers remain scanned.
+[[zone]]
+name = "exempt"
+purpose = "host-binding"
+reason = "User-level host discovery, linking and unlinking require host names."
+globs = ["scripts/doctor.py", "scripts/system_link.py", "scripts/uninstall.sh"]
+
+# Upstream provenance notes are human records outside the lints (spec 11.1);
+# adapters bind to specific hosts by design; operating notes under docs/ are
+# not part of the product repo and docs/** inside the repo is ratchet (below).
+[[zone]]
+name = "exempt"
+globs = ["sources/**", "adapters/**"]
+
+# registry/catalog.json embeds the legacy manifest.yaml install notes
+# verbatim (manifest.install.note). Those sources are ratchet-zone text, so
+# their generated copy follows the same ratchet instead of forcing a rewrite
+# of existing text. Every other generated registry file stays hard.
+[[zone]]
+name = "ratchet"
+globs = ["registry/catalog.json"]
+
+[[zone]]
+name = "hard"
+globs = [
+  "skillkit/**",
+  "schema/**",
+  "registry/**",
+  "policy/**",
+  "skills/skill-router/**",
+]
+
+[[zone]]
+name = "ratchet"
+globs = ["skills/**", "guidance/**", "workflows/**", "plugins/**", "docs/**"]

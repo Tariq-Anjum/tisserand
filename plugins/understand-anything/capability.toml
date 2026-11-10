@@ -1,0 +1,52 @@
+schema = 1
+id = "understand-anything"
+name = "Understand Anything"
+description = "Pointer only: an external multi-agent plugin that maps a codebase's architecture and dependencies into a graph; token-heavy. Named use only; never installed here."
+kind = "reference"
+type = "plugin"
+category = "engineering"
+# explicit pointer (coherence plan section 1, owner-approved 2026-11-09): a
+# token-heavy multi-agent run, so never inferred and capped SUPPORTING in its
+# cell (rubric 4.2b, flag o). No body; never installed (plugins are not
+# auto-installed).
+activation = "explicit"
+risk = "medium"
+version = "0.2.0"
+
+task_types = ["explore"]
+
+[routing]
+provides = ["code-understanding", "architecture-exploration", "dependency-analysis", "impact-analysis"]
+# Pointer: one intent for discovery by name; no phrases (never inferred).
+intents = ["external codebase graph plugin"]
+phrases = []
+exclusions = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "read"
+network = "none"
+shell = "none"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+# Wrapper metadata is ours (MIT). Upstream identity, licence and pin live in
+# manifest.yaml `upstream` and in the inspired_by entry below. What changes:
+# license here now describes this wrapper; the unpinned source/ref pair
+# ("main") becomes a pinned inspired_by entry.
+origin = "original"
+license = "MIT"
+disposition = "INDEPENDENT"
+evidence_ref = "ev:lic:index"
+verified = "2026-11-09"
+notes_ref = "sources/egonex-ai.md"
+
+[[provenance.inspired_by]]
+name = "Egonex-AI/Understand-Anything"
+url = "https://github.com/Egonex-AI/Understand-Anything"
+sha = "a6ea4024"
+licence = "MIT"
+date = "2026-11-09"

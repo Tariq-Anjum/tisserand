@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "catalog",
+  "description": "Generated registry/catalog.json.",
+  "type": "object",
+  "required": ["schema", "capabilities"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": 1},
+    "capabilities": {"type": "array", "items": {"$ref": "#/$defs/entry"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "idlist": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+    "strlist": {"type": "array", "items": {"type": "string"}},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "entry": {
+      "type": "object",
+      "required": ["id", "type", "kind", "category", "activation", "risk", "priority", "aliases", "name",
+                   "description", "routing", "cost", "access", "provenance", "path", "body_bytes", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "type": {"enum": ["skill", "guidance", "workflow", "plugin"]},
+        "kind": {"type": "string"},
+        "category": {"type": "string"},
+        "activation": {"enum": ["always", "contextual", "explicit", "manual", "dependency"]},
+        "risk": {"enum": ["low", "medium", "high"]},
+        "priority": {"enum": ["normal", "foundational"]},
+        "version": {"type": "string"},
+        "aliases": {"$ref": "#/$defs/idlist"},
+        "name": {"type": "string"},
+        "description": {"type": "string"},
+        "disable-model-invocation": {"type": "boolean"},
+        "routing": {
+          "type": "object",
+          "required": ["provides", "intents", "phrases", "exclusions", "artifacts", "platforms",
+                       "requires", "composes_with", "conflicts_with"],
+          "additionalProperties": false,
+          "properties": {
+            "provides": {"$ref": "#/$defs/strlist"},
+            "intents": {"$ref": "#/$defs/strlist"},
+            "phrases": {"$ref": "#/$defs/strlist"},
+            "exclusions": {"$ref": "#/$defs/strlist"},
+            "artifacts": {"$ref": "#/$defs/strlist"},
+            "platforms": {"$ref": "#/$defs/strlist"},
+            "requires": {"$ref": "#/$defs/idlist"},
+            "composes_with": {"$ref": "#/$defs/idlist"},
+            "conflicts_with": {"$ref": "#/$defs/idlist"},
+            "display_name": {"type": "string"}
+          }
+        },
+        "cost": {"type": "object", "required": ["latency"], "additionalProperties": false,
+                 "properties": {"latency": {"type": "string"}}},
+        "access": {
+          "type": "object",
+          "required": ["fs", "network", "shell", "secrets", "privilege"],
+          "additionalProperties": false,
+          "properties": {
+            "fs": {"type": "string"}, "network": {"type": "string"}, "shell": {"type": "string"},
+            "secrets": {"type": "string"}, "privilege": {"type": "string"}
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": ["origin", "license", "verified", "source", "ref", "adaptation"],
+          "additionalProperties": false,
+          "properties": {
+            "origin": {"enum": ["original", "derived"]},
+            "license": {"type": "string"},
+            "license_waiver": {"type": "string"},
+            "source": {"type": "string"},
+            "ref": {"type": "string"},
+            "adaptation": {"type": "string"},
+            "derived_from": {"type": "string"},
+            "disposition": {"enum": ["INDEPENDENT", "COPIED-PERMISSIVE", "COPIED-UNCLEARED", "ORIGINAL", "LEGACY-UNATTESTED", "UNKNOWN"]},
+            "evidence_ref": {"type": "string", "pattern": "^ev:lic:[a-z0-9][a-z0-9.-]{0,62}$"},
+            "inspired_by": {"type": "array", "items": {"type": "object", "required": ["name", "url", "sha", "licence", "date"], "additionalProperties": false, "properties": {"name": {"type": "string", "minLength": 1}, "url": {"type": "string", "pattern": "^https?://[^\\s/]+/[^\\s]*$"}, "sha": {"type": "string", "pattern": "^[0-9a-fA-F]{7,40}$"}, "licence": {"type": "string", "minLength": 1}, "date": {"type": "string", "x-format": "date"}}}},
+            "notes_ref": {"type": "string"},
+            "verified": {"type": "string"}
+          },
+          "if": {"required": ["inspired_by"]},
+          "then": {"required": ["disposition"]}
+        },
+        "path": {"type": "string", "minLength": 1},
+        "body_bytes": {"type": "integer"},
+        "sha256": {"$ref": "#/$defs/sha"},
+        "manifest_sha256": {"$ref": "#/$defs/sha"},
+        "manifest": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "upstream": {"type": "object"},
+            "install": {"type": "object"},
+            "summary": {"type": "string"},
+            "notes": {"type": "string"}
+          }
+        }
+      }
+    }
+  }
+}

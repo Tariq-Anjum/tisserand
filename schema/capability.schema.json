@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "capability",
+  "description": "Authored capability.toml (manifest v1). Subset of JSON Schema checked by skillkit.",
+  "type": "object",
+  "required": ["schema", "id", "kind", "type", "category", "activation", "risk", "routing", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": 1},
+    "id": {"$ref": "#/$defs/id"},
+    "name": {"type": "string", "minLength": 1, "maxLength": 64},
+    "description": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "kind": {"enum": ["judgment", "deterministic", "reference", "verifier", "reviewer"]},
+    "type": {"enum": ["skill", "guidance", "workflow", "plugin"]},
+    "category": {"type": "string", "pattern": "^[a-z0-9-]+$", "maxLength": 64},
+    "activation": {"enum": ["always", "contextual", "explicit", "manual", "dependency"]},
+    "risk": {"enum": ["low", "medium", "high"]},
+    "priority": {"enum": ["normal", "foundational"]},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"},
+    "task_types": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z]+$"}},
+    "aliases": {"$ref": "#/$defs/idlist"},
+    "routing": {
+      "type": "object",
+      "required": ["provides"],
+      "additionalProperties": false,
+      "properties": {
+        "provides": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "intents": {"$ref": "#/$defs/strlist"},
+        "phrases": {"$ref": "#/$defs/strlist"},
+        "exclusions": {"$ref": "#/$defs/strlist"},
+        "artifacts": {"$ref": "#/$defs/strlist"},
+        "platforms": {"$ref": "#/$defs/strlist"},
+        "requires": {"$ref": "#/$defs/idlist"},
+        "composes_with": {"$ref": "#/$defs/idlist"},
+        "conflicts_with": {"$ref": "#/$defs/idlist"},
+        "display_name": {"type": "string", "minLength": 1}
+      }
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {"latency": {"enum": ["low", "med", "high"]}}
+    },
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fs": {"enum": ["none", "read", "write-scoped"]},
+        "network": {"enum": ["none", "read", "write"]},
+        "shell": {"enum": ["none", "read", "write"]},
+        "secrets": {"$ref": "#/$defs/label"},
+        "privilege": {"$ref": "#/$defs/label"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["origin", "license", "verified"],
+      "additionalProperties": false,
+      "properties": {
+        "origin": {"enum": ["original", "derived"]},
+        "license": {"type": "string", "minLength": 1},
+        "license_waiver": {"type": "string", "minLength": 8},
+        "source": {"type": "string"},
+        "ref": {"type": "string"},
+        "adaptation": {"type": "string"},
+        "derived_from": {"type": "string"},
+        "disposition": {"enum": ["INDEPENDENT", "COPIED-PERMISSIVE", "COPIED-UNCLEARED", "ORIGINAL", "LEGACY-UNATTESTED", "UNKNOWN"]},
+        "evidence_ref": {"type": "string", "pattern": "^ev:lic:[a-z0-9][a-z0-9.-]{0,62}$"},
+        "inspired_by": {"type": "array", "items": {"type": "object", "required": ["name", "url", "sha", "licence", "date"], "additionalProperties": false, "properties": {"name": {"type": "string", "minLength": 1}, "url": {"type": "string", "pattern": "^https?://[^\\s/]+/[^\\s]*$"}, "sha": {"type": "string", "pattern": "^[0-9a-fA-F]{7,40}$"}, "licence": {"type": "string", "minLength": 1}, "date": {"type": "string", "x-format": "date"}}}},
+        "notes_ref": {"type": "string"},
+        "verified": {"type": "string", "x-format": "date"}
+      },
+      "if": {"required": ["origin"], "properties": {"origin": {"const": "derived"}}},
+      "then": {
+        "required": ["source", "ref", "adaptation"],
+        "properties": {
+          "source": {"minLength": 1},
+          "ref": {"pattern": "^[0-9a-fA-F]{7,40}$"},
+          "adaptation": {"minLength": 1}
+        },
+        "if": {"required": ["inspired_by"]},
+        "then": {"required": ["disposition"]}
+      },
+      "else": {"if": {"required": ["inspired_by"]}, "then": {"required": ["disposition"]}}
+    }
+  },
+  "if": {"required": ["type"], "properties": {"type": {"const": "skill"}}},
+  "then": {},
+  "else": {"required": ["name", "description"]},
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$", "minLength": 1, "maxLength": 64},
+    "idlist": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "strlist": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "label": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}
+  }
+}

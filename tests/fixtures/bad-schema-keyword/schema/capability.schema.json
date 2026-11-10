@@ -1,0 +1,4 @@
+{
+  "type": "object",
+  "properties": {"schema": {"minimum": 1}}
+}

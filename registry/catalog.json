@@ -1,0 +1,1569 @@
+{
+  "capabilities": [
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 0,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Pointer only: an external agile method spanning requirements, architecture, build, verification and retrospectives. Named use only; never installed here.",
+      "id": "bmad",
+      "kind": "reference",
+      "manifest": {
+        "install": {
+          "command": "npx skills add bmad-code-org/BMAD-METHOD",
+          "kind": "skills-cli"
+        },
+        "notes": "Pointer only. It competes with this registry's own delivery skills, so the router never infers it; use it only when the owner names it for a project.",
+        "summary": "Pointer to an external agile method; named use only.",
+        "upstream": {
+          "license": "MIT",
+          "ref": "a867e160",
+          "repo": "https://github.com/bmad-code-org/BMAD-METHOD",
+          "verified_on": "2026-11-09"
+        }
+      },
+      "manifest_sha256": "7f4d0a7b843e7353ecb4427af3d974dfe0b5a0c6cf6663f8dcb425d9b795e7bf",
+      "name": "BMAD Method",
+      "path": "workflows/bmad/manifest.yaml",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:index",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "bmad-code-org/BMAD-METHOD",
+            "sha": "a867e160",
+            "url": "https://github.com/bmad-code-org/BMAD-METHOD"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "sources/bmad-code-org.md",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "external agile delivery method"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "agile-development",
+          "multi-perspective-planning",
+          "requirements",
+          "architecture"
+        ],
+        "requires": []
+      },
+      "sha256": "ddfd8f58388b2f530121014044a9b517bc57c4d02cd52c1ca4f019b0f97acff8",
+      "type": "workflow",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "write",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "write"
+      },
+      "activation": "contextual",
+      "aliases": [
+        "wayfinder"
+      ],
+      "body_bytes": 2960,
+      "category": "planning",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Order an agreed goal into a sized plan of checked steps, or a typed ticket map when multi-session work has an unclear route. USE WHEN the goal is settled. NOT FOR unclear goals, architecture or building.",
+      "disable-model-invocation": false,
+      "id": "bounded-plan",
+      "kind": "judgment",
+      "name": "bounded-plan",
+      "path": "skills/bounded-plan/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.dispositions",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "mattpocock/skills",
+            "sha": "4ae2317d",
+            "url": "https://github.com/mattpocock/skills"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b1",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "goal still unsettled"
+        ],
+        "intents": [
+          "order an agreed goal into steps",
+          "sequence a change with checks",
+          "map tickets with blocking edges",
+          "size the plan to the change"
+        ],
+        "phrases": [
+          "step by step plan",
+          "order of the steps",
+          "check for each step",
+          "ticket map"
+        ],
+        "platforms": [],
+        "provides": [
+          "step-ordering",
+          "criteria-tracing",
+          "plan-sizing",
+          "plan-handoff",
+          "typed-ticket-map"
+        ],
+        "requires": []
+      },
+      "sha256": "283a32750dd366a01bbe90426e9b065ffc0f6bf9ce4ee5192d6eba0da12c7f14",
+      "type": "skill",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 0,
+      "category": "productivity",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Pointer only: an external terse-output skill and CLI. Named use only; the registry keeps its own terse-output skill.",
+      "id": "caveman",
+      "kind": "reference",
+      "manifest": {
+        "install": {
+          "command": "npx skills add JuliusBrussee/caveman",
+          "kind": "skills-cli"
+        },
+        "notes": "At the pinned revision (3dc497a7) the repository root licence is Apache-2.0 (a root NOTICE file exists, not fetched); BSL-1.1 applied only to pre-3.0.0 runtime components. Keep the upstream installer separate from this registry's deterministic skill installation.",
+        "summary": "Pointer to an external terse-output skill and CLI.",
+        "upstream": {
+          "license": "Apache-2.0",
+          "ref": "3dc497a7",
+          "repo": "https://github.com/JuliusBrussee/caveman",
+          "verified_on": "2026-11-09"
+        }
+      },
+      "manifest_sha256": "8812a9c0ff44eebcc90e2d28eeae4d2ebd629a17ec015768440336909313d59a",
+      "name": "Caveman",
+      "path": "workflows/caveman/manifest.yaml",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:index",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "Apache-2.0",
+            "name": "JuliusBrussee/caveman",
+            "sha": "3dc497a7",
+            "url": "https://github.com/JuliusBrussee/caveman"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "sources/juliusbrussee.md",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "medium",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "compress agent output",
+          "install output compression"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "token-efficiency",
+          "concise-output",
+          "agent-installation"
+        ],
+        "requires": []
+      },
+      "sha256": "93273579b2a6a8c708bdae38c8d8029e5ad3b778b1ede31681c83e17b1ea6f68",
+      "type": "workflow",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "write"
+      },
+      "activation": "contextual",
+      "aliases": [
+        "serena-code-intelligence"
+      ],
+      "body_bytes": 3075,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Trace code structure (symbols, references, callers, implementations, diagnostics) through a semantic tool adapter, with text search as a labelled fallback. USE WHEN tracing code structure. NOT FOR exact text, edits or outside facts.",
+      "disable-model-invocation": false,
+      "id": "code-intelligence",
+      "kind": "judgment",
+      "name": "code-intelligence",
+      "path": "skills/code-intelligence/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b1",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "exact string",
+          "editing code"
+        ],
+        "intents": [
+          "find symbol references callers",
+          "find a declaration or impl",
+          "trace code structure",
+          "list diagnostics for a file"
+        ],
+        "phrases": [
+          "find references",
+          "find callers",
+          "symbol overview",
+          "go to definition"
+        ],
+        "platforms": [],
+        "provides": [
+          "semantic-navigation",
+          "reference-tracing",
+          "symbol-overview",
+          "labelled-findings"
+        ],
+        "requires": []
+      },
+      "sha256": "1c92c9f3e04bde33b724b0d0b5c477289175268d7ee09c75bbb58dbfbe56f455",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "read"
+      },
+      "activation": "contextual",
+      "aliases": [
+        "context-fundamentals"
+      ],
+      "body_bytes": 2927,
+      "category": "meta",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Design what an agent loads, when and at what cost: a load map giving each context source a tier, trigger, budget and check. USE WHEN designing or tracing context loading. NOT FOR installs, app code or UI.",
+      "disable-model-invocation": false,
+      "id": "context-design",
+      "kind": "judgment",
+      "name": "context-design",
+      "path": "skills/context-design/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.dispositions",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+            "sha": "9ff0c991",
+            "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b1",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "installing a capability",
+          "app code architecture"
+        ],
+        "intents": [
+          "decide what an agent loads",
+          "tier agent context sources",
+          "set a context byte budget",
+          "trace why context loaded"
+        ],
+        "phrases": [
+          "load map",
+          "context budget",
+          "on demand loading",
+          "always loaded"
+        ],
+        "platforms": [],
+        "provides": [
+          "load-map",
+          "context-tiers",
+          "context-budget",
+          "load-trace"
+        ],
+        "requires": []
+      },
+      "sha256": "ccb4ef8be8c70d7325b9cd4eb2768c6431a552b56f35fa3d3ef1c3b7f3278822",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "read"
+      },
+      "activation": "explicit",
+      "aliases": [
+        "grill-me",
+        "grill-with-docs"
+      ],
+      "body_bytes": 2948,
+      "category": "planning",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Settle each open branch of a plan or decision, one question per turn with a recommended answer; record mode keeps only pinned terms and qualifying decisions. USE WHEN named. NOT FOR unnamed clarifying, design, plans or building.",
+      "disable-model-invocation": true,
+      "id": "decision-interview",
+      "kind": "judgment",
+      "name": "decision-interview",
+      "path": "skills/decision-interview/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.dispositions",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "mattpocock/skills",
+            "sha": "4ae2317d",
+            "url": "https://github.com/mattpocock/skills"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b1",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "solution shape",
+          "ordering the steps"
+        ],
+        "intents": [
+          "question each open branch",
+          "pin terms and record decisions"
+        ],
+        "phrases": [
+          "one question per turn"
+        ],
+        "platforms": [],
+        "provides": [
+          "branch-interview",
+          "branch-ledger",
+          "pinned-terms",
+          "decision-records"
+        ],
+        "requires": []
+      },
+      "sha256": "9da8abc6b8e57dbcd6abbe73b2c2d2d4d1809dfa525bb57d878975eda994304f",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "write"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4115,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Diagnose and repair an observed failure (error, crash, wrong output, failing test or check) by proving the cause before changing anything. USE WHEN something already fails and the cause is unknown. NOT FOR new work with nothing failing, a tool or skill the agent cannot see, checking your own finished change, or judging someone else's finished work.",
+      "disable-model-invocation": false,
+      "id": "fault-loop",
+      "kind": "judgment",
+      "name": "fault-loop",
+      "path": "skills/fault-loop/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "notes_ref": "ev:note:s1",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-07"
+      },
+      "risk": "medium",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [
+          "research-first",
+          "code-intelligence"
+        ],
+        "conflicts_with": [],
+        "exclusions": [
+          "nothing is failing",
+          "tool not visible"
+        ],
+        "intents": [
+          "diagnose an observed failure",
+          "fix a failing test or check",
+          "find why a command errors",
+          "repair an unexplained regression"
+        ],
+        "phrases": [
+          "stack trace",
+          "keeps failing",
+          "stopped working",
+          "regression since"
+        ],
+        "platforms": [],
+        "provides": [
+          "fault-diagnosis",
+          "failure-reproduction",
+          "cause-first-fix",
+          "correction-ladder"
+        ],
+        "requires": []
+      },
+      "sha256": "e5fdfa023e8639600df617429a8df1db1615fa6e69dee891c52005c4979b31eb",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "read"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 2948,
+      "category": "planning",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Keep a long task's progress, findings and dead ends in files so a reset or crash resumes from disk. USE WHEN work is long-running. NOT FOR ordering steps, handoff notes or doc drift.",
+      "disable-model-invocation": false,
+      "id": "file-based-planning",
+      "kind": "judgment",
+      "name": "file-based-planning",
+      "path": "skills/file-based-planning/SKILL.md",
+      "priority": "foundational",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.dispositions",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "OthmanAdi/planning-with-files",
+            "sha": "2362ca38",
+            "url": "https://github.com/OthmanAdi/planning-with-files"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b2",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "single shot",
+          "reconcile"
+        ],
+        "intents": [
+          "keep task progress in files",
+          "resume a long task from disk",
+          "survive a reset or crash"
+        ],
+        "phrases": [
+          "progress file",
+          "pick up where",
+          "after a crash"
+        ],
+        "platforms": [],
+        "provides": [
+          "progress-file",
+          "resume-state",
+          "dead-end-log"
+        ],
+        "requires": []
+      },
+      "sha256": "b130f6d3d9ab18b42a0f3db3748beda2082a418471b4d7773a661e59ee4c480e",
+      "type": "skill",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4841,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Independently audit completed implementation work before acceptance when another agent, developer, or prior pass claims the task is finished, production-ready, safe, or ready to merge.",
+      "disable-model-invocation": false,
+      "id": "final-audit",
+      "kind": "judgment",
+      "name": "final-audit",
+      "path": "skills/final-audit/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-10"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [
+          "research-first",
+          "code-intelligence"
+        ],
+        "conflicts_with": [],
+        "exclusions": [
+          "ordinary implementation"
+        ],
+        "intents": [
+          "verify completed implementation",
+          "independent code review",
+          "audit production readiness",
+          "check a patch before merge"
+        ],
+        "phrases": [
+          "second opinion",
+          "production ready",
+          "ready to merge",
+          "completed work"
+        ],
+        "platforms": [],
+        "provides": [
+          "code-review",
+          "implementation-audit",
+          "production-readiness",
+          "verification"
+        ],
+        "requires": []
+      },
+      "sha256": "843fd2a446b565d3e7a29dbc9eec2c599c217b506545db5330f8dcd417442214",
+      "type": "skill",
+      "version": "0.1.1"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "read"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 2939,
+      "category": "productivity",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Write a continuation note so another session or agent resumes in-flight work from checked state, open items, dead ends and pointers. USE WHEN named. NOT FOR durable docs or progress files.",
+      "disable-model-invocation": true,
+      "id": "handoff",
+      "kind": "judgment",
+      "name": "handoff",
+      "path": "skills/handoff/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.dispositions",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "mattpocock/skills",
+            "sha": "4ae2317d",
+            "url": "https://github.com/mattpocock/skills"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b2",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [
+          "file-based-planning"
+        ],
+        "conflicts_with": [],
+        "exclusions": [
+          "durable records"
+        ],
+        "intents": [
+          "write a continuation note",
+          "hand off to a new session"
+        ],
+        "phrases": [
+          "continuation note",
+          "new session"
+        ],
+        "platforms": [],
+        "provides": [
+          "context-transfer",
+          "session-continuity"
+        ],
+        "requires": []
+      },
+      "sha256": "1a4b19ca79b9b737926d33a62dd24e67e2ba1ed7be6fdacd0fd4f0d045c2487d",
+      "type": "skill",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "write"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4892,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Judge finished work or a done claim: test each claim against evidence, track coverage, confirm findings before rating, rule-based verdict. USE WHEN asked if work is ready. NOT FOR your own change, debug or fixing.",
+      "disable-model-invocation": false,
+      "id": "independent-review",
+      "kind": "reviewer",
+      "name": "independent-review",
+      "path": "skills/independent-review/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.h4-rewrite",
+        "inspired_by": [
+          {
+            "date": "2026-11-10",
+            "licence": "CC-BY-SA-4.0",
+            "name": "trailofbits/skills",
+            "sha": "e4dd0bb5b15535f7c5a0834187dffba6ac37e4ff",
+            "url": "https://github.com/trailofbits/skills"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:s4",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-10"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [
+          "final-audit",
+          "research-first"
+        ],
+        "conflicts_with": [],
+        "exclusions": [
+          "proving own change",
+          "fixing the findings"
+        ],
+        "intents": [
+          "judge whether work is ready",
+          "review a done claim",
+          "review finished docs or config",
+          "check work another party did"
+        ],
+        "phrases": [
+          "claimed done",
+          "review verdict",
+          "findings by severity",
+          "is it really done"
+        ],
+        "platforms": [],
+        "provides": [
+          "independent-judgment",
+          "claim-states",
+          "coverage-ledger",
+          "rule-based-verdict"
+        ],
+        "requires": []
+      },
+      "sha256": "0840ddd90f457013c8876275bcca11fc28d450a51fa9014b0b03d72a9a4acee7",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4995,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Safely integrate shared agent capabilities by discovering providers, classifying ownership, reusing installations, adding thin harness bindings, validating, and registering verified state.",
+      "disable-model-invocation": false,
+      "id": "integrating-agent-capabilities",
+      "kind": "judgment",
+      "name": "integrating-agent-capabilities",
+      "path": "skills/integrating-agent-capabilities/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-10"
+      },
+      "risk": "medium",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "spec or change plan",
+          "application code"
+        ],
+        "intents": [
+          "integrate shared agent tools",
+          "add update remove providers",
+          "reuse existing skill plugins",
+          "repair harness tool bindings"
+        ],
+        "phrases": [
+          "provider installation",
+          "missing binding",
+          "shared agent tools",
+          "skills plugins"
+        ],
+        "platforms": [],
+        "provides": [
+          "capability-integration",
+          "mcp-integration",
+          "skill-governance",
+          "plugin-governance"
+        ],
+        "requires": []
+      },
+      "sha256": "811df8a667c6d13e221f5aaf758a6d8cecd7997b034ef87df1b2a54fbbf98c76",
+      "type": "skill",
+      "version": "0.1.1"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "read"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 2867,
+      "category": "planning",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Turn an unsettled request into a written contract with checkable done-criteria, then proceed or ask. USE WHEN goal, scope or done is unclear, or a plan needs critique. NOT FOR design, plans, known small edits, named interviews.",
+      "disable-model-invocation": false,
+      "id": "intent-contract",
+      "kind": "judgment",
+      "name": "intent-contract",
+      "path": "skills/intent-contract/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "notes_ref": "ev:note:s2-s3",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-07"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "shape or architecture",
+          "known small edit"
+        ],
+        "intents": [
+          "turn a vague ask into a contract",
+          "define done before building",
+          "agree on checkable done criteria",
+          "decide what to ask or assume"
+        ],
+        "phrases": [
+          "definition of done",
+          "what counts as done",
+          "success criteria",
+          "scope is unclear"
+        ],
+        "platforms": [],
+        "provides": [
+          "intent-contract",
+          "done-criteria",
+          "assumption-ledger",
+          "ask-or-proceed-gate"
+        ],
+        "requires": []
+      },
+      "sha256": "c09dbeb94f02ee4cd8004b338f10762b8586fa0f5a07cf78e59c82ebb339131d",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "read",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "write"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4608,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Decide a user interface's shape before building: states, layout, input paths, and a check plan of run and judged items. USE WHEN designing a UI, screen, TUI or theme. NOT FOR building, proving or reviewing it.",
+      "disable-model-invocation": false,
+      "id": "interface-design",
+      "kind": "judgment",
+      "name": "interface-design",
+      "path": "skills/interface-design/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "notes_ref": "ev:note:s5",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "what or why is unsettled",
+          "building the interface"
+        ],
+        "intents": [
+          "design a screen or page layout",
+          "design a terminal ui",
+          "define ui states and focus order",
+          "write ui accessibility checks"
+        ],
+        "phrases": [
+          "interaction states",
+          "contrast ratio",
+          "reduced motion",
+          "visual hierarchy"
+        ],
+        "platforms": [],
+        "provides": [
+          "interface-brief",
+          "state-inventory",
+          "ui-check-plan",
+          "run-or-judged-split"
+        ],
+        "requires": []
+      },
+      "sha256": "c4fcd1aa480290b65f925fea879a18419e5a44ca819f1d836797699d5b0b172e",
+      "type": "skill",
+      "version": "0.1.1"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 0,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Pointer only: an external spec-driven workflow that keeps requirements and change plans reviewable before code. Named use only; never installed here.",
+      "id": "openspec",
+      "kind": "reference",
+      "manifest": {
+        "install": {
+          "command": "npm install -g @fission-ai/openspec@1.13.0",
+          "kind": "npm"
+        },
+        "notes": "Pointer only. The registry does not absorb its CLI, schemas, generated commands or project-local files; the router never infers it.",
+        "summary": "Pointer to an external spec-driven workflow; named use only.",
+        "upstream": {
+          "license": "MIT",
+          "package": "@fission-ai/openspec",
+          "ref": "0fa4a970",
+          "repo": "https://github.com/Fission-AI/OpenSpec",
+          "verified_on": "2026-11-09",
+          "verified_version": "1.13.0"
+        }
+      },
+      "manifest_sha256": "9a1ebfd4b309f3c85da06057b94a5c63b9842e4146960be9dc5990d5694df0b8",
+      "name": "OpenSpec",
+      "path": "workflows/openspec/manifest.yaml",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:index",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "Fission-AI/OpenSpec",
+            "sha": "0fa4a970",
+            "url": "https://github.com/Fission-AI/OpenSpec"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "sources/fission-ai.md",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "provider installation",
+          "harness binding"
+        ],
+        "intents": [
+          "external spec driven workflow"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "spec-driven-development",
+          "planning",
+          "change-management"
+        ],
+        "requires": []
+      },
+      "sha256": "2f8bce8650f170d9b7dbeb6a0797c7b477640d6147d875f3f5365edef5da71eb",
+      "type": "workflow",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "write"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4745,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Prove your own change meets its criteria with checks run now, one evidence record per criterion; unproven is not done. USE WHEN checking your work before calling it done. NOT FOR review, debug or building.",
+      "disable-model-invocation": false,
+      "id": "proof-gate",
+      "kind": "verifier",
+      "name": "proof-gate",
+      "path": "skills/proof-gate/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "notes_ref": "ev:note:s4",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-08"
+      },
+      "risk": "medium",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [
+          "research-first"
+        ],
+        "conflicts_with": [],
+        "exclusions": [
+          "judging finished work",
+          "failure cause unknown"
+        ],
+        "intents": [
+          "prove my change meets criteria",
+          "check my work before done",
+          "record evidence per criterion",
+          "confirm own change with checks"
+        ],
+        "phrases": [
+          "fail condition",
+          "fresh evidence",
+          "before claiming done",
+          "prove it works"
+        ],
+        "platforms": [],
+        "provides": [
+          "criteria-proof",
+          "fresh-evidence",
+          "fail-closed-gate",
+          "claim-record"
+        ],
+        "requires": []
+      },
+      "sha256": "0a32f800090ada13305d93024981ffa9f1f67b561969a704a18b65b4c5099e18",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4792,
+      "category": "research",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Research current or uncertain external technical facts before deciding when freshness, versions, evidence, or real-world experience could materially change the answer.",
+      "disable-model-invocation": false,
+      "id": "research-first",
+      "kind": "judgment",
+      "name": "research-first",
+      "path": "skills/research-first/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-10"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [
+          "bounded-plan"
+        ],
+        "conflicts_with": [],
+        "exclusions": [
+          "self contained"
+        ],
+        "intents": [
+          "research current technical facts",
+          "verify version compatibility",
+          "compare tools and frameworks",
+          "investigate software releases"
+        ],
+        "phrases": [
+          "primary sources",
+          "version specific",
+          "recent releases",
+          "technical claim"
+        ],
+        "platforms": [],
+        "provides": [
+          "technical-research",
+          "source-verification",
+          "current-information"
+        ],
+        "requires": []
+      },
+      "sha256": "ec337a065d45e272664f2e04583176e2b40aeafcc90ff5864b0422d4391f36fc",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "read"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 2947,
+      "category": "meta",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Check what a session changed against docs, agent instructions and memory; list each mismatch, fix only approved ones. USE WHEN records may lag reality. NOT FOR handoff notes or progress files.",
+      "disable-model-invocation": false,
+      "id": "session-reconcile",
+      "kind": "judgment",
+      "name": "session-reconcile",
+      "path": "skills/session-reconcile/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.dispositions",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "KKKKhazix/khazix-skills",
+            "sha": "cfa3436d",
+            "url": "https://github.com/KKKKhazix/khazix-skills"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b2",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "continuation note",
+          "progress file"
+        ],
+        "intents": [
+          "reconcile session changes",
+          "check documentation drift",
+          "record durable session knowledge",
+          "sync docs with actual code"
+        ],
+        "phrases": [
+          "end of a working session",
+          "out of sync",
+          "session changes",
+          "docs still describe"
+        ],
+        "platforms": [],
+        "provides": [
+          "drift-ledger",
+          "documentation-hygiene",
+          "memory-hygiene"
+        ],
+        "requires": []
+      },
+      "sha256": "9fafab571abc01c81187af32f27a8bdeb174c2cf90c5f431b2bbdcb158148700",
+      "type": "skill",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "always",
+      "aliases": [],
+      "body_bytes": 1655,
+      "category": "meta",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Route non-trivial tasks to the smallest relevant skill, guidance, workflow, or plugin without loading unrelated context.",
+      "disable-model-invocation": false,
+      "id": "skill-router",
+      "kind": "judgment",
+      "name": "skill-router",
+      "path": "skills/skill-router/SKILL.md",
+      "priority": "foundational",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-10"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "capability-routing",
+          "context-management",
+          "progressive-disclosure"
+        ],
+        "requires": []
+      },
+      "sha256": "21d322bd3e739aaa258df5ead96e56493a67b5e48c6f848ea6d66a07beb07b86",
+      "type": "skill",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "none",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 1896,
+      "category": "productivity",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Opt-in reply style with shorter prose in your own replies; code, commands, paths, errors, numbers and quotes stay exact. USE WHEN named. NOT FOR shrinking inputs or written docs.",
+      "disable-model-invocation": true,
+      "id": "terse-output",
+      "kind": "judgment",
+      "name": "terse-output",
+      "path": "skills/terse-output/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:compare.dispositions",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "Apache-2.0",
+            "name": "JuliusBrussee/caveman",
+            "sha": "3dc497a7",
+            "url": "https://github.com/JuliusBrussee/caveman"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "ev:note:t2-b2",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "shorter replies",
+          "cut the verbose prose"
+        ],
+        "phrases": [
+          "shorter replies"
+        ],
+        "platforms": [],
+        "provides": [
+          "communication",
+          "concise-replies"
+        ],
+        "requires": []
+      },
+      "sha256": "691b6b43a579a7de74c8eb8bc3cf2d40dfae9d9e7f1c20f41c63eb382b170ffb",
+      "type": "skill",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "write-scoped",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "write"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 4100,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Build a known change in thin end-to-end slices, each checked before the next. USE WHEN implementing and nothing fails. NOT FOR debug, clarify, plan, setup, verify or review.",
+      "disable-model-invocation": false,
+      "id": "thin-slice",
+      "kind": "judgment",
+      "name": "thin-slice",
+      "path": "skills/thin-slice/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "ORIGINAL",
+        "license": "MIT",
+        "notes_ref": "ev:note:s2-s3",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-07"
+      },
+      "risk": "medium",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [
+          "unexplained failure",
+          "tool not installed"
+        ],
+        "intents": [
+          "build a feature slice by slice",
+          "ship one end to end path first",
+          "add a feature across layers",
+          "make a planned multi part change"
+        ],
+        "phrases": [
+          "vertical slice",
+          "thin slice",
+          "walking skeleton"
+        ],
+        "platforms": [],
+        "provides": [
+          "vertical-slice",
+          "incremental-build",
+          "per-slice-check",
+          "scope-control"
+        ],
+        "requires": []
+      },
+      "sha256": "6ca7f8bd01a57d41d74bddfd2353e0a1880c4a4fae8365b69d75155444fcf3ef",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 0,
+      "category": "engineering",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Pointer only: an external multi-agent plugin that maps a codebase's architecture and dependencies into a graph; token-heavy. Named use only; never installed here.",
+      "id": "understand-anything",
+      "kind": "reference",
+      "manifest": {
+        "install": {
+          "command": "Not installed or managed by this system; follow the upstream project's own instructions.",
+          "kind": "external"
+        },
+        "notes": "Pointer only. The first analysis of a large codebase can use many model tokens; the router never infers it.",
+        "summary": "Pointer to an external multi-agent codebase-graph plugin; token-heavy; named use only.",
+        "upstream": {
+          "license": "MIT",
+          "ref": "a6ea4024",
+          "repo": "https://github.com/Egonex-AI/Understand-Anything",
+          "verified_on": "2026-11-09"
+        }
+      },
+      "manifest_sha256": "f2bb8963b6bcccf2166b69471e6119e33c2af97f6cfa0a4f4e6c492ab3b3b2b5",
+      "name": "Understand Anything",
+      "path": "plugins/understand-anything/manifest.yaml",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "disposition": "INDEPENDENT",
+        "evidence_ref": "ev:lic:index",
+        "inspired_by": [
+          {
+            "date": "2026-11-09",
+            "licence": "MIT",
+            "name": "Egonex-AI/Understand-Anything",
+            "sha": "a6ea4024",
+            "url": "https://github.com/Egonex-AI/Understand-Anything"
+          }
+        ],
+        "license": "MIT",
+        "notes_ref": "sources/egonex-ai.md",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-09"
+      },
+      "risk": "medium",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "external codebase graph plugin"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "code-understanding",
+          "architecture-exploration",
+          "dependency-analysis",
+          "impact-analysis"
+        ],
+        "requires": []
+      },
+      "sha256": "d874d679e2a5dd54194c00f7f070467dd20ce959761514f41544de4b5a27b0a4",
+      "type": "plugin",
+      "version": "0.2.0"
+    }
+  ],
+  "schema": 1
+}

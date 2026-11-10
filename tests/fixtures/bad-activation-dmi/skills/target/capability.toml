@@ -1,0 +1,22 @@
+schema = 1
+id = "target"
+kind = "judgment"
+type = "skill"
+category = "testing"
+activation = "explicit"
+risk = "low"
+
+[routing]
+provides = ["fixture-capability"]
+intents = ["do-fixture-work"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

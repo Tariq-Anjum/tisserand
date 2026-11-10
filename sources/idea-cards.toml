@@ -1,0 +1,606 @@
+schema = 1
+source_index = "ev:card:index"
+# baseline rebased 2026-11-10 (hygiene H1/H2): own-text edits, no idea card used; prior digests in the live record.
+baseline = {"skills/final-audit/SKILL.md" = "843fd2a446b565d3e7a29dbc9eec2c599c217b506545db5330f8dcd417442214", "skills/integrating-agent-capabilities/SKILL.md" = "811df8a667c6d13e221f5aaf758a6d8cecd7997b034ef87df1b2a54fbbf98c76", "skills/research-first/SKILL.md" = "ec337a065d45e272664f2e04583176e2b40aeafcc90ff5864b0422d4391f36fc", "skills/skill-router/SKILL.md" = "21d322bd3e739aaa258df5ead96e56493a67b5e48c6f848ea6d66a07beb07b86"}
+
+[[card]]
+ids = ["addy-01"]
+record = "ev:card:addy-osmani-agent-skills"
+source_record = "sources/addyosmani-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["addy-02"]
+record = "ev:card:addy-osmani-agent-skills"
+source_record = "sources/addyosmani-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["addy-03"]
+record = "ev:card:addy-osmani-agent-skills"
+source_record = "sources/addyosmani-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["addy-04"]
+record = "ev:card:addy-osmani-agent-skills"
+source_record = "sources/addyosmani-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["addy-05"]
+record = "ev:card:addy-osmani-agent-skills"
+source_record = "sources/addyosmani-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["addy-06"]
+record = "ev:card:addy-osmani-agent-skills"
+source_record = "sources/addyosmani-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["aspec-01"]
+record = "ev:card:agent-skills-format"
+source_record = "sources/agent-skills-format.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["aspec-02"]
+record = "ev:card:agent-skills-format"
+source_record = "sources/agent-skills-format.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["bmad-01"]
+record = "ev:card:bmad-method"
+source_record = "sources/bmad-code-org.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["bmad-02"]
+record = "ev:card:bmad-method"
+source_record = "sources/bmad-code-org.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["cav-01"]
+record = "ev:card:caveman-terse-output"
+source_record = "sources/juliusbrussee.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["cav-02"]
+record = "ev:card:caveman-terse-output"
+source_record = "sources/juliusbrussee.md"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["gstack-01"]
+record = "ev:card:gstack"
+source_record = "sources/garrytan-gstack.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["gstack-02"]
+record = "ev:card:gstack"
+source_record = "sources/garrytan-gstack.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["gstack-03"]
+record = "ev:card:gstack"
+source_record = "sources/garrytan-gstack.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["gstack-04"]
+record = "ev:card:gstack"
+source_record = "sources/garrytan-gstack.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["gstack-05"]
+record = "ev:card:gstack"
+source_record = "sources/garrytan-gstack.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ifd-01"]
+record = "ev:card:interface-design-proposal"
+source_record = "sources/interface-design-proposal.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ifd-02"]
+record = "ev:card:interface-design-proposal"
+source_record = "sources/interface-design-proposal.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ifd-03"]
+record = "ev:card:interface-design-proposal"
+source_record = "sources/interface-design-proposal.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ifd-04"]
+record = "ev:card:interface-design-proposal"
+source_record = "sources/interface-design-proposal.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ar-01"]
+record = "ev:card:karpathy-autoresearch"
+source_record = "sources/karpathy-autoresearch.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["kg-01"]
+record = "ev:card:karpathy-guidelines"
+source_record = "sources/multica-ai.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["kiro-01"]
+record = "ev:card:kiro-aws"
+source_record = "sources/kiro-aws.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["mattpocock-01"]
+record = "ev:card:mattpocock-skills"
+source_record = "sources/mattpocock.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["mattpocock-02"]
+record = "ev:card:mattpocock-skills"
+source_record = "sources/mattpocock.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["mattpocock-03"]
+record = "ev:card:mattpocock-skills"
+source_record = "sources/mattpocock.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["mattpocock-04"]
+record = "ev:card:mattpocock-skills"
+source_record = "sources/mattpocock.md"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ondrej-01"]
+record = "ev:card:ondrej-software-factory"
+source_record = "sources/ondrej-software-factory.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ondrej-02"]
+record = "ev:card:ondrej-software-factory"
+source_record = "sources/ondrej-software-factory.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["ondrej-03"]
+record = "ev:card:ondrej-software-factory"
+source_record = "sources/ondrej-software-factory.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["owasp-01"]
+record = "ev:card:owasp-agentic-skills"
+source_record = "sources/owasp-agentic-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["pwf-01"]
+record = "ev:card:planning-with-files"
+source_record = "sources/othmanadi.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["pstack-01"]
+record = "ev:card:pstack"
+source_record = "sources/backnotprop-pstack.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["pstack-02"]
+record = "ev:card:pstack"
+source_record = "sources/backnotprop-pstack.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["pstack-03"]
+record = "ev:card:pstack"
+source_record = "sources/backnotprop-pstack.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["pstack-04"]
+record = "ev:card:pstack"
+source_record = "sources/backnotprop-pstack.md"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["pstack-05"]
+record = "ev:card:pstack"
+source_record = "sources/backnotprop-pstack.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["pstack-06"]
+record = "ev:card:pstack"
+source_record = "sources/backnotprop-pstack.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["route-01"]
+record = "ev:card:routing-cascade-research"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["sih-01"]
+record = "ev:card:self-improving-harness-research"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["speckit-01"]
+record = "ev:card:spec-kit"
+source_record = "sources/github-spec-kit.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["speckit-02"]
+record = "ev:card:spec-kit"
+source_record = "sources/github-spec-kit.md"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["suite32-01"]
+record = "ev:card:suite32-agent-complete"
+source_record = "sources/suite32-agent-complete.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["suite32-02"]
+record = "ev:card:suite32-agent-complete"
+source_record = "sources/suite32-agent-complete.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["suite32-03"]
+record = "ev:card:suite32-agent-complete"
+source_record = "sources/suite32-agent-complete.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["suite32-04"]
+record = "ev:card:suite32-agent-complete"
+source_record = "sources/suite32-agent-complete.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["suite32-05"]
+record = "ev:card:suite32-agent-complete"
+source_record = "sources/suite32-agent-complete.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["suite32-06"]
+record = "ev:card:suite32-agent-complete"
+source_record = "sources/suite32-agent-complete.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["superpowers-01"]
+record = "ev:card:superpowers"
+source_record = "sources/obra-superpowers.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["superpowers-02"]
+record = "ev:card:superpowers"
+source_record = "sources/obra-superpowers.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["superpowers-03"]
+record = "ev:card:superpowers"
+source_record = "sources/obra-superpowers.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["superpowers-04"]
+record = "ev:card:superpowers"
+source_record = "sources/obra-superpowers.md"
+license_verified = true
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["testmu-01"]
+record = "ev:card:testmu-lambdatest"
+source_record = "sources/lambdatest-agent-skills.md"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["testmu-02"]
+record = "ev:card:testmu-lambdatest"
+source_record = "sources/lambdatest-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["testmu-03"]
+record = "ev:card:testmu-lambdatest"
+source_record = "sources/lambdatest-agent-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["testmu-04"]
+record = "ev:card:testmu-lambdatest"
+source_record = "sources/lambdatest-agent-skills.md"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["tob-01"]
+record = "ev:card:trail-of-bits"
+source_record = "sources/trailofbits-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["tob-02"]
+record = "ev:card:trail-of-bits"
+source_record = "sources/trailofbits-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["tob-03"]
+record = "ev:card:trail-of-bits"
+source_record = "sources/trailofbits-skills.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["verif-01"]
+record = "ev:card:verifier-research"
+source_record = "sources/verifier-papers.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["verif-02"]
+record = "ev:card:verifier-research"
+source_record = "sources/verifier-papers.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["verif-03"]
+record = "ev:card:verifier-research"
+source_record = "sources/verifier-papers.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["verif-04"]
+record = "ev:card:verifier-research"
+source_record = "sources/verifier-papers.md"
+license_verified = false
+dropped = false
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[card]]
+ids = ["verif-05"]
+record = "ev:card:verifier-research"
+source_record = "sources/verifier-papers.md"
+license_verified = false
+dropped = true
+records = ["ref-01.md", "ref-02.md", "ref-03.md", "ref-04.md", "ref-05.md", "ref-06.md", "ref-07.md", "ref-08.md"]
+
+[[text]]
+path = "skills/fault-loop/SKILL.md"
+digest = "e5fdfa023e8639600df617429a8df1db1615fa6e69dee891c52005c4979b31eb"
+idea_cards = ["superpowers-03", "superpowers-01", "suite32-05", "pstack-01"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/intent-contract/SKILL.md"
+digest = "c09dbeb94f02ee4cd8004b338f10762b8586fa0f5a07cf78e59c82ebb339131d"
+idea_cards = ["mattpocock-01", "kiro-01", "ondrej-01", "speckit-01"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/bounded-plan/SKILL.md"
+digest = "283a32750dd366a01bbe90426e9b065ffc0f6bf9ce4ee5192d6eba0da12c7f14"
+idea_cards = ["gstack-04", "bmad-02", "pwf-01", "kiro-01", "ondrej-01"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/thin-slice/SKILL.md"
+digest = "6ca7f8bd01a57d41d74bddfd2353e0a1880c4a4fae8365b69d75155444fcf3ef"
+idea_cards = ["mattpocock-02", "pstack-06", "kg-01"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/proof-gate/SKILL.md"
+digest = "0a32f800090ada13305d93024981ffa9f1f67b561969a704a18b65b4c5099e18"
+idea_cards = ["superpowers-02", "verif-01", "verif-02", "verif-04", "pstack-05", "speckit-01", "addy-05"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/independent-review/SKILL.md"
+digest = "0840ddd90f457013c8876275bcca11fc28d450a51fa9014b0b03d72a9a4acee7"
+idea_cards = ["tob-01", "tob-02", "tob-03", "mattpocock-03", "addy-06", "ondrej-02"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/interface-design/SKILL.md"
+digest = "c4fcd1aa480290b65f925fea879a18419e5a44ca819f1d836797699d5b0b172e"
+idea_cards = ["ifd-01", "ifd-02", "ifd-03", "ifd-04"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/decision-interview/SKILL.md"
+digest = "9da8abc6b8e57dbcd6abbe73b2c2d2d4d1809dfa525bb57d878975eda994304f"
+idea_cards = ["mattpocock-01", "gstack-04", "pwf-01"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/context-design/SKILL.md"
+digest = "ccb4ef8be8c70d7325b9cd4eb2768c6431a552b56f35fa3d3ef1c3b7f3278822"
+idea_cards = ["aspec-01", "aspec-02", "pwf-01"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/code-intelligence/SKILL.md"
+digest = "1c92c9f3e04bde33b724b0d0b5c477289175268d7ee09c75bbb58dbfbe56f455"
+idea_cards = ["aspec-02", "pstack-03"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/file-based-planning/SKILL.md"
+digest = "b130f6d3d9ab18b42a0f3db3748beda2082a418471b4d7773a661e59ee4c480e"
+idea_cards = ["pwf-01", "suite32-03", "addy-04"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/handoff/SKILL.md"
+digest = "1a4b19ca79b9b737926d33a62dd24e67e2ba1ed7be6fdacd0fd4f0d045c2487d"
+idea_cards = ["gstack-04", "pwf-01", "addy-04"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/session-reconcile/SKILL.md"
+digest = "9fafab571abc01c81187af32f27a8bdeb174c2cf90c5f431b2bbdcb158148700"
+idea_cards = ["gstack-03", "pstack-01"]
+reuse = "mechanism"
+
+[[text]]
+path = "skills/terse-output/SKILL.md"
+digest = "691b6b43a579a7de74c8eb8bc3cf2d40dfae9d9e7f1c20f41c63eb382b170ffb"
+idea_cards = ["cav-01"]
+reuse = "mechanism"

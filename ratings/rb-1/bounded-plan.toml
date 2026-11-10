@@ -1,0 +1,23 @@
+id = "bounded-plan"
+version = "0.2.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "5265413d3fd435bfcaedf7e7d515f64449288a98364b0650d039092f5a1dbb1a"
+
+[[cell]]
+task_type = "plan"
+scope = []
+when = {}
+F = 3
+B = 2
+S = 3
+C = 3
+raw = 27
+score = 68
+evidence = "Description names an agreed goal turned into checked steps or, for multi-session work with an unclear route, a typed ticket map (`SKILL.md:3`); steps 1-8 and ticket mode produce it (`:24-53`). Long-running progress files stay with file-based-planning (`:19-20`), narrower than the plan type, so F3. v1 caps B at 2. Mechanisms: no invented goal (`:24-27`), fail-closed mode test (`:28-30`), one unit one step (`:31`), a check per step (`:33-34`), two-way tracing (`:35`), stop rule with count carried and dated revision (`:38-41`), typed tickets with blocking edges, no skill names, never worked, research tickets isolated (`:47-53`), existing tracker when access and posting are authorised, else the plan file (`:50-52`). file-based-planning now names plans in its NOT FOR (file-based-planning `SKILL.md:3,18-19`), reciprocal to `:19-20`, and no longer provides planning; bmad and openspec are explicit; exclusions stated (`capability.toml:31`); no shared multi-word trigger, so S3 (T2 b2 neighbour re-rate; was S1). 3000 B, no dependency, writes only its own artifact (plan file or its tickets), so C3. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = []
+digest = "283a32750dd366a01bbe90426e9b065ffc0f6bf9ce4ee5192d6eba0da12c7f14"

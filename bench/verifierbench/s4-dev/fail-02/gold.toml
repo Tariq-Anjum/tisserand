@@ -1,0 +1,15 @@
+id = "fail-02"
+kind = "fail"
+units = ["candidate.py", "criteria.toml"]
+
+[claims]
+c1 = "FALSIFIED"
+c2 = "VERIFIED"
+
+[result]
+proof-gate = "FAIL"
+independent-review = "FAIL"
+
+[checks]
+"test_local.py" = 1
+"check.py" = 1

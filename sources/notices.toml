@@ -1,0 +1,5 @@
+# Exact upstream notice text, keyed by relative licence evidence identifier.
+# Retain records after rewrites: distributed history can still require notices.
+# Each [[notice]] has evidence_ref = "ev:lic:<slug>" and text = "...".
+schema = 1
+notice = []

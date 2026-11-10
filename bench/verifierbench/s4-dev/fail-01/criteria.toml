@@ -1,0 +1,9 @@
+title = "Round half quantities upward."
+
+[c1]
+required = true
+text = "A half quantity rounds upward."
+
+[c2]
+required = true
+text = "Zero stays zero."

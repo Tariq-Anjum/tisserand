@@ -1,0 +1,24 @@
+schema = 1
+id = "skill-router"
+kind = "judgment"
+type = "skill"
+category = "routing"
+activation = "always"
+risk = "low"
+priority = "foundational"
+version = "0.1.0"
+
+[routing]
+provides = ["capability-routing"]
+intents = ["select-capability"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

@@ -1,0 +1,23 @@
+id = "session-reconcile"
+version = "0.2.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "111b7249aa47f6902969ede9f2877ea5de8294eea0c7b367fdc2e414d0034785"
+
+[[cell]]
+task_type = "document"
+scope = ["docs", "agent"]
+when = {"drift_check" = true}
+F = 3
+B = 2
+S = 3
+C = 3
+raw = 27
+score = 68
+evidence = "Description names checking a session's changes against docs, agent instructions and memory and fixing approved mismatches (`SKILL.md:3`); steps 1-6 produce ledger, edits and status (`:27-56`). Scope [docs, agent] is narrower than the document type, so F3 (flag * kept: F3 vs 4). Condition from its applicability: a session changed things or a record looks out of date (`:3,11-12`; `capability.toml:20-21`). v1 caps B at 2. Mechanisms: own versus others' changes (`:27-29`), MATCH/DRIFT/MISSING/UNCHECKED ledger (`:33-38`), source and last-checked date with stale entries flagged, repeated hand corrections become a check (`:39-42`), approved or authorised edits only, protected paths, memory policy, re-read, correction ladder (`:43-49`), total fail-closed status (`:50-56`). decision-interview document [docs] is explicit, so activation separates; bmad document is F1; reciprocal NOT FOR with handoff and file-based-planning (`:3,20-21`; handoff `SKILL.md:18-19`; file-based-planning `SKILL.md:20-21`); exclusions stated (`capability.toml:24`); no shared trigger, so S3. 2995 B, no dependency; record edits are the job itself, so C3. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = ["*", "†"]
+digest = "9fafab571abc01c81187af32f27a8bdeb174c2cf90c5f431b2bbdcb158148700"

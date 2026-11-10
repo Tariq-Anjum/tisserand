@@ -1,0 +1,61 @@
+schema = 1
+id = "session-reconcile"
+kind = "judgment"
+type = "skill"
+category = "meta"
+# contextual: inferred only in document [docs, agent] rows when drift_check
+# holds (SKILL.md Quick Index start rule).
+activation = "contextual"
+# low: edits records only after approval or project authorisation, re-reads
+# each edit (SKILL.md step 5).
+risk = "low"
+version = "0.2.0"
+
+task_types = ["document"]
+
+[routing]
+provides = ["drift-ledger", "documentation-hygiene", "memory-hygiene"]
+# Kept from the earlier entry except where noted; they describe the rewritten
+# text. No source phrasing.
+intents = ["reconcile session changes", "check documentation drift", "record durable session knowledge", "sync docs with actual code"]
+phrases = ["end of a working session", "out of sync", "session changes", "docs still describe"]
+# limit 2: handoff notes (the taxonomy document row's NOT-this) and in-flight
+# progress state (file-based-planning, the measured lexical neighbour).
+exclusions = ["continuation note", "progress file"]
+# composes_with dropped: reconciliation reads progress files as plain input
+# and needs no other skill loaded.
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+# approved record edits (fs write-scoped); shell read for diff, status and
+# commit history. Memory writes use the configured memory tool, whose own
+# declared access governs them (procedure in the skill, authority in tools).
+fs = "write-scoped"
+network = "none"
+shell = "read"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+# Original text written clean-room on 2026-11-09 from active idea cards
+# gstack-03 and pstack-01 (mechanisms only). What changes: the legacy
+# derivation comments become the inspired_by entry below with disposition
+# INDEPENDENT and an evidence_ref; LicenseRef-unverified becomes MIT;
+# notes_ref moves to the T2 notes. Earlier revisions stay in history: the
+# history comparison under evidence_ref governs THIRD_PARTY_NOTICES, not
+# this field.
+origin = "original"
+license = "MIT"
+disposition = "INDEPENDENT"
+evidence_ref = "ev:lic:compare.dispositions"
+verified = "2026-11-09"
+notes_ref = "ev:note:t2-b2"
+
+[[provenance.inspired_by]]
+name = "KKKKhazix/khazix-skills"
+url = "https://github.com/KKKKhazix/khazix-skills"
+sha = "cfa3436d"
+licence = "MIT"
+date = "2026-11-09"

@@ -1,0 +1,23 @@
+id = "fault-loop"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "2d3e29a77f3338e613d8c92496b536b6eacef065b8e585fc5dd72bdb55d24aa1"
+
+[[cell]]
+task_type = "debug"
+scope = []
+when = {}
+F = 4
+B = 2
+S = 1
+C = 2
+raw = 26
+score = 65
+evidence = "The description names the job and its artifact: an observed failure, cause first, then a fix (`SKILL.md:3`). Steps 1–6 produce the fix and the re-observation end to end (`:31-44`). The Boundaries list (`:16-23`) matches the debug NOT-this (nothing failing → implement; tool not visible → setup), plus verify and review. v1 caps B at 2. Mechanisms aimed at known debug failures: observe before patching (`:31-33`), a disconfirming test before editing (`:36-37`), the same command re-run with exit code alone not accepted (`:41-42`), and a counter that never resets (`:56`). Gets B3 only after a RED/GREEN fixture. T2 b1: the only debug neighbour with F ≥ 2 is context-design [agent]; karpathy-guidelines retired and the code-intelligence debug cell was dropped. context-design sends fixes here (context-design `SKILL.md:19-20`) but this text has no reciprocal NOT FOR and the artifact overlaps on agent, so S1 (\"no reciprocal NOT FOR, no differing closed field\"). S3 needs a reciprocal NOT FOR line here for context-loading design, a separate authored change with re-rating. Until then, precision is reported separately (rubric §5) and does not change S. The body is 3–6 KB, with no dependency. The skill edits code and runs local checks, so it does not get C3 (\"writes only its own artifact\" does not fit a code fix). Inherited count continued (`:50-52`). H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = []
+digest = "e5fdfa023e8639600df617429a8df1db1615fa6e69dee891c52005c4979b31eb"

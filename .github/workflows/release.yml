@@ -1,0 +1,41 @@
+name: release
+on:
+  push:
+    tags: ["v*.*.*"]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - name: verify strict provenance summary against the tracked tree without the summary
+        run: |
+          export GIT_INDEX_FILE="$RUNNER_TEMP/summary-index"
+          git read-tree HEAD
+          git rm --cached --quiet release/provenance-summary.json
+          tree="$(git write-tree)"
+          unset GIT_INDEX_FILE
+          python3 -m skillkit provenance verify release/provenance-summary.json --tree "$tree"
+      - run: python3 -m skillkit check --provenance public
+      - run: python3 -m skillkit lint privacy --no-baseline
+      - run: python3 -m unittest discover -s tests -t .
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          persist-credentials: false
+      - run: gh release create "$GITHUB_REF_NAME" release/provenance-summary.json --verify-tag --notes-file CHANGELOG.md
+        env:
+          GH_TOKEN: ${{ github.token }}

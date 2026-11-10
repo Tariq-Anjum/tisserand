@@ -1,0 +1,13 @@
+# Local Python bootstrap environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local runtime state
+skills/state/
+
+# Development backups
+.v2-backup-*/
+
+# Router decision cache
+.cache/

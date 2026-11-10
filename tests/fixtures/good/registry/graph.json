@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "alpha-research",
+      "rel": "composes_with",
+      "to": "beta-explicit"
+    },
+    {
+      "from": "alpha-research",
+      "rel": "requires",
+      "to": "delta-dep"
+    },
+    {
+      "from": "beta-explicit",
+      "rel": "conflicts_with",
+      "to": "gamma-manual"
+    },
+    {
+      "from": "gamma-manual",
+      "rel": "conflicts_with",
+      "to": "beta-explicit"
+    }
+  ],
+  "nodes": [
+    "alpha-research",
+    "beta-explicit",
+    "delta-dep",
+    "eta-guidance",
+    "gamma-manual",
+    "iota-plugin",
+    "skill-router",
+    "theta-flow"
+  ]
+}

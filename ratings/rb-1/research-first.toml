@@ -1,0 +1,23 @@
+id = "research-first"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 7
+rater = "source-matrix"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "8c7964529770a8abf371b91b731b257665995904c0a1894f910c7630c873d902"
+
+[[cell]]
+task_type = "research"
+scope = []
+when = {}
+F = 4
+B = 2
+S = 3
+C = 2
+raw = 30
+score = 75
+evidence = "`SKILL.md:9-21` defines the trigger and exclusion; research loop `:23-42`, ranking `:44-54`, applicability `:56-63`, claim labels and fail-closed rules `:65-71`, tool adapter `:73-78`, retrieval retries `:80-92`, halts `:94-99`, neighbours `:101-107`. Exclusion at `capability.toml:16`. Rev 3: the scope was `[external]`; `external` is no longer an artifact (taxonomy A3 `external_facts`). The research type already means outside facts, so the cell needs no condition. Re-rating: complete external-research procedure and applicability checks retain F4; v1 B2 cap; planning boundary retains S3; 4792 B retains C2. Values unchanged."
+flags = []
+digest = "ec337a065d45e272664f2e04583176e2b40aeafcc90ff5864b0422d4391f36fc"

@@ -1,0 +1,24 @@
+name = "Foo"
+description = "Collides by case."
+schema = 1
+id = "Foo-Bar"
+kind = "reference"
+type = "guidance"
+category = "testing"
+activation = "contextual"
+risk = "low"
+
+[routing]
+provides = ["fixture-capability"]
+intents = ["do-fixture-work"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

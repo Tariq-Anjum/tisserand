@@ -1,0 +1,73 @@
+{
+  "edges": [
+    {
+      "from": "fault-loop",
+      "rel": "composes_with",
+      "to": "code-intelligence"
+    },
+    {
+      "from": "fault-loop",
+      "rel": "composes_with",
+      "to": "research-first"
+    },
+    {
+      "from": "final-audit",
+      "rel": "composes_with",
+      "to": "code-intelligence"
+    },
+    {
+      "from": "final-audit",
+      "rel": "composes_with",
+      "to": "research-first"
+    },
+    {
+      "from": "handoff",
+      "rel": "composes_with",
+      "to": "file-based-planning"
+    },
+    {
+      "from": "independent-review",
+      "rel": "composes_with",
+      "to": "final-audit"
+    },
+    {
+      "from": "independent-review",
+      "rel": "composes_with",
+      "to": "research-first"
+    },
+    {
+      "from": "proof-gate",
+      "rel": "composes_with",
+      "to": "research-first"
+    },
+    {
+      "from": "research-first",
+      "rel": "composes_with",
+      "to": "bounded-plan"
+    }
+  ],
+  "nodes": [
+    "bmad",
+    "bounded-plan",
+    "caveman",
+    "code-intelligence",
+    "context-design",
+    "decision-interview",
+    "fault-loop",
+    "file-based-planning",
+    "final-audit",
+    "handoff",
+    "independent-review",
+    "integrating-agent-capabilities",
+    "intent-contract",
+    "interface-design",
+    "openspec",
+    "proof-gate",
+    "research-first",
+    "session-reconcile",
+    "skill-router",
+    "terse-output",
+    "thin-slice",
+    "understand-anything"
+  ]
+}

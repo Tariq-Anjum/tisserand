@@ -1,0 +1,9 @@
+[
+  {
+    "id": "",
+    "msg": "/properties/schema/minimum: unsupported keyword 'minimum'",
+    "path": "schema/capability.schema.json",
+    "rule": "schema.unsupported",
+    "severity": "error"
+  }
+]

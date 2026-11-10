@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "graph",
+  "description": "Generated registry/graph.json.",
+  "type": "object",
+  "required": ["nodes", "edges"],
+  "additionalProperties": false,
+  "properties": {
+    "nodes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}},
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "rel", "to"],
+        "additionalProperties": false,
+        "properties": {
+          "from": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "rel": {"enum": ["requires", "composes_with", "conflicts_with"]},
+          "to": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+schema = 1
+id = "delta-dep"
+kind = "judgment"
+type = "skill"
+category = "testing"
+activation = "dependency"
+risk = "low"
+
+[routing]
+provides = ["helper-work"]
+intents = ["help-other-skills"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

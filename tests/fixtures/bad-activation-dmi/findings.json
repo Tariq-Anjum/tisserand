@@ -1,0 +1,23 @@
+[
+  {
+    "id": "skill-router",
+    "msg": "disposition not cleared",
+    "path": "skills/skill-router/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "target",
+    "msg": "activation=explicit requires disable-model-invocation: true",
+    "path": "skills/target/SKILL.md",
+    "rule": "activation-dmi",
+    "severity": "error"
+  },
+  {
+    "id": "target",
+    "msg": "disposition not cleared",
+    "path": "skills/target/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  }
+]

@@ -1,0 +1,24 @@
+name = "eta-guidance"
+description = "Fixture guidance entry."
+schema = 1
+id = "eta-guidance"
+kind = "reference"
+type = "guidance"
+category = "meta"
+activation = "contextual"
+risk = "low"
+
+[routing]
+provides = ["fixture-guidance"]
+intents = ["follow-fixture-guidance"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

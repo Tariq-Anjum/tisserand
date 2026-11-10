@@ -1,0 +1,30 @@
+[
+  {
+    "id": "skill-router",
+    "msg": "disposition not cleared",
+    "path": "skills/skill-router/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "target",
+    "msg": "disposition not cleared",
+    "path": "skills/target/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "target",
+    "msg": "requires references unknown id 'no-such-skill'",
+    "path": "skills/target/capability.toml",
+    "rule": "ref-unknown",
+    "severity": "error"
+  },
+  {
+    "id": "target",
+    "msg": "routing.intents is empty (placeholder)",
+    "path": "skills/target/capability.toml",
+    "rule": "todo-intent",
+    "severity": "info"
+  }
+]

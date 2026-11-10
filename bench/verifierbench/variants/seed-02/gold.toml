@@ -1,0 +1,17 @@
+id = "seed-02"
+kind = "seeded"
+units = ["candidate.py", "criteria.toml"]
+defects = ["seed-02-defect"]
+parent = "pass-01"
+
+[claims]
+c1 = "FALSIFIED"
+c2 = "VERIFIED"
+
+[result]
+proof-gate = "FAIL"
+independent-review = "FAIL"
+
+[checks]
+"test_local.py" = 1
+"check.py" = 1

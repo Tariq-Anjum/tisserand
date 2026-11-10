@@ -1,0 +1,32 @@
+schema = 1
+id = "integrating-agent-capabilities"
+kind = "judgment"
+type = "skill"
+category = "engineering"
+activation = "contextual"
+risk = "medium"
+version = "0.1.1"
+
+task_types = ["setup"]
+
+[routing]
+provides = ["capability-integration", "mcp-integration", "skill-governance", "plugin-governance"]
+intents = ["integrate shared agent tools", "add update remove providers", "reuse existing skill plugins", "repair harness tool bindings"]
+phrases = ["provider installation", "missing binding", "shared agent tools", "skills plugins"]
+exclusions = ["spec or change plan", "application code"]  # T2 b2: openspec (reciprocal) and the setup row NOT-this
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "read"
+network = "none"
+shell = "none"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+origin = "original"
+license = "MIT"
+verified = "2026-11-10"

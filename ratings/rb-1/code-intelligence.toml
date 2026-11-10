@@ -1,0 +1,24 @@
+id = "code-intelligence"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "d287cc5bb71f2b0e93fbeadb80350136dab922cf5baa96e6cc4139e87b06f32c"
+
+[[cell]]
+task_type = "explore"
+scope = ["code"]
+when = {"exact_text" = false, "semantic_code" = true}
+max_role = "supporting"
+F = 3
+B = 2
+S = 3
+C = 2
+raw = 26
+score = 65
+evidence = "Description and Quick Index name structural code questions (`SKILL.md:3,11-12`); steps 1-5 produce per-question marks, labelled findings and a status (`:27-46`). Scope narrower than explore (no architecture or impact maps), so F3. v1 caps B at 2. Mechanisms: known-file short cut (`:27-28`), exact-checkout binding (`:29-31`), stopped tool started on demand by the checkout-scoped launcher (`:31-32`), no installs (`:34-35`), one query per question marked ANSWERED (empty included), FAILED or SKIPPED (`:36-40`), CANDIDATE fallback (`:41-42`), CONFIRMED only when every question is ANSWERED (`:43-46`), count carried (`:50-53`). Positive condition from Use for (`:11-12`, semantic_code); negated from Not for exact text (`:13`, exact_text). Capped at SUPPORTING (rubric 4.2): one known small file (`:13,27-28`) has no closed condition. understand-anything is now explicit (activation separates) and shares no provides term; exclusions stated (`capability.toml:31`), so S3 (was S1). Body 3123 B plus the adapter doc and an on-demand local server, so C2. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = ["†", "c"]
+digest = "1c92c9f3e04bde33b724b0d0b5c477289175268d7ee09c75bbb58dbfbe56f455"

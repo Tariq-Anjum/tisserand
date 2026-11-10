@@ -1,0 +1,5 @@
+# SPDX identifiers accepted for derived capabilities (manifest spec 1.4).
+# Any other licence on a derived entry needs an explicit `license_waiver`
+# reason in its [provenance] table. "LicenseRef-unverified" is never
+# allowlisted; it is reported as a warning for every entry that carries it.
+allow = ["Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "CC0-1.0", "ISC", "MIT", "Unlicense"]

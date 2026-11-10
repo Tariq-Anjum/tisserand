@@ -1,0 +1,23 @@
+id = "proof-gate"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 7
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "8d3836475a4bcf4471241c3818d1e2ab508ae404dd0d383cd0ebcf6725fc322f"
+
+[[cell]]
+task_type = "verify"
+scope = []
+when = {}
+F = 4
+B = 2
+S = 3
+C = 2
+raw = 30
+score = 75
+evidence = "Description names own change proved against criteria with an evidence record per criterion (`SKILL.md:3`); criterion sheet through outcome produce records and result (`:19-61`); Quick Index Elsewhere (`:15-17`) matches the verify NOT-this plus debug, implement, clarify. v1 caps B at 2. Mechanisms: open criteria count as UNTESTABLE (`:23`), fail condition first (`:19-26`), executed checks for system-wide claims (`:30-33`), fresh run (`:35-37`), every criterion stated with NOT_APPLICABLE discharge (`:42-48`), total fail-closed result, BLOCKED only after budgeted repair, repair first when unmatched (`:50-58`), count carried (`:59-61`, `:65-71`), excuse list (`:39-40`), section 10/11 fields (`:72-75`), staged research, MEDIUM fields, HIGH checkpoint (`:76-79`), no rerun-to-green (`:81`). Alone in the cell (final-audit has no verify cell since T2 b2; bmad verify is F1), exclusions stated, no shared trigger, so S3. 4745 B, runs checks, so C2. H4 (2026-11-10): clean-room restructure (criterion sheet, outcome table), same mechanisms; dangling policy section 14 cite corrected to 12; values unchanged."
+flags = []
+digest = "0a32f800090ada13305d93024981ffa9f1f67b561969a704a18b65b4c5099e18"

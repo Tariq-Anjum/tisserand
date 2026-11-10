@@ -1,0 +1,53 @@
+schema = 1
+id = "proof-gate"
+# verifier: schema enum value matching its role (taxonomy §3.4 VERIFIER).
+# No tool reads `kind` for routing; "judgment" is the drop-in fallback.
+kind = "verifier"
+type = "skill"
+category = "engineering"
+# contextual (model-invoked), not explicit: verify is inferred from task text
+# (taxonomy A2 cues "run the tests", "make sure it works") and the skill must
+# fill the VERIFIER role of verify steps (taxonomy §3.4). rubric §4.4 says an
+# explicit capability is never inferred, so explicit would leave verify
+# named-only and VERIFIER empty. Own-work checks rarely name a skill.
+activation = "contextual"
+# medium: runs project checks and may write disposable probes and an evidence
+# record; PLAN §5 then requires independent review before promotion.
+risk = "medium"
+version = "0.1.0"
+
+task_types = ["verify"]
+
+[routing]
+provides = ["criteria-proof", "fresh-evidence", "fail-closed-gate", "claim-record"]
+# Authored from capability text; no source phrasing.
+# Avoids neighbour terms: definition of done, success criteria (intent-contract),
+# verification (final-audit provides), ready to merge, completed work.
+intents = ["prove my change meets criteria", "check my work before done", "record evidence per criterion", "confirm own change with checks"]
+phrases = ["fail condition", "fresh evidence", "before claiming done", "prove it works"]
+# limit 2: the taxonomy verify row's NOT-this (finished work -> review) and
+# debug. implement and clarify stay in SKILL.md Boundaries.
+exclusions = ["judging finished work", "failure cause unknown"]
+composes_with = ["research-first"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "write-scoped"
+network = "none"
+shell = "write"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+# original text; mechanisms from idea cards superpowers-02 (testmu-01 merge),
+# verif-01, verif-02, verif-04, pstack-05, speckit-01, addy-05. Only the
+# superpowers licence is recorded (MIT); the rest are unverified, so only
+# mechanisms were taken, no wording.
+origin = "original"
+license = "MIT"
+verified = "2026-11-08"
+notes_ref = "ev:note:s4"

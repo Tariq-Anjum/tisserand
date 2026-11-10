@@ -1,0 +1,39 @@
+name: Skill proposal
+description: Propose a new skill for an observed gap. Skills are added for real failures, not for completeness.
+labels: ["skill-proposal"]
+body:
+  - type: input
+    id: task-type
+    attributes:
+      label: Task type
+      description: The task type from taxonomy/ that the skill would serve.
+    validations:
+      required: true
+  - type: textarea
+    id: cells
+    attributes:
+      label: Decision-table cells
+      description: Which cells of decision-table.json it would fill, and which existing skill currently covers them (if any).
+    validations:
+      required: true
+  - type: textarea
+    id: failures
+    attributes:
+      label: Observed failures without it
+      description: Concrete cases where an agent went wrong, with what happened. Evidence, not opinion.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: USE WHEN / NOT FOR
+      description: One line each. The boundary against its nearest neighbour skill matters most.
+    validations:
+      required: true
+  - type: checkboxes
+    id: origin
+    attributes:
+      label: Origin
+      options:
+        - label: The proposed wording is my own; any idea it builds on is named as inspiration only (see CONTRIBUTING.md).
+          required: true

@@ -1,0 +1,28 @@
+id: openspec
+name: OpenSpec
+type: workflow
+category: engineering
+capabilities:
+- spec-driven-development
+- planning
+- change-management
+activation: explicit
+requires: []
+conflicts: []
+risk: low
+upstream:
+  repo: https://github.com/Fission-AI/OpenSpec
+  license: MIT
+  ref: 0fa4a970
+  package: '@fission-ai/openspec'
+  verified_version: 1.13.0
+  verified_on: 2026-11-09
+install:
+  kind: npm
+  command: npm install -g @fission-ai/openspec@1.13.0
+  note: Upstream installer; run only on the owner's request. Needs Node.js 20.19.0
+    or later and a per-project init. This registry never installs it.
+summary: Pointer to an external spec-driven workflow; named use only.
+notes: Pointer only. The registry does not absorb its CLI, schemas, generated
+  commands or project-local files; the router never infers it.
+description: 'Pointer only: an external spec-driven workflow that keeps requirements and change plans reviewable before code. Named use only; never installed here.'

@@ -1,0 +1,43 @@
+{
+  "inputs": {
+    "guidance/eta-guidance/GUIDANCE.md": "daf528ae26e164f5f36d1cbcd0f5caf49c5a67b19539a221ebc67a3e0b94c804",
+    "guidance/eta-guidance/capability.toml": "353c276ec6af16d8995defb3093f6bda6d73810229ec8d64b8b12849cbc5c457",
+    "plugins/iota-plugin/capability.toml": "8d9ed68e66f88ae048b9df4ca835527a5de51e633c355cf49bad669fd5ba69c6",
+    "plugins/iota-plugin/manifest.yaml": "b85e129154277686034b2dada0dd8aa573d85f563600a3fd68634883911c6105",
+    "policy/licenses.toml": "2380b3e63f5a2c25f5708f84c51235433ea1723bb37915ddd8b737709468fe64",
+    "policy/routing-vocab.toml": "dc8c2c070254b49a323c7baeb72e68f0d0732c1d348b25672f3fbc1049c862ee",
+    "schema/capability.schema.json": "91e2fcca50ef68bd6623b209dcdf7bc4cfeed768d8beb9eae5cfe689e04c6bf8",
+    "schema/catalog.schema.json": "c14fa9ef37a63172082d917dac99c7b683f9e0bb66ad73377a279d9845a07d5a",
+    "schema/frontmatter.schema.json": "5e4e3b42ec706b7eda741ae706c47e365c3f877322384b4c28623bc61ed19b22",
+    "schema/graph.schema.json": "9716b8ad61c4fd1558dbc90bb59fc2d797024e34716e80c08e2b427275221f19",
+    "schema/index.schema.json": "e23b2e0dc834912bae41f331e9d791fba932a0459de801922be35120d9973c23",
+    "schema/lock.schema.json": "62509b7be640c58b45bd6546df2b7d2488a344d9bf6208997b6e6eb9429a8cbf",
+    "skills/alpha-research/SKILL.md": "ef65764a20ffb071e75c34ff95838acc880e7a367c1034146de40f69a501bc50",
+    "skills/alpha-research/capability.toml": "993d4f89c25ccae89f62b7c6863ade8c30458339357d85652f06be25d8b4b1ba",
+    "skills/beta-explicit/SKILL.md": "e5240149cdb2030b759539cdffef9daef1484866cb45a9b2979ae54dc70aa5b4",
+    "skills/beta-explicit/capability.toml": "39fc75a7152d197d3e516f811fe4ce99988dc12a828b667fd7ddbf5da9413fa7",
+    "skills/delta-dep/SKILL.md": "c4aef49555b505773da37891b200874f92be03614de649bff67c8195fe526326",
+    "skills/delta-dep/capability.toml": "0761b9d8ed6ad25d7585147da7f807b191466c3c37357e239a9196262784eec0",
+    "skills/gamma-manual/SKILL.md": "13f91f2eb9f6e89f16fe1e90c70f2f65ccec5050d045bcbef8449d59811578fa",
+    "skills/gamma-manual/capability.toml": "41c58a4991f84ded0d18af8133d04a433ec40aaaf45a75064e0608e4fb95d9b4",
+    "skills/skill-router/SKILL.md": "fac91a27d825a18012f77ef123f47a8252e0d85c0813634360e2b6d258d058c5",
+    "skills/skill-router/capability.toml": "c038898f0fa247d37ebdea732e274ccbf36cfd6f8ddc2194a95e8f4c970bb09c",
+    "workflows/theta-flow/capability.toml": "a69e00d48aa8126aa2b58c3d147adcbd6fbe01e30da4ca8bc56c59fb2c289e0d",
+    "workflows/theta-flow/manifest.yaml": "12fb94cd083ccec643513926645c1d0df1e9abcdde77f19aea639eb0f11830cd"
+  },
+  "outputs": {
+    "CREDITS.md": "ecad6fea311fab49d2e5cc8e1197e9a692882dd6bc2f43bccb2236663eef980c",
+    "INDEX.md": "31ba9d763320b906f8bc15be18dba21123e44d2aeff2b1b2f544fdc29a7f9a39",
+    "THIRD_PARTY_NOTICES": "9114852674889aff299c6cde41337c1f4edd5152664a39d8fcf7ade50e503602",
+    "capabilities.md": "5baaf0aabe0e20be8f96f4762f2cd3b5dafa970ae74c0235addbc70eb011bfce",
+    "catalog.yaml": "b74f3061791d70588cf84b46782b56c25ddc7d1a873b26054a1f4b800f972191",
+    "categories/meta.md": "541d554d1355f11abef53b9257aecd65f673d2e9c93f424bf5cf21de39b35fa0",
+    "categories/research.md": "4320556f983ac29e23b77e581b0115ddd6adda78f2cd27eae9e15ed71b475d64",
+    "categories/routing.md": "4c2f49efa3a70b59e4ddcf1bc9f760e3893d6441d4c4db674f8a58de0307baa9",
+    "categories/testing.md": "66be1581a9b087e8516479ffba672d727de94f8506a6cadcf8db895a0bc5c550",
+    "guidance/INDEX.md": "17f61c530af6968fbf30cbaf1ce198cc1c486024c2fce970480b03385bb23bb5",
+    "registry/catalog.json": "28f9b55a214b4eb3ee4f90188ba21e960769eae95ca10a840c159f8af951291b",
+    "registry/graph.json": "239ead0883b77d41fa3126462ade6c640ed1b7a70aaf9e00ae6237b950adce85",
+    "registry/index.json": "024e5f70de25b39ca2572b908398b2b0f4813c8ebd35cb54ecabfa9185fda2da"
+  }
+}

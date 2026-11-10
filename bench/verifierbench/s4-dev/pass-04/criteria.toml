@@ -1,0 +1,9 @@
+title = "Encode lines for a tiny ledger."
+
+[c1]
+required = true
+text = "Entries have one newline separator."
+
+[c2]
+required = true
+text = "No entries produce an empty string."

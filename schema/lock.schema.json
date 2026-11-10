@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "lock",
+  "description": "Generated registry/manifest.lock.json: path to sha256 maps. The map values (64 hex characters) are produced by the generator; the supported schema subset cannot constrain arbitrary map values.",
+  "type": "object",
+  "required": ["inputs", "outputs"],
+  "additionalProperties": false,
+  "properties": {
+    "inputs": {"type": "object"},
+    "outputs": {"type": "object"}
+  }
+}

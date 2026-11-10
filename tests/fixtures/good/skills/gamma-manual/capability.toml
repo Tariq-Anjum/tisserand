@@ -1,0 +1,23 @@
+schema = 1
+id = "gamma-manual"
+kind = "judgment"
+type = "skill"
+category = "testing"
+activation = "manual"
+risk = "low"
+
+[routing]
+provides = ["manual-work"]
+intents = ["do-manual-work"]
+conflicts_with = ["beta-explicit"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

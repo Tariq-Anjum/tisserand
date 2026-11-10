@@ -1,0 +1,13 @@
+version = "rb-1.1.0"
+tt = "tt-1.1.0"
+revision = 5
+source = "ev:design:rubric-v1"
+weights = {"F" = 4, "B" = 3, "S" = 2, "C" = 1}
+score = {"multiplier" = 5, "offset" = 1, "divisor" = 2}
+primary = {"F" = 3, "score" = 50}
+supporting = {"F" = 2, "score" = 40}
+benefit_max = 2
+max_shortlist = 5
+anchors = {"F" = [{"value" = 0, "anchor" = "Text excludes the job"}, {"value" = 1, "anchor" = "The job appears only as a stage word or side effect"}, {"value" = 2, "anchor" = "Covers a stated sub-case, or supports the job without producing its artifact"}, {"value" = 3, "anchor" = "Routing fields or when-to-use name the job and artifact; scope narrower than the type, or workflow not locally inspectable"}, {"value" = 4, "anchor" = "Meets 3; the workflow produces the artifact end to end; its boundaries match the type's NOT-this"}], "B" = [{"value" = 0, "anchor" = "No gain, added ceremony, or conflicts with an owner decision"}, {"value" = 1, "anchor" = "Gain claimed, no mechanism given"}, {"value" = 2, "anchor" = "A concrete mechanism in the text targets a known failure mode of this type"}, {"value" = 3, "anchor" = "RED/GREEN behaviour fixture at the current version: failure without it, none with it"}, {"value" = 4, "anchor" = "Behaviour eval, ≥15 cases, current version, model/harness/version recorded, beats baseline"}], "S" = [{"value" = 0, "anchor" = "A neighbour does the same job on the same artifact, undistinguished; or confusion/must_not measured on current text"}, {"value" = 1, "anchor" = "Prose only: no reciprocal NOT FOR, no differing closed field (`artifact`, `activation`), or a shared trigger/`provides` term"}, {"value" = 2, "anchor" = "Closed field or reciprocal NOT FOR separates, but a trigger is shared or exclusions missing; or alone without exclusions"}, {"value" = 3, "anchor" = "Every neighbour separated by closed field or reciprocal NOT FOR; no shared multi-word trigger; exclusions stated; no measured confusion; or alone with exclusions"}, {"value" = 4, "anchor" = "Meets 3; measured cell precision ≥ 0.90, must_not 0, n ≥ 15 with ≥ 5 neighbour negatives"}], "C" = [{"value" = 0, "anchor" = "Needs a resident service, a container, or a hosted API key by default"}, {"value" = 1, "anchor" = "A pointer whose install command lies outside the shared runtime, or a token-heavy multi-agent run"}, {"value" = 2, "anchor" = "Body 3–6 KB, an on-demand local tool or server, or network reads"}, {"value" = 3, "anchor" = "Body ≤ 3 KB, no new dependency, writes only its own artifact"}, {"value" = 4, "anchor" = "Body ≤ 1.5 KB, no dependency, no writes"}]}
+ties = "raw descending, then capability id ascending (bytewise); nothing else."
+unscored = "Any unknown makes the cell UNSCORED; sort last, never auto-selected, reachable only by naming."

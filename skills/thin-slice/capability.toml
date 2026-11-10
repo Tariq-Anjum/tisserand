@@ -1,0 +1,46 @@
+schema = 1
+id = "thin-slice"
+kind = "judgment"
+type = "skill"
+category = "engineering"
+# contextual (model-invoked), not explicit: implement is inferred from task text
+# (taxonomy A2 cues "write the code", "make the change"). Requests to build
+# rarely name a skill; explicit would leave the implement gap open.
+activation = "contextual"
+# medium: edits code or config and runs local checks; PLAN §5 then requires
+# independent review before promotion.
+risk = "medium"
+version = "0.1.0"
+
+task_types = ["implement"]
+
+[routing]
+provides = ["vertical-slice", "incremental-build", "per-slice-check", "scope-control"]
+# Authored from capability text; no source phrasing.
+# Avoids neighbour terms: smallest implementation, stay in scope, overbuild.
+intents = ["build a feature slice by slice", "ship one end to end path first", "add a feature across layers", "make a planned multi part change"]
+# "end to end" dropped (review 2026-11-08): it also matches e2e-test (verify) wording.
+phrases = ["vertical slice", "thin slice", "walking skeleton"]
+# limit 2: the taxonomy implement row's NOT-this (unexplained failure -> debug)
+# and setup work. clarify/plan/verify/review stay in SKILL.md Boundaries.
+exclusions = ["unexplained failure", "tool not installed"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "write-scoped"
+network = "none"
+shell = "write"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+# original text; mechanisms from idea cards mattpocock-02 and pstack-06. Both
+# card licences are unverified, so only mechanisms were taken, no wording.
+origin = "original"
+license = "MIT"
+verified = "2026-11-07"
+notes_ref = "ev:note:s2-s3"

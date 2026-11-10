@@ -1,0 +1,9 @@
+title = "Limit a preview without changing its input."
+
+[c1]
+required = true
+text = "The preview obeys its limit."
+
+[c2]
+required = true
+text = "The caller collection is preserved."

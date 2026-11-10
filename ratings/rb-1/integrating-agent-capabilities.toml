@@ -1,0 +1,23 @@
+id = "integrating-agent-capabilities"
+version = "0.1.1"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 8
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "f1e179388b561b423c40b29c7ea4a45b5a631e92b256940fe1198bd178f99fdb"
+
+[[cell]]
+task_type = "setup"
+scope = ["agent"]
+when = {}
+F = 4
+B = 2
+S = 3
+C = 2
+raw = 30
+score = 75
+evidence = "`SKILL.md:9-21` defines trigger, exclusions and reciprocal openspec boundary; seven phases `:23-52`, adapter and authoritative locations `:25-29`, inventory `:30-34`, baseline `:36-40`, reuse `:41-45`, observed validation `:46-52`. Risk sheet `:54-65`, closed vocabulary and fail-closed status `:67-81`, owner gates `:83-91`, scoped rollback and BLOCKED `:93-95`, ladder `:95-100`. B: `:36-40,46-52,83-100`. openspec excludes this work (`workflows/openspec/capability.toml:23`, verified current). T2 b2 exclusions (`capability.toml:16`): spec or change plans, reciprocal to openspec, and application code, the setup NOT-this. Unnamed explicit entries remain ineligible (`skillkit/core/route/eligible.py:20-21`). Re-rating: complete setup/agent procedure and observed validation retain F4; v1 B2 cap; reciprocal exclusions retain S3; 4995 B retains C2. Registry validator runs in T and reruns after W, fail closed `:50-52`; approval gate limited to acquisition/install and listed actions `:85-91`. Values unchanged."
+flags = ["*"]
+digest = "811df8a667c6d13e221f5aaf758a6d8cecd7997b034ef87df1b2a54fbbf98c76"

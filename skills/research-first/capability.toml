@@ -1,0 +1,33 @@
+schema = 1
+id = "research-first"
+kind = "judgment"
+type = "skill"
+category = "research"
+activation = "contextual"
+risk = "low"
+version = "0.1.0"
+
+task_types = ["research"]
+
+[routing]
+provides = ["technical-research", "source-verification", "current-information"]
+intents = ["research current technical facts", "verify version compatibility", "compare tools and frameworks", "investigate software releases"]
+phrases = ["primary sources", "version specific", "recent releases", "technical claim"]
+exclusions = ["self contained"]
+composes_with = ["bounded-plan"]
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "read"
+network = "none"
+shell = "none"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+origin = "original"
+license = "MIT"
+verified = "2026-11-10"

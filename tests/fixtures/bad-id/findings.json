@@ -1,0 +1,23 @@
+[
+  {
+    "id": "Bad_ID",
+    "msg": "id 'Bad_ID' != directory name 'bad-id'",
+    "path": "skills/bad-id/capability.toml",
+    "rule": "id-dir-mismatch",
+    "severity": "error"
+  },
+  {
+    "id": "Bad_ID",
+    "msg": "/id: does not match pattern ^[a-z0-9-]+$",
+    "path": "skills/bad-id/capability.toml",
+    "rule": "schema.capability",
+    "severity": "error"
+  },
+  {
+    "id": "skill-router",
+    "msg": "disposition not cleared",
+    "path": "skills/skill-router/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  }
+]

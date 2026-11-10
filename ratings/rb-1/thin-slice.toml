@@ -1,0 +1,23 @@
+id = "thin-slice"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "66072e15d18d6c77a35a2bafe89945b0f3f81660569dab84a67ac57e382d5c08"
+
+[[cell]]
+task_type = "implement"
+scope = []
+when = {}
+F = 4
+B = 2
+S = 3
+C = 2
+raw = 30
+score = 75
+evidence = "Description names a known change built in thin end-to-end slices, each checked (`SKILL.md:3`). Steps 1-7 produce it with per-slice evidence (`:29-48`). Boundaries (`:20-25`) match the implement NOT-this plus clarify, plan, setup, verify, review. v1 caps B at 2. Mechanisms: done-check before editing (`:29-32`), first slice through every layer (`:33-37`), check before and after (`:38-39`, `:42-44`), no unneeded abstraction (`:40-41`, kg-01), earlier checks rerun (`:45-46`), count carried into debug (`:43-44`, `:57-58`), staged research, MEDIUM fields, HIGH checkpoint (`:59-65`). T2 b1: karpathy-guidelines retired, so the cell has no F >= 2 neighbour (bmad implement is F1); exclusions stated (`capability.toml:26`), no shared trigger, so S3 (was S1). 4148 B, edits code, so C2. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = []
+digest = "6ca7f8bd01a57d41d74bddfd2353e0a1880c4a4fae8365b69d75155444fcf3ef"

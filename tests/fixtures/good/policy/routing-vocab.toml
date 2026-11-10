@@ -1,0 +1,11 @@
+# Closed vocabulary for [routing].platforms and [routing].artifacts in capability.toml
+# (router-v2 section 1, optional improvement 2). Neutral operating-system and
+# artifact-kind names only; `skillkit check` rejects any other value.
+# Extend deliberately: every value costs index.json bytes when used.
+
+[platforms]
+allow = ["android", "ios", "linux", "macos", "web", "windows"]
+
+[artifacts]
+allow = ["audio", "code", "config", "dataset", "diagram", "document", "image", "notebook", "pdf",
+         "presentation", "spreadsheet", "video"]

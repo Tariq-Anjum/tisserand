@@ -1,0 +1,22 @@
+schema = 1
+id = "target"
+kind = "judgment"
+type = "skill"
+category = "testing"
+activation = "contextual"
+risk = "low"
+
+[routing]
+provides = ["x-work"]
+requires = ["no-such-skill"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

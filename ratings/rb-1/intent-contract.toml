@@ -1,0 +1,23 @@
+id = "intent-contract"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 5
+rater = "source-proposal"
+date = "2026-11-09"
+source = "ev:rate:intent-contract"
+metadata_digest = "a7c75c4e5ee84ec50bb273a7fc61405e4ff97d0f80b51a0a2d92d675c93e5066"
+
+[[cell]]
+task_type = "clarify"
+scope = []
+when = {}
+F = 4
+B = 2
+S = 3
+C = 3
+raw = 31
+score = 78
+evidence = "Description names contract, proceed-or-ask decision and plan critique (`SKILL.md:3`). Steps 1-5 produce contract and gate end to end (`:23-48`); critique sub-case: offered plan is the draft, weak branches become unknowns (`:24-26`). Boundaries (`:17-19`) match the clarify NOT-this. v1 caps B at 2. Mechanisms: inspect before asking (`:23-24`), checkable criteria or drop (`:30-31`), assume wins when cheap and reversible (`:35-37`), three-question and two-round caps (`:42-44`), both failure directions named (`:50`). T2 b1: every clarify neighbour is explicit (decision-interview, openspec, bmad), so activation separates; decision-interview also by reciprocal NOT FOR (`:3,17-19`; decision-interview `SKILL.md:3,18`); exclusions stated (`capability.toml:25`); no shared trigger, so S3 (was S1). 2867 B, no dependency, writes only its own contract (`:47-48`), so C3."
+flags = []
+digest = "c09dbeb94f02ee4cd8004b338f10762b8586fa0f5a07cf78e59c82ebb339131d"

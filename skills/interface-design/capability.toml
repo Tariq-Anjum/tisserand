@@ -1,0 +1,55 @@
+schema = 1
+id = "interface-design"
+kind = "judgment"
+type = "skill"
+# engineering, not a new "design" category: a new category adds a line to the
+# model-read INDEX.md (packet: INDEX surface must not grow).
+category = "engineering"
+# contextual (model-invoked), not explicit: design on an interface is inferred
+# from task text (taxonomy A1 interface cues "UI", "screen", "TUI", "theme";
+# A2 "sketch the design", "design it first"). rubric §4.4 never infers an
+# explicit capability, so explicit would leave design [interface] with no
+# PRIMARY (matrix-v1 §2 gap). UI requests rarely name a skill.
+activation = "contextual"
+# low: reads the workspace, writes only its own brief and disposable probes in
+# scratch space; tracked files are never changed (SKILL.md steps 2, 6).
+risk = "low"
+version = "0.1.1"
+
+task_types = ["design"]
+
+[routing]
+provides = ["interface-brief", "state-inventory", "ui-check-plan", "run-or-judged-split"]
+# Authored from capability text; no source
+# phrasing. Avoids neighbour terms: architecture, context loading, plan before
+# coding, definition of done, prove it works.
+intents = ["design a screen or page layout", "design a terminal ui", "define ui states and focus order", "write ui accessibility checks"]
+phrases = ["interaction states", "contrast ratio", "reduced motion", "visual hierarchy"]
+# limit 2 (24 chars each): the taxonomy design row's NOT-this (what or why ->
+# clarify) and building (implement). verify/review/plan stay in SKILL.md
+# Boundaries and are separated by type resolution.
+exclusions = ["what or why is unsettled", "building the interface"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+# probes run in scratch (shell write); writes only the brief and scratch
+# output (fs write-scoped); SKILL.md step 6. network read: the bounded
+# research its correction ladder requires (SKILL.md Corrections), reads only.
+fs = "write-scoped"
+network = "read"
+shell = "write"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+# original text; mechanisms from idea cards ifd-01, ifd-02, ifd-03, ifd-04
+# (internal proposal; the conformance-standard licence is unverified, so
+# mechanism only, no wording; platform reference packs not taken).
+origin = "original"
+license = "MIT"
+verified = "2026-11-09"
+notes_ref = "ev:note:s5"

@@ -1,0 +1,23 @@
+id = "independent-review"
+version = "0.1.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 8
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "1008e256206695ad846b012d36b1908bb2ca9fdc63fd09a9e782131e95c55aed"
+
+[[cell]]
+task_type = "review"
+scope = []
+when = {}
+F = 4
+B = 2
+S = 1
+C = 2
+raw = 26
+score = 65
+evidence = "Description names finished work or a done claim judged into findings and a verdict (`SKILL.md:3`); phases A-C, states and ruling produce them (`:19-72`); Quick Index Elsewhere (`:15-17`) matches the review NOT-this plus debug, implement. v1 caps B at 2. Mechanisms: summary as claims with required claims defined (`:11`, `:24-27`), critical inventory and coverage (`:28-30`), deterministic first, bounded writes, no rerun (`:34-38`), two questions (`:39-43`), refute before counting, risk-gated adversarial pass (`:47-50`), trace before severity, blocker defined (`:52-56`), states with discharge (`:58-62`), total verdict with catch-all (`:64-72`), count carried and section 10/11 fields (`:74-82`). Neighbour final-audit [code] F4 overlaps with no reciprocal NOT FOR, so S1 (final-audit `SKILL.md:91-96`; attachment governed here at `SKILL.md:16-17`). 4892 B, so C2. H4 (2026-11-10): clean-room restructure (phases, state and ruling tables), same mechanisms; values unchanged."
+flags = []
+digest = "0840ddd90f457013c8876275bcca11fc28d450a51fa9014b0b03d72a9a4acee7"

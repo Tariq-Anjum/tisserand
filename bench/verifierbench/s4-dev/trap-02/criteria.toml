@@ -1,0 +1,9 @@
+title = "Reject an earlier green observation after a later edit."
+
+[c1]
+required = true
+text = "The final change doubles quantities."
+
+[c2]
+required = true
+text = "Zero remains zero."

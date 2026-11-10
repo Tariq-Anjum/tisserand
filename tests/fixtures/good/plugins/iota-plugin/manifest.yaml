@@ -1,0 +1,21 @@
+id: iota-plugin
+name: 'Iota Plugin'
+type: plugin
+category: testing
+capabilities:
+  - fixture-plugin
+activation: explicit
+requires: []
+conflicts: []
+risk: medium
+upstream:
+  repo: https://example.org/upstream/iota
+  license: MIT
+  ref: main
+  verified_on: 2026-11-05
+install:
+  kind: plugin-marketplace
+  command: /plugin install iota
+summary: Fixture plugin pointer.
+notes: Not installed by default.
+description: Fixture plugin pointer entry.

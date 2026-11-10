@@ -1,0 +1,9 @@
+title = "Expire tokens at their deadline."
+
+[c1]
+required = true
+text = "The exact deadline is expired."
+
+[c2]
+required = true
+text = "A future deadline is valid."

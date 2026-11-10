@@ -1,0 +1,9 @@
+title = "Normalize a shelf label."
+
+[c1]
+required = true
+text = "Uppercase labels become lowercase."
+
+[c2]
+required = true
+text = "Outer spaces are removed."

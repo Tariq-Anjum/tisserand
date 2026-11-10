@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Foo-Bar",
+    "msg": "id collides with another capability (guidance/Foo-Bar/capability.toml, skills/foo-bar/capability.toml)",
+    "path": "guidance/Foo-Bar/capability.toml",
+    "rule": "id-case-collision",
+    "severity": "error"
+  },
+  {
+    "id": "Foo-Bar",
+    "msg": "/id: does not match pattern ^[a-z0-9-]+$",
+    "path": "guidance/Foo-Bar/capability.toml",
+    "rule": "schema.capability",
+    "severity": "error"
+  },
+  {
+    "id": "foo-bar",
+    "msg": "id collides with another capability (guidance/Foo-Bar/capability.toml, skills/foo-bar/capability.toml)",
+    "path": "skills/foo-bar/capability.toml",
+    "rule": "id-case-collision",
+    "severity": "error"
+  },
+  {
+    "id": "foo-bar",
+    "msg": "disposition not cleared",
+    "path": "skills/foo-bar/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "skill-router",
+    "msg": "disposition not cleared",
+    "path": "skills/skill-router/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "capabilities": [
+    {
+      "activation": "contextual",
+      "aliases": ["alpha-lookup"],
+      "category": "research",
+      "composes_with": ["beta-explicit"],
+      "description": "Fixture research skill with derived provenance.",
+      "id": "alpha-research",
+      "path": "skills/alpha-research/SKILL.md",
+      "provides": ["external-research", "source-checking"],
+      "requires": ["delta-dep"],
+      "risk": "low",
+      "type": "skill"
+    },
+    {
+      "activation": "explicit",
+      "category": "testing",
+      "conflicts_with": ["gamma-manual"],
+      "description": "Fixture skill beta-explicit.",
+      "id": "beta-explicit",
+      "intents": ["do-explicit-work"],
+      "path": "skills/beta-explicit/SKILL.md",
+      "provides": ["explicit-work"],
+      "risk": "low",
+      "type": "skill"
+    },
+    {
+      "activation": "dependency",
+      "category": "testing",
+      "description": "Fixture skill delta-dep.",
+      "id": "delta-dep",
+      "intents": ["help-other-skills"],
+      "path": "skills/delta-dep/SKILL.md",
+      "provides": ["helper-work"],
+      "risk": "low",
+      "routable": false,
+      "type": "skill"
+    },
+    {
+      "activation": "contextual",
+      "category": "meta",
+      "description": "Fixture guidance entry.",
+      "id": "eta-guidance",
+      "intents": ["follow-fixture-guidance"],
+      "path": "guidance/eta-guidance/GUIDANCE.md",
+      "provides": ["fixture-guidance"],
+      "risk": "low",
+      "type": "guidance"
+    },
+    {
+      "activation": "manual",
+      "category": "testing",
+      "conflicts_with": ["beta-explicit"],
+      "description": "Fixture skill gamma-manual.",
+      "id": "gamma-manual",
+      "intents": ["do-manual-work"],
+      "path": "skills/gamma-manual/SKILL.md",
+      "provides": ["manual-work"],
+      "risk": "low",
+      "routable": false,
+      "type": "skill"
+    },
+    {
+      "activation": "explicit",
+      "category": "testing",
+      "description": "Fixture plugin pointer entry.",
+      "id": "iota-plugin",
+      "intents": ["use-fixture-plugin"],
+      "name": "Iota Plugin",
+      "path": "plugins/iota-plugin/manifest.yaml",
+      "provides": ["fixture-plugin"],
+      "risk": "medium",
+      "type": "plugin"
+    },
+    {
+      "activation": "always",
+      "category": "routing",
+      "description": "Routes tasks to the smallest relevant capability set.",
+      "id": "skill-router",
+      "intents": ["select-capability"],
+      "path": "skills/skill-router/SKILL.md",
+      "provides": ["capability-routing"],
+      "risk": "low",
+      "type": "skill"
+    },
+    {
+      "activation": "contextual",
+      "category": "testing",
+      "description": "Fixture workflow pointer entry.",
+      "id": "theta-flow",
+      "intents": ["run-fixture-workflow"],
+      "name": "Theta Flow",
+      "path": "workflows/theta-flow/manifest.yaml",
+      "provides": ["fixture-workflow"],
+      "risk": "low",
+      "type": "workflow"
+    }
+  ],
+  "schema": 2
+}

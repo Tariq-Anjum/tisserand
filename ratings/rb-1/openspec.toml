@@ -1,0 +1,54 @@
+id = "openspec"
+version = "0.2.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 5
+rater = "source-proposal"
+date = "2026-11-09"
+source = "ev:rate:openspec"
+metadata_digest = "2f8bce8650f170d9b7dbeb6a0797c7b477640d6147d875f3f5365edef5da71eb"
+
+[[cell]]
+task_type = "clarify"
+scope = []
+when = {}
+max_role = "supporting"
+F = 3
+B = 1
+S = 1
+C = 1
+raw = 18
+score = 45
+evidence = "Pointer, explicit (T2 b1). Capped at SUPPORTING under rubric 4.2b: owner approval of coherence-plan section 1 (DEMOTE to explicit pointer), 2026-11-09 (owner decision record). Requirements kept reviewable before code (`capability.toml:4,18,20`); workflow not locally inspectable, so F3 at most. Neighbours decision-interview and bmad are also explicit, no reciprocal NOT FOR, so S1. C1: npm install plus per-project init (`manifest.yaml:22-24`)."
+flags = ["*", "e", "o"]
+digest = "9a1ebfd4b309f3c85da06057b94a5c63b9842e4146960be9dc5990d5694df0b8"
+
+[[cell]]
+task_type = "design"
+scope = []
+when = {}
+max_role = "supporting"
+F = "UNSCORED"
+B = "UNSCORED"
+S = "UNSCORED"
+C = "UNSCORED"
+raw = "UNSCORED"
+score = "UNSCORED"
+evidence = "Pointer, explicit (T2 b1). Capped at SUPPORTING under rubric 4.2b: owner approval of coherence-plan section 1 (DEMOTE to explicit pointer), 2026-11-09 (owner decision record). No local text; upstream unreviewed."
+flags = ["*", "U", "e", "o"]
+digest = "9a1ebfd4b309f3c85da06057b94a5c63b9842e4146960be9dc5990d5694df0b8"
+
+[[cell]]
+task_type = "plan"
+scope = []
+when = {}
+max_role = "supporting"
+F = 2
+B = 1
+S = 1
+C = 1
+raw = 14
+score = 35
+evidence = "Pointer, explicit (T2 b1). Capped at SUPPORTING under rubric 4.2b: owner approval of coherence-plan section 1 (DEMOTE to explicit pointer), 2026-11-09 (owner decision record). Change plans, not sequencing (`capability.toml:4`). No NOT FOR against bounded-plan, so S1. C1 (`manifest.yaml:22-24`)."
+flags = ["e", "o"]
+digest = "9a1ebfd4b309f3c85da06057b94a5c63b9842e4146960be9dc5990d5694df0b8"

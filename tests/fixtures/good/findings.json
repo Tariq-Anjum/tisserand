@@ -1,0 +1,79 @@
+[
+  {
+    "id": "eta-guidance",
+    "msg": "disposition not cleared",
+    "path": "guidance/eta-guidance/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "iota-plugin",
+    "msg": "disposition not cleared",
+    "path": "plugins/iota-plugin/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "iota-plugin",
+    "msg": "upstream ref 'main' is not pinned",
+    "path": "plugins/iota-plugin/manifest.yaml",
+    "rule": "unpinned-ref",
+    "severity": "info"
+  },
+  {
+    "id": "alpha-research",
+    "msg": "disposition not cleared",
+    "path": "skills/alpha-research/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "alpha-research",
+    "msg": "routing.intents is empty (placeholder)",
+    "path": "skills/alpha-research/capability.toml",
+    "rule": "todo-intent",
+    "severity": "info"
+  },
+  {
+    "id": "alpha-research",
+    "msg": "[access] values are marked unreviewed",
+    "path": "skills/alpha-research/capability.toml",
+    "rule": "unreviewed-access",
+    "severity": "info"
+  },
+  {
+    "id": "beta-explicit",
+    "msg": "disposition not cleared",
+    "path": "skills/beta-explicit/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "delta-dep",
+    "msg": "disposition not cleared",
+    "path": "skills/delta-dep/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "gamma-manual",
+    "msg": "disposition not cleared",
+    "path": "skills/gamma-manual/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "skill-router",
+    "msg": "disposition not cleared",
+    "path": "skills/skill-router/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "theta-flow",
+    "msg": "disposition not cleared",
+    "path": "workflows/theta-flow/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  }
+]

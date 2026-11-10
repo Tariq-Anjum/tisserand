@@ -1,0 +1,9 @@
+title = "Remove repeated tags while preserving their order."
+
+[c1]
+required = true
+text = "First-seen ordering is preserved."
+
+[c2]
+required = true
+text = "Duplicates are removed."

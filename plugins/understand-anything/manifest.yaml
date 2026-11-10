@@ -1,0 +1,29 @@
+id: understand-anything
+name: Understand Anything
+type: plugin
+category: engineering
+capabilities:
+- code-understanding
+- architecture-exploration
+- dependency-analysis
+- impact-analysis
+activation: explicit
+requires: []
+conflicts: []
+risk: medium
+upstream:
+  repo: https://github.com/Egonex-AI/Understand-Anything
+  license: MIT
+  ref: a6ea4024
+  verified_on: 2026-11-09
+install:
+  kind: external
+  command: Not installed or managed by this system; follow the upstream project's
+    own instructions.
+  note: Not installed or managed by this system; follow the upstream project's
+    own instructions.
+summary: Pointer to an external multi-agent codebase-graph plugin; token-heavy;
+  named use only.
+notes: Pointer only. The first analysis of a large codebase can use many model
+  tokens; the router never infers it.
+description: 'Pointer only: an external multi-agent plugin that maps a codebase''s architecture and dependencies into a graph; token-heavy. Named use only; never installed here.'

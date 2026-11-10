@@ -1,0 +1,24 @@
+id = "final-audit"
+version = "0.1.1"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 7
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "e44fcefaffa8f75614b2d4ad93bb61551b4cab09ad58b09eeb6b2ea60fc48946"
+
+[[cell]]
+task_type = "review"
+scope = ["code"]
+when = {}
+F = 4
+B = 2
+S = 1
+C = 2
+raw = 26
+score = 65
+evidence = "`SKILL.md:9-20` defines trigger and exclusions; audit passes `:22-45`, lenses `:47-54`, fail-closed evidence and authority `:56-63`, findings `:65-69`, retries `:71-82`, halts `:84-89`, neighbours `:91-98`. Core evidence rule `:58-63`. Exclusion at `capability.toml:16`. S-4: independent-review is an F4 review neighbour overlapping on code with no reciprocal NOT FOR, so S1 (was S3). Capped at SUPPORTING under rubric §4.2b: owner decision D-S4-1 option A (2026-11-08), review spine to independent-review. Attaches as code checks (independent-review `SKILL.md:16-17`). T2 b2: the F1 verify cell remains dropped (`capability.toml:10`); proof `:35-40` serves review only, and own-change proof goes to proof-gate (`:19-20,95-96`). Re-rating: complete implementation-review procedure and checks retain F4; v1 B2 cap; overlap and supporting cap retain S1; 4841 B retains C2. Values unchanged."
+flags = ["o"]
+digest = "843fd2a446b565d3e7a29dbc9eec2c599c217b506545db5330f8dcd417442214"
+max_role = "supporting"

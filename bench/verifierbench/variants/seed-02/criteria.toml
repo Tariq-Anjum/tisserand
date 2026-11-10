@@ -1,0 +1,9 @@
+title = "Review a seeded label-normalization defect."
+
+[c1]
+required = true
+text = "Interior spaces are preserved."
+
+[c2]
+required = true
+text = "Outer spaces are removed."

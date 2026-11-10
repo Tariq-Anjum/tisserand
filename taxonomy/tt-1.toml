@@ -1,0 +1,168 @@
+version = "tt-1.1.0"
+revision = 4
+source = "ev:design:taxonomy-v1"
+cue_file = "cues-1.toml"
+artifacts = ["code", "interface", "system", "agent", "docs", "none"]
+conditions = ["multi_session", "route_unclear", "long_running", "finished_work", "exact_text", "drift_check", "external_facts", "semantic_code", "own_change"]
+stage_order = ["discovery", "spec", "design", "plan", "implement", "verify", "deliver", "maintain", "any"]
+unclear = {"U1" = "nothing asked matches any definition → unclear; ask for the wanted deliverable.", "U2" = "state-changing split → unclear; ask, offering the competing types.", "U3" = "it depends on an absent object (\"fix it\") that context cannot supply → unclear; ask for the object."}
+resolution_text = "1. **Named capability:** route it; record the type by rules 4–6 (audit only, never blocking).\n2. **U3, missing referent:** it depends on an absent object (\"fix it\") that context cannot supply → `unclear`; ask for the object.\n3. **U1, no outcome:** nothing asked matches any definition → `unclear`; ask for the wanted deliverable.\n4. **One type fits:** choose it; missing details do not block (the capability states its default).\n5. **Pairwise tie-breaks** (they read only cue-set conditions, never an artifact):\n   - research vs explore: `external_facts` → research; otherwise explore.\n   - verify vs review: `own_change` → verify; otherwise `finished_work` → review; otherwise verify. Authorship is read first, so a finished-work cue (\"this patch\", \"this branch\") on the asker's own change does not make it a review. An explicit review cue still adds a review step (§3).\n   - clarify vs design: clarify.\n   - answer vs any other type: the other type.\n6. **Still more than one type:**\n   - All non-mutating (clarify, design, plan, verify, review, research, explore, answer), or all reach the same cells (each candidate evaluated with `artifact_cue`, else its own Art.) → earliest by stage, then #; state the assumption.\n   - Otherwise **U2, state-changing split** → `unclear`; ask, offering the competing types.\n"
+steps_text = "1. The primary comes from a §4 rule (a chooser, if one is ever approved, §5, emits one token and nothing else).\n2. Code adds one step per type whose A2 cue matches. A cue for the primary's own type adds nothing. No step is added as good practice (D1); no requested type is replaced. Length or session span only sets conditions.\n3. Order: stage, then #; the primary takes its stage position. The order is advisory; the main agent follows the request's stated order.\n4. Roles: primary → PRIMARY, verify → VERIFIER, review → REVIEWER, others → SUPPORTING. A step without an eligible capability is done by the main agent.\n5. `unclear` stands alone.\n"
+non_mutating = ["clarify", "design", "plan", "verify", "review", "research", "explore", "answer"]
+route_status = {"unclear" = "needs_information", "otherwise" = "ok"}
+
+[[type]]
+id = "clarify"
+order = 1
+stage = "spec"
+artifact_default = "docs"
+definition = "Settle goal, requirements, acceptance criteria or a decision; pressure-test a plan"
+not_this = [{"to" = "design", "when" = "shape"}]
+not_this_text = "shape → design"
+
+[[type]]
+id = "design"
+order = 2
+stage = "design"
+artifact_default = "code"
+definition = "Decide a shape before building: architecture, interface, data model, agent context loading"
+not_this = [{"to" = "clarify", "when" = "what or why"}]
+not_this_text = "what or why → clarify"
+
+[[type]]
+id = "plan"
+order = 3
+stage = "plan"
+artifact_default = "docs"
+definition = "Order an agreed goal into dependent steps or tickets; keep a long plan on disk"
+not_this = [{"to" = "clarify", "when" = "goal unsettled"}]
+not_this_text = "goal unsettled → clarify"
+
+[[type]]
+id = "implement"
+order = 4
+stage = "implement"
+artifact_default = "code"
+definition = "Make a known change to code or config (feature, refactor, migration, dependency bump)"
+not_this = [{"to" = "debug", "when" = "unexplained failure"}]
+not_this_text = "unexplained failure → debug"
+
+[[type]]
+id = "debug"
+order = 5
+stage = "implement"
+artifact_default = "code"
+definition = "Find and fix the cause of an observed failure; check it does not recur"
+not_this = [{"to" = "implement", "when" = "nothing failing"}, {"to" = "setup", "when" = "tool not visible"}]
+not_this_text = "nothing failing → implement; tool not visible → setup"
+
+[[type]]
+id = "verify"
+order = 6
+stage = "verify"
+artifact_default = "code"
+definition = "Prove this task's own change meets its criteria; run checks, record evidence"
+not_this = [{"to" = "review", "when" = "finished work"}]
+not_this_text = "finished work → review"
+
+[[type]]
+id = "review"
+order = 7
+stage = "verify"
+artifact_default = "code"
+definition = "Independently judge finished work or a done/ready claim; findings by severity, verdict"
+not_this = [{"to" = "verify", "when" = "own change"}]
+not_this_text = "own change → verify"
+
+[[type]]
+id = "deliver"
+order = 8
+stage = "deliver"
+artifact_default = "code"
+definition = "Ship finished work: merge or PR, version, changelog, release notes, package"
+not_this = [{"to" = "review", "when" = "readiness"}]
+not_this_text = "readiness → review"
+
+[[type]]
+id = "document"
+order = 9
+stage = "maintain"
+artifact_default = "docs"
+definition = "Make durable records (docs, agent instructions, decisions, memory) match reality"
+not_this = [{"to" = "handoff", "when" = "next-session note"}]
+not_this_text = "next-session note → handoff"
+
+[[type]]
+id = "research"
+order = 10
+stage = "discovery"
+artifact_default = "none"
+definition = "Establish current, version-specific or disputed external facts from primary sources"
+not_this = [{"to" = "explore", "when" = "workspace facts"}]
+not_this_text = "workspace facts → explore"
+
+[[type]]
+id = "explore"
+order = 11
+stage = "discovery"
+artifact_default = "code"
+definition = "Understand existing code or systems: locate, trace references, map architecture or impact"
+not_this = [{"to" = "research", "when" = "outside facts"}]
+not_this_text = "outside facts → research"
+
+[[type]]
+id = "setup"
+order = 12
+stage = "implement"
+artifact_default = "system"
+definition = "Install, configure, update, remove or repair tools, packages, services, agent capabilities or bindings"
+not_this = [{"to" = "implement", "when" = "app code"}]
+not_this_text = "app code → implement"
+
+[[type]]
+id = "handoff"
+order = 13
+stage = "any"
+artifact_default = "docs"
+definition = "Move in-flight work across a session or agent boundary: continuation note or resume"
+not_this = [{"to" = "document", "when" = "durable records"}]
+not_this_text = "durable records → document"
+
+[[type]]
+id = "answer"
+order = 14
+stage = "any"
+artifact_default = "none"
+definition = "Reply from general knowledge or supplied text; inspect, fetch and change nothing"
+not_this = [{"to" = "research", "when" = "fresh facts"}]
+not_this_text = "fresh facts → research"
+
+[[type]]
+id = "unclear"
+order = 15
+stage = "any"
+artifact_default = "none"
+definition = "Closed abstain code (§4)"
+not_this = []
+not_this_text = "clear but unserved → its type"
+
+[[tie_break]]
+pair = ["research", "explore"]
+condition = "external_facts"
+if_true = "research"
+otherwise = "explore"
+
+[[tie_break]]
+pair = ["verify", "review"]
+precede = {"own_change" = "verify"}
+condition = "finished_work"
+if_true = "review"
+otherwise = "verify"
+
+[[tie_break]]
+pair = ["clarify", "design"]
+choose = "clarify"
+
+[[tie_break]]
+pair = ["answer", "*"]
+choose = "*"

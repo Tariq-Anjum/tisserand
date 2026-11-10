@@ -1,0 +1,435 @@
+{
+  "capabilities": [
+    {
+      "access": {
+        "fs": "read",
+        "network": "read",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "contextual",
+      "aliases": [
+        "alpha-lookup"
+      ],
+      "body_bytes": 206,
+      "category": "research",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Fixture research skill with derived provenance.",
+      "disable-model-invocation": false,
+      "id": "alpha-research",
+      "kind": "judgment",
+      "name": "alpha-research",
+      "path": "skills/alpha-research/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "Rewritten for the fixture registry.",
+        "license": "MIT",
+        "origin": "derived",
+        "ref": "abcdef1234567",
+        "source": "https://example.org/upstream/alpha",
+        "verified": "2026-11-05"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [
+          "beta-explicit"
+        ],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "external-research",
+          "source-checking"
+        ],
+        "requires": [
+          "delta-dep"
+        ]
+      },
+      "sha256": "ef65764a20ffb071e75c34ff95838acc880e7a367c1034146de40f69a501bc50",
+      "type": "skill",
+      "version": "0.2.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 184,
+      "category": "testing",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Fixture skill beta-explicit.",
+      "disable-model-invocation": true,
+      "id": "beta-explicit",
+      "kind": "judgment",
+      "name": "beta-explicit",
+      "path": "skills/beta-explicit/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-05"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [
+          "gamma-manual"
+        ],
+        "exclusions": [],
+        "intents": [
+          "do-explicit-work"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "explicit-work"
+        ],
+        "requires": []
+      },
+      "sha256": "e5240149cdb2030b759539cdffef9daef1484866cb45a9b2979ae54dc70aa5b4",
+      "type": "skill"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "dependency",
+      "aliases": [],
+      "body_bytes": 173,
+      "category": "testing",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Fixture skill delta-dep.",
+      "disable-model-invocation": false,
+      "id": "delta-dep",
+      "kind": "judgment",
+      "name": "delta-dep",
+      "path": "skills/delta-dep/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-05"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "help-other-skills"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "helper-work"
+        ],
+        "requires": []
+      },
+      "sha256": "c4aef49555b505773da37891b200874f92be03614de649bff67c8195fe526326",
+      "type": "skill"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 66,
+      "category": "meta",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Fixture guidance entry.",
+      "id": "eta-guidance",
+      "kind": "reference",
+      "name": "eta-guidance",
+      "path": "guidance/eta-guidance/GUIDANCE.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-05"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "follow-fixture-guidance"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "fixture-guidance"
+        ],
+        "requires": []
+      },
+      "sha256": "daf528ae26e164f5f36d1cbcd0f5caf49c5a67b19539a221ebc67a3e0b94c804",
+      "type": "guidance"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "manual",
+      "aliases": [],
+      "body_bytes": 181,
+      "category": "testing",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Fixture skill gamma-manual.",
+      "disable-model-invocation": true,
+      "id": "gamma-manual",
+      "kind": "judgment",
+      "name": "gamma-manual",
+      "path": "skills/gamma-manual/SKILL.md",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-05"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [
+          "beta-explicit"
+        ],
+        "exclusions": [],
+        "intents": [
+          "do-manual-work"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "manual-work"
+        ],
+        "requires": []
+      },
+      "sha256": "13f91f2eb9f6e89f16fe1e90c70f2f65ccec5050d045bcbef8449d59811578fa",
+      "type": "skill"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "explicit",
+      "aliases": [],
+      "body_bytes": 0,
+      "category": "testing",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Fixture plugin pointer entry.",
+      "id": "iota-plugin",
+      "kind": "reference",
+      "manifest": {
+        "install": {
+          "command": "/plugin install iota",
+          "kind": "plugin-marketplace"
+        },
+        "notes": "Not installed by default.",
+        "summary": "Fixture plugin pointer.",
+        "upstream": {
+          "license": "MIT",
+          "ref": "main",
+          "repo": "https://example.org/upstream/iota",
+          "verified_on": "2026-11-05"
+        }
+      },
+      "manifest_sha256": "b85e129154277686034b2dada0dd8aa573d85f563600a3fd68634883911c6105",
+      "name": "Iota Plugin",
+      "path": "plugins/iota-plugin/manifest.yaml",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-05"
+      },
+      "risk": "medium",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "use-fixture-plugin"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "fixture-plugin"
+        ],
+        "requires": []
+      },
+      "sha256": "8d9ed68e66f88ae048b9df4ca835527a5de51e633c355cf49bad669fd5ba69c6",
+      "type": "plugin"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "always",
+      "aliases": [],
+      "body_bytes": 208,
+      "category": "routing",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Routes tasks to the smallest relevant capability set.",
+      "disable-model-invocation": false,
+      "id": "skill-router",
+      "kind": "judgment",
+      "name": "skill-router",
+      "path": "skills/skill-router/SKILL.md",
+      "priority": "foundational",
+      "provenance": {
+        "adaptation": "",
+        "license": "MIT",
+        "origin": "original",
+        "ref": "",
+        "source": "",
+        "verified": "2026-11-05"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "select-capability"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "capability-routing"
+        ],
+        "requires": []
+      },
+      "sha256": "fac91a27d825a18012f77ef123f47a8252e0d85c0813634360e2b6d258d058c5",
+      "type": "skill",
+      "version": "0.1.0"
+    },
+    {
+      "access": {
+        "fs": "read",
+        "network": "none",
+        "privilege": "none",
+        "secrets": "none",
+        "shell": "none"
+      },
+      "activation": "contextual",
+      "aliases": [],
+      "body_bytes": 0,
+      "category": "testing",
+      "cost": {
+        "latency": "low"
+      },
+      "description": "Fixture workflow pointer entry.",
+      "id": "theta-flow",
+      "kind": "reference",
+      "manifest": {
+        "install": {
+          "command": "npx skills add example/theta",
+          "kind": "skills-cli"
+        },
+        "notes": "Not installed by default.",
+        "summary": "Fixture workflow pointer.",
+        "upstream": {
+          "license": "MIT",
+          "ref": "v1.2.3",
+          "repo": "https://example.org/upstream/theta",
+          "verified_on": "2026-11-05"
+        }
+      },
+      "manifest_sha256": "12fb94cd083ccec643513926645c1d0df1e9abcdde77f19aea639eb0f11830cd",
+      "name": "Theta Flow",
+      "path": "workflows/theta-flow/manifest.yaml",
+      "priority": "normal",
+      "provenance": {
+        "adaptation": "Pointer only.",
+        "license": "MIT",
+        "origin": "derived",
+        "ref": "0123456789abcdef",
+        "source": "https://example.org/upstream/theta",
+        "verified": "2026-11-05"
+      },
+      "risk": "low",
+      "routing": {
+        "artifacts": [],
+        "composes_with": [],
+        "conflicts_with": [],
+        "exclusions": [],
+        "intents": [
+          "run-fixture-workflow"
+        ],
+        "phrases": [],
+        "platforms": [],
+        "provides": [
+          "fixture-workflow"
+        ],
+        "requires": []
+      },
+      "sha256": "a69e00d48aa8126aa2b58c3d147adcbd6fbe01e30da4ca8bc56c59fb2c289e0d",
+      "type": "workflow"
+    }
+  ],
+  "schema": 1
+}

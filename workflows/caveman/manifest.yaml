@@ -1,0 +1,28 @@
+id: caveman
+name: Caveman
+type: workflow
+category: productivity
+capabilities:
+- token-efficiency
+- concise-output
+- agent-installation
+activation: explicit
+requires: []
+conflicts: []
+risk: medium
+upstream:
+  repo: https://github.com/JuliusBrussee/caveman
+  license: Apache-2.0
+  ref: 3dc497a7
+  verified_on: 2026-11-09
+install:
+  kind: skills-cli
+  command: npx skills add JuliusBrussee/caveman
+  note: Pointer only. Installs the upstream skill (root licence Apache-2.0 at 3dc497a7).
+    The registry keeps its own terse-output skill and never installs this.
+summary: Pointer to an external terse-output skill and CLI.
+notes: At the pinned revision (3dc497a7) the repository root licence is Apache-2.0
+  (a root NOTICE file exists, not fetched); BSL-1.1 applied only to pre-3.0.0
+  runtime components. Keep the upstream installer separate from this registry's
+  deterministic skill installation.
+description: 'Pointer only: an external terse-output skill and CLI. Named use only; the registry keeps its own terse-output skill.'

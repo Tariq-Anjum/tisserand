@@ -1,0 +1,58 @@
+schema = 1
+id = "handoff"
+kind = "judgment"
+type = "skill"
+category = "productivity"
+# explicit and named-only (owner decision D3, B1 notes): never inferred; all
+# handoff rows stay named-only. The flip gate is unchanged.
+activation = "explicit"
+# low: reads the workspace; writes one note file only when the user names
+# one or the receiver cannot read the reply (SKILL.md Write step 7).
+risk = "low"
+version = "0.2.0"
+
+task_types = ["handoff"]
+
+[routing]
+provides = ["context-transfer", "session-continuity"]
+# Kept from the earlier entry; they still describe the rewritten text
+#. No source phrasing.
+intents = ["write a continuation note", "hand off to a new session"]
+phrases = ["continuation note", "new session"]
+# limit 2: the taxonomy handoff row's NOT-this (durable records -> document).
+exclusions = ["durable records"]
+composes_with = ["file-based-planning"]
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+# one note file in a safe place, only when asked (fs write-scoped); shell read
+# for working-tree status and to avoid files with changes it did not make.
+fs = "write-scoped"
+network = "none"
+shell = "read"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+# Original text written clean-room on 2026-11-09 from active idea cards
+# gstack-04, pwf-01 and addy-04 (mechanisms only). What changes: the legacy
+# derivation comments become the inspired_by entry below with disposition
+# INDEPENDENT and an evidence_ref; LicenseRef-unverified becomes MIT;
+# notes_ref moves to the T2 notes. Earlier revisions stay in history: the
+# history comparison under evidence_ref governs THIRD_PARTY_NOTICES, not
+# this field.
+origin = "original"
+license = "MIT"
+disposition = "INDEPENDENT"
+evidence_ref = "ev:lic:compare.dispositions"
+verified = "2026-11-09"
+notes_ref = "ev:note:t2-b2"
+
+[[provenance.inspired_by]]
+name = "mattpocock/skills"
+url = "https://github.com/mattpocock/skills"
+sha = "4ae2317d"
+licence = "MIT"
+date = "2026-11-09"

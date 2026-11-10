@@ -1,0 +1,46 @@
+schema = 1
+id = "intent-contract"
+kind = "judgment"
+type = "skill"
+category = "planning"
+# contextual (model-invoked), not explicit: clarify is inferred from task text
+# (taxonomy A2 cues "clarify the requirements", "confirm the requirements").
+# Before it, the clarify cell was named-only (the interview skill is explicit);
+# rubric §4.4 never infers an explicit capability, so explicit would keep the gap.
+activation = "contextual"
+# low: inspects read-only and writes at most its own contract file.
+risk = "low"
+version = "0.1.0"
+
+task_types = ["clarify"]
+
+[routing]
+provides = ["intent-contract", "done-criteria", "assumption-ledger", "ask-or-proceed-gate"]
+# Authored from capability text; no source phrasing.
+# Avoids neighbour terms: planning, requirements, pressure test, decision record.
+intents = ["turn a vague ask into a contract", "define done before building", "agree on checkable done criteria", "decide what to ask or assume"]
+phrases = ["definition of done", "what counts as done", "success criteria", "scope is unclear"]
+# limit 2: the taxonomy clarify row's NOT-this (shape -> design), plus known small
+# edits (implement). plan/named-interview boundaries stay in SKILL.md Boundaries.
+exclusions = ["shape or architecture", "known small edit"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "write-scoped"
+network = "none"
+shell = "read"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+# original text; mechanisms from idea cards mattpocock-01, kiro-01, ondrej-01,
+# speckit-01. All four card licences are unverified, so only mechanisms were
+# taken, no wording.
+origin = "original"
+license = "MIT"
+verified = "2026-11-07"
+notes_ref = "ev:note:s2-s3"

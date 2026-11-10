@@ -1,0 +1,17 @@
+schema = "verifierbench-tracks/1"
+
+[proof-gate]
+skill = "proof-gate"
+fixtures = "s4-dev"
+framing = "This is your own completed change. Prove each required criterion against the final files and supplied evidence. The author summary is your earlier claim. Run fresh checks where useful; never treat old observations as current. Return the claim table, result and captured transcript."
+
+[independent-review]
+skill = "independent-review"
+fixtures = "s4-dev"
+variants = "variants"
+framing = "Another party says this change is finished. Independently inspect the final files, criteria, summary and supplied evidence. Judge every required claim and record inspected scope. Return the claim table, verdict, coverage and confirmed defects. Do not repair the change."
+
+[output]
+format = "verifierbench-input/1"
+claim_states = ["VERIFIED", "FALSIFIED", "PARTIALLY_VERIFIED", "UNTESTABLE", "NOT_APPLICABLE"]
+coverage_units = ["candidate.py", "criteria.toml"]

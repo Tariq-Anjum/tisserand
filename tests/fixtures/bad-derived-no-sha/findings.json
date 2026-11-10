@@ -1,0 +1,16 @@
+[
+  {
+    "id": "skill-router",
+    "msg": "disposition not cleared",
+    "path": "skills/skill-router/capability.toml",
+    "rule": "provenance-not-cleared",
+    "severity": "info"
+  },
+  {
+    "id": "target",
+    "msg": "/provenance: missing required property 'ref'",
+    "path": "skills/target/capability.toml",
+    "rule": "schema.capability",
+    "severity": "error"
+  }
+]

@@ -1,0 +1,29 @@
+schema = 1
+id = "alpha-research"
+kind = "judgment"
+type = "skill"
+category = "research"
+activation = "contextual"
+risk = "low"
+version = "0.2.0"
+aliases = ["alpha-lookup"]
+
+[routing]
+provides = ["external-research", "source-checking"]
+requires = ["delta-dep"]
+composes_with = ["beta-explicit"]
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed
+fs = "read"
+network = "read"
+
+[provenance]
+origin = "derived"
+license = "MIT"
+source = "https://example.org/upstream/alpha"
+ref = "abcdef1234567"
+adaptation = "Rewritten for the fixture registry."
+verified = "2026-11-05"

@@ -1,0 +1,40 @@
+# Tuned on DEV only; see bench/baseline/p3-router-tuning.json
+schema = 1
+
+[identity]
+name = "router-v2"
+version = "1"
+
+[tokens]
+stem = true
+
+[bm25]
+k1 = 1.2
+b = 0.75
+
+[weights]
+intent = 3.0
+phrase = 4.0
+provides = 1.5
+bm25 = 3.0
+excl = 2.0
+named = 1000.0
+
+[decision]
+tau = 3.0
+delta = 0.3
+tau_s = 0.5
+
+[compose]
+max_supporting = 1
+max_depth = 3
+
+[overrides]
+negation_cues = ["without", "no", "dont use", "don t use", "do not use", "never use", "stop using", "skip"]
+bridge = ["the", "a", "any", "using", "use"]
+invoke_before = ["use", "run", "invoke", "apply", "activate", "enable", "with", "using", "load"]
+invoke_after = ["skill", "mode", "command"]
+
+[bootstrap]
+seed = 20261105
+resamples = 1000

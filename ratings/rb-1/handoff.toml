@@ -1,0 +1,23 @@
+id = "handoff"
+version = "0.2.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "d951ac317ca008373a22ed97e9f2b6b66e20237a1a39663631e3423d84280da6"
+
+[[cell]]
+task_type = "handoff"
+scope = []
+when = {}
+F = 4
+B = 2
+S = 3
+C = 3
+raw = 31
+score = 78
+evidence = "Description names a continuation note so another session or agent resumes in-flight work (`SKILL.md:3`); steps 1-7 and the status produce it end to end (`:25-61`); Boundaries match the handoff NOT-this (durable records to document) plus progress files and plans (`:18-21`), so F4. v1 caps B at 2. Mechanisms: next action first (`:27`), four item states with own edits UNVERIFIED until checked (`:28-33`), dead ends with evidence (`:34-35`), correction campaigns with accumulated count and history continued across changed symptoms, never reset, approvals with scope, pending gates, uncommitted changes and whose they are (`:36-41`), pointers not copies, no secrets (`:42`), safe place with read-back (`:43-46`), every required part present or marked none (`:48`), total first-match status: no safe place STOP, missing part or failed write INCOMPLETE, READY only when complete and delivered, and READY is not done (`:52-61`), receiver re-check (`:65-66`). file-based-planning [handoff] is contextual and SUPPORTING: activation separates and the two name each other (`:19-20`; file-based-planning `SKILL.md:19-20`); session-reconcile excludes \"continuation note\" (`skills/session-reconcile/capability.toml:24`); exclusions stated (`capability.toml:23`); no shared trigger, so S3. 2987 B, no dependency, writes only its note, so C3. Named-only (owner D3). H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = ["e"]
+digest = "1a4b19ca79b9b737926d33a62dd24e67e2ba1ed7be6fdacd0fd4f0d045c2487d"

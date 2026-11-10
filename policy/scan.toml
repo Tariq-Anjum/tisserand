@@ -1,0 +1,12 @@
+# Paths the lints skip. gitignore-style subset: "name/" matches directories,
+# a pattern without "/" matches at any depth, a pattern with "/" is anchored.
+# Keep this a superset of .gitignore (a test enforces it). The VCS directory
+# and bytecode caches are always skipped by the scanner itself.
+exclude = [
+  ".venv/",
+  "__pycache__/",
+  "*.py[cod]",
+  "skills/state/",
+  ".v2-backup-*/",
+  ".cache/",
+]

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "tisserand: typed, checkable skills for coding agents"
+type: software
+authors:
+  - name: "Tariq Anjum"
+license: MIT
+version: "0.1.0"
+repository-code: "https://github.com/Tariq-Anjum/tisserand"
+keywords:
+  - agent skills
+  - coding agents
+  - task taxonomy
+  - verification
+  - provenance
+abstract: >-
+  A collection of agent skills behind a fixed task taxonomy and a generated
+  decision table, with registry checks, a verifier benchmark and provenance
+  records. Experimental; behavioural benefit unmeasured.

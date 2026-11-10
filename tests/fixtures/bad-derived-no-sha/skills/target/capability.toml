@@ -1,0 +1,24 @@
+schema = 1
+id = "target"
+kind = "judgment"
+type = "skill"
+category = "testing"
+activation = "contextual"
+risk = "low"
+
+[routing]
+provides = ["fixture-capability"]
+intents = ["do-fixture-work"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "derived"
+license = "MIT"
+source = "https://example.org/upstream/t"
+adaptation = "Adapted."
+verified = "2026-11-05"

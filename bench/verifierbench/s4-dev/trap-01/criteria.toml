@@ -1,0 +1,9 @@
+title = "Inspect the postcondition even when the command exits zero."
+
+[c1]
+required = true
+text = "The job reaches ready."
+
+[c2]
+required = true
+text = "The status is text."

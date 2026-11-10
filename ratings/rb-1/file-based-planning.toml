@@ -1,0 +1,37 @@
+id = "file-based-planning"
+version = "0.2.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "ec52217e3351fd16f058a3eda82611eacec1ecd078274e2f59b6744760ce64b8"
+
+[[cell]]
+task_type = "plan"
+scope = []
+when = {"long_running" = true}
+F = 2
+B = 2
+S = 3
+C = 3
+raw = 23
+score = 58
+evidence = "Keeps a long task's progress state in files (`SKILL.md:3,11-14`) and cites the plan instead of ordering work (`:18-19,30-31`): it supports plan without producing the ordered plan, so F2. Condition copied from \"USE WHEN work is long-running\" (`:3,11`); excludes one-exchange work (`:18`; `capability.toml:25`). v1 caps B at 2. Mechanisms: safe place or state kept in the reply (`:26-29`), event-driven writes, never on a timer (`:32-35`), goal re-read before each phase, before any major action and after a reset (`:36-37`), DONE only with a cited check (`:38-39`), correction-campaign count and history carried across changed symptoms and sessions (`:40-44`), resume check against the workspace with a safe restart (`:45-48`), total fail-closed status (`:49-55`). bounded-plan: reciprocal NOT FOR (`:3,18-19`; bounded-plan `SKILL.md:19-20`); openspec and bmad plan cells are explicit; no shared provides term (planning dropped) or multi-word trigger; exclusions stated (`capability.toml:25`); the earlier lexical must_not was measured on the replaced text, so S3 (was 1). 2996 B, no dependency, writes only its own state files, so C3. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = ["†"]
+digest = "b130f6d3d9ab18b42a0f3db3748beda2082a418471b4d7773a661e59ee4c480e"
+
+[[cell]]
+task_type = "handoff"
+scope = []
+when = {"long_running" = true}
+F = 2
+B = 2
+S = 3
+C = 3
+raw = 23
+score = 58
+evidence = "Keeps the state files a resume reads (`SKILL.md:45-48`) but writes no continuation note; that is handoff's (`:19-20`), so F2. Condition as plan (`:3,11`). handoff is explicit, so activation separates, and the two name each other (`:19-20`; handoff `SKILL.md:19-20`); handoff composes with it (`skills/handoff/capability.toml:24`); exclusions stated (`capability.toml:25`); no shared trigger, so S3. B and C as plan. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = ["†"]
+digest = "b130f6d3d9ab18b42a0f3db3748beda2082a418471b4d7773a661e59ee4c480e"

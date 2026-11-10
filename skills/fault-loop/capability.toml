@@ -1,0 +1,47 @@
+schema = 1
+id = "fault-loop"
+kind = "judgment"
+type = "skill"
+category = "engineering"
+# contextual (model-invoked), not explicit: debug is inferred from task text
+# (taxonomy A2 cues "fix the bug", "debug it"). rubric §4.4 says an explicit
+# capability is never inferred, so explicit would make the debug cell
+# named-only and leave the gap open. Fault reports rarely name a skill.
+activation = "contextual"
+# medium: the loop edits code and runs commands; PLAN §5 then requires
+# independent review before promotion.
+risk = "medium"
+version = "0.1.0"
+
+task_types = ["debug"]
+
+[routing]
+provides = ["fault-diagnosis", "failure-reproduction", "cause-first-fix", "correction-ladder"]
+# Authored from capability text; no source phrasing.
+intents = ["diagnose an observed failure", "fix a failing test or check", "find why a command errors", "repair an unexplained regression"]
+phrases = ["stack trace", "keeps failing", "stopped working", "regression since"]
+# limit 2: keep the taxonomy debug row's own NOT-this (implement, setup); verify/review
+# stay separated by type resolution and in SKILL.md Boundaries.
+exclusions = ["nothing is failing", "tool not visible"]
+composes_with = ["research-first", "code-intelligence"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "write-scoped"
+network = "none"
+shell = "write"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+# original text; mechanisms from idea cards superpowers-03, superpowers-01
+# (testmu-01 merge), suite32-05, pstack-01. Card licences for suite32 and
+# pstack are unverified, so only mechanisms were taken, no wording.
+origin = "original"
+license = "MIT"
+verified = "2026-11-07"
+notes_ref = "ev:note:s1"

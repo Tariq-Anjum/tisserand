@@ -1,0 +1,27 @@
+id: bmad
+name: BMAD Method
+type: workflow
+category: engineering
+capabilities:
+- agile-development
+- multi-perspective-planning
+- requirements
+- architecture
+activation: explicit
+requires: []
+conflicts: []
+risk: low
+upstream:
+  repo: https://github.com/bmad-code-org/BMAD-METHOD
+  license: MIT
+  ref: a867e160
+  verified_on: 2026-11-09
+install:
+  kind: skills-cli
+  command: npx skills add bmad-code-org/BMAD-METHOD
+  note: Upstream installer; run only on the owner's request, per project. This
+    registry never installs it.
+summary: Pointer to an external agile method; named use only.
+notes: Pointer only. It competes with this registry's own delivery skills, so the
+  router never infers it; use it only when the owner names it for a project.
+description: 'Pointer only: an external agile method spanning requirements, architecture, build, verification and retrospectives. Named use only; never installed here.'

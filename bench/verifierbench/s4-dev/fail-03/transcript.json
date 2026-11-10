@@ -1,0 +1,16 @@
+[
+  {
+    "kind": "edit",
+    "path": "candidate.py"
+  },
+  {
+    "kind": "check",
+    "command": "python test_local.py",
+    "exit_code": 0,
+    "output": "local checks passed",
+    "criteria": [
+      "c1",
+      "c2"
+    ]
+  }
+]

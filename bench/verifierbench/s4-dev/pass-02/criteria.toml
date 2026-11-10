@@ -1,0 +1,9 @@
+title = "Sum optional quantities."
+
+[c1]
+required = true
+text = "Missing quantities are skipped."
+
+[c2]
+required = true
+text = "An empty collection totals zero."

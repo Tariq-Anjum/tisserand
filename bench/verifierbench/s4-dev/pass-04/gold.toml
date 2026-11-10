@@ -1,0 +1,15 @@
+id = "pass-04"
+kind = "pass"
+units = ["candidate.py", "criteria.toml"]
+
+[claims]
+c1 = "VERIFIED"
+c2 = "VERIFIED"
+
+[result]
+proof-gate = "PASS_PENDING_REVIEW"
+independent-review = "PASS"
+
+[checks]
+"test_local.py" = 0
+"check.py" = 0

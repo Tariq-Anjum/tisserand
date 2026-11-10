@@ -1,0 +1,66 @@
+schema = 1
+id = "bounded-plan"
+kind = "judgment"
+type = "skill"
+category = "planning"
+# contextual (model-invoked), not explicit: plan is inferred from task text
+# (taxonomy A2 cues "make a plan", "break it into steps", "plan it first").
+# Ticket mode is internal (SKILL.md step 2), not a second routed entry.
+activation = "contextual"
+# low: reads the workspace and writes only its own artifact: the plan file, or
+# tickets in the project's existing tracker when access and posting are
+# authorised (SKILL.md ticket mode).
+risk = "low"
+version = "0.2.0"
+# One release only. Kept so the frozen router's name detector still routes the
+# old name; registry/migrations.toml holds the permanent record (validator:
+# a live alias is allowed only when its owner equals the resolved target).
+aliases = ["wayfinder"]
+
+task_types = ["plan"]
+
+[routing]
+provides = ["step-ordering", "criteria-tracing", "plan-sizing", "plan-handoff", "typed-ticket-map"]
+# Authored from capability text; no source
+# phrasing. Avoids neighbour terms: planning, plan file, findings file,
+# context reset, decisions log.
+intents = ["order an agreed goal into steps", "sequence a change with checks", "map tickets with blocking edges", "size the plan to the change"]
+phrases = ["step by step plan", "order of the steps", "check for each step", "ticket map"]
+# the taxonomy plan row's NOT-this (goal unsettled -> clarify). design and
+# implement stay in SKILL.md Boundaries and are separated by type resolution.
+exclusions = ["goal still unsettled"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+# authorised tracker posting may use the project's tracker CLI or API
+# (shell write, network write); otherwise only the plan file is written.
+fs = "write-scoped"
+network = "write"
+shell = "write"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+# Original text (2026-11-07, rev 2026-11-09); mechanisms from idea cards
+# gstack-04, bmad-02, pwf-01, kiro-01, ondrej-01 (pwf-01, kiro-01, ondrej-01
+# licences unverified: mechanisms only, no wording). Rev 2026-11-09 absorbs
+# the retired dependency-ticket planner as ticket mode, written clean-room.
+# What changes: the retired entry's legacy derivation comment is not carried
+# here; it becomes the inspired_by entry below with disposition INDEPENDENT
+# and an evidence_ref. License stays MIT (our text; INDEPENDENT is an overlap result, not a clearance).
+origin = "original"
+license = "MIT"
+disposition = "INDEPENDENT"
+evidence_ref = "ev:lic:compare.dispositions"
+verified = "2026-11-09"
+notes_ref = "ev:note:t2-b1"
+
+[[provenance.inspired_by]]
+name = "mattpocock/skills"
+url = "https://github.com/mattpocock/skills"
+sha = "4ae2317d"
+licence = "MIT"
+date = "2026-11-09"

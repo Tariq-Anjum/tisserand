@@ -1,0 +1,34 @@
+schema = 1
+id = "skill-router"
+kind = "judgment"
+type = "skill"
+category = "meta"
+activation = "always"
+risk = "low"
+priority = "foundational"
+version = "0.2.0"
+
+[routing]
+provides = ["capability-routing", "context-management", "progressive-disclosure"]
+# Always on, so never ranked: no task_types, intents, phrases or exclusions.
+intents = []
+phrases = []
+exclusions = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "read"
+network = "none"
+shell = "none"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+# Original text. 0.2.0 (2026-11-10): typed rewrite over the generated decision
+# table; own text, no idea card used (idea-cards baseline rebased).
+origin = "original"
+license = "MIT"
+verified = "2026-11-10"

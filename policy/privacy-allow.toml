@@ -1,0 +1,18 @@
+# Privacy lint allowlists (manifest spec 5.2). Keep this short: anything
+# allowed here is invisible to the lint.
+
+[files]
+# Globs of repo-relative files exempt from the privacy lint.
+allow = []
+
+[email]
+# Case-insensitive globs on the whole address. Only no-reply style senders
+# and the reserved documentation domains are allowed by default.
+allow = [
+  "noreply@*",
+  "no-reply@*",
+  "*@users.noreply.github.com",
+  "*@example.com",
+  "*@example.org",
+  "*@example.net",
+]

@@ -1,0 +1,53 @@
+schema = 1
+id = "openspec"
+name = "OpenSpec"
+description = "Pointer only: an external spec-driven workflow that keeps requirements and change plans reviewable before code. Named use only; never installed here."
+kind = "reference"
+type = "workflow"
+category = "engineering"
+# explicit pointer (coherence plan section 1, owner-approved 2026-11-09):
+# inferred routing would suggest installs, so never inferred and capped
+# SUPPORTING in every cell (rubric 4.2b, flag o). No body; never installed.
+activation = "explicit"
+risk = "low"
+version = "0.2.0"
+
+task_types = ["clarify", "design", "plan"]
+
+[routing]
+provides = ["spec-driven-development", "planning", "change-management"]
+# Pointer: one intent for discovery by name; no phrases (never inferred).
+intents = ["external spec driven workflow"]
+phrases = []
+# kept: separates installation and binding work (integrating-agent-capabilities).
+exclusions = ["provider installation", "harness binding"]
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+fs = "read"
+network = "none"
+shell = "none"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+# Wrapper metadata is ours (MIT). Upstream identity, licence and pin live in
+# manifest.yaml `upstream` and in the inspired_by entry below. What changes:
+# license here now describes this wrapper; the empty ref and the package
+# comments become a pinned inspired_by entry (package and version stay in
+# manifest.yaml).
+origin = "original"
+license = "MIT"
+disposition = "INDEPENDENT"
+evidence_ref = "ev:lic:index"
+verified = "2026-11-09"
+notes_ref = "sources/fission-ai.md"
+
+[[provenance.inspired_by]]
+name = "Fission-AI/OpenSpec"
+url = "https://github.com/Fission-AI/OpenSpec"
+sha = "0fa4a970"
+licence = "MIT"
+date = "2026-11-09"

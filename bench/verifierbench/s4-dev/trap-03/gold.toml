@@ -1,0 +1,15 @@
+id = "trap-03"
+kind = "trap"
+units = ["candidate.py", "criteria.toml"]
+
+[claims]
+c1 = "VERIFIED"
+c2 = "UNTESTABLE"
+
+[result]
+proof-gate = "BLOCKED"
+independent-review = "BLOCKED"
+
+[checks]
+"test_local.py" = 0
+"check.py" = 0

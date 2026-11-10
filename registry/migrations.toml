@@ -1,0 +1,56 @@
+# Fragment for registry/migrations.toml (T2 batch 1, 2026-11-09).
+# Replaces the empty [aliases] / [retired_by] tables. Format per
+# skillkit/core/migrations.py: target, reason, quoted date; no expiry.
+# Landed with the migrations-validator amendment and the renames.
+# Validated in a scratch copy with the amended validator:
+# - no key is a live id (old dirs removed);
+# - the five [aliases.*] keys are live capability aliases whose owner equals
+#   the resolved target (grill-me, grill-with-docs -> decision-interview;
+#   wayfinder -> bounded-plan; context-fundamentals -> context-design;
+#   serena-code-intelligence -> code-intelligence), the only coexistence the
+#   amendment allows; the unamended validator rejects them;
+# - keys unique; every target live; every chain length 1, so no cycles.
+schema = 1
+
+[aliases.grill-me]
+target = "decision-interview"
+reason = "merged with grill-with-docs into decision-interview, interview mode (upstream skill name removed; coherence plan final section 3)"
+date = "2026-11-09"
+
+[aliases.grill-with-docs]
+target = "decision-interview"
+reason = "merged into decision-interview; this name opens record mode for one release (coherence plan final section 3)"
+date = "2026-11-09"
+
+[aliases.wayfinder]
+target = "bounded-plan"
+reason = "absorbed as bounded-plan ticket mode when multi_session and route_unclear hold (coherence plan final section 3)"
+date = "2026-11-09"
+
+[aliases.context-fundamentals]
+target = "context-design"
+reason = "renamed with a clean-room rewrite (upstream name and unverified licence; coherence plan section 1)"
+date = "2026-11-09"
+
+[aliases.serena-code-intelligence]
+target = "code-intelligence"
+reason = "neutral facade rename; tool invocation moved to adapters/serena (coherence plan final section 6)"
+date = "2026-11-09"
+
+[retired_by]
+
+[retired_by.karpathy-guidelines]
+target = "thin-slice"
+reason = "retired: person-named guidance already covered by the spine; one line moved into thin-slice step 4 (idea card kg-01)"
+date = "2026-11-09"
+
+[retired_by.skill-memory]
+target = "session-reconcile"
+reason = "retired: a competing memory layer conflicts with owner decision D4; durable records are reconciled by session-reconcile"
+date = "2026-11-09"
+
+# Optional: the retired entry's own alias, so the old lookup name still resolves.
+[retired_by.acontext]
+target = "session-reconcile"
+reason = "retired with skill-memory (its alias); owner decision D4"
+date = "2026-11-09"

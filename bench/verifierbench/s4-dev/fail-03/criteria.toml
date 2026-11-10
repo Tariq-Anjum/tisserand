@@ -1,0 +1,9 @@
+title = "Update a producer while preserving the consumer contract."
+
+[c1]
+required = true
+text = "The complete producer-consumer flow still works."
+
+[c2]
+required = true
+text = "The new producer emits its requested text representation."

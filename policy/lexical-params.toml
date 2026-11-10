@@ -1,0 +1,30 @@
+# Rung-0 lexical scorer parameters (name lexical-bm25f, version 1).
+# Written by `python3 -m skillkit bench tune-lexical`; tuned on the DEV split only.
+# Grid, objective, tie-break and dev metrics: bench/baseline/p2-lexical-tuning.json (params sha256 5d8e0c2c5e899aff).
+# Objective: J = 0.5*top1_acc + 0.2*(1-hard_neg_fp_rate) + 0.2*abstain_f1 + 0.1*composition_f1 (undefined term = 0)
+# 86016 candidates evaluated; dev objective 0.4286.
+
+schema = 1
+
+[scoring]
+k1 = 1.2
+b = 0.75
+stem = true
+norm = "none"
+
+[weights]
+name = 2.0
+provides = 2.0
+description = 1.0
+intents = 2.0
+phrases = 3.0
+
+[decision]
+tau = 2.5
+delta = 0.0
+tau_s = 2.5
+max_supporting = 1
+
+[bootstrap]
+seed = 20261105
+resamples = 1000

@@ -1,0 +1,9 @@
+title = "Separate present behavior from an unavailable historical artifact."
+
+[c1]
+required = true
+text = "The current tag is stable."
+
+[c2]
+required = true
+text = "The original archived release was checked; its bytes and original trace are absent."

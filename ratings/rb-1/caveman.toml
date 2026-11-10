@@ -1,0 +1,23 @@
+id = "caveman"
+version = "0.2.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 5
+rater = "source-proposal"
+date = "2026-11-09"
+source = "ev:rate:caveman"
+metadata_digest = "93273579b2a6a8c708bdae38c8d8029e5ad3b778b1ede31681c83e17b1ea6f68"
+
+[[cell]]
+task_type = "setup"
+scope = ["agent"]
+when = {}
+F = 2
+B = 1
+S = 2
+C = 1
+raw = 16
+score = 40
+evidence = "Pointer, explicit; licence fix only (T2 b1). Installs only the upstream skill (`capability.toml:4,15,17`). Activation separates it from integrating-agent-capabilities. npx install outside the shared runtime (`manifest.yaml:19-22`), so C1."
+flags = ["e"]
+digest = "8812a9c0ff44eebcc90e2d28eeae4d2ebd629a17ec015768440336909313d59a"

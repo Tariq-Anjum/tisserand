@@ -1,0 +1,24 @@
+id = "understand-anything"
+version = "0.2.0"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 5
+rater = "source-proposal"
+date = "2026-11-09"
+source = "ev:rate:understand-anything"
+metadata_digest = "d874d679e2a5dd54194c00f7f070467dd20ce959761514f41544de4b5a27b0a4"
+
+[[cell]]
+task_type = "explore"
+scope = ["code"]
+when = {}
+max_role = "supporting"
+F = 3
+B = 1
+S = 2
+C = 1
+raw = 20
+score = 50
+evidence = "Pointer, explicit (T2 b1). Capped at SUPPORTING under rubric 4.2b: owner approval of coherence-plan section 1 (DEMOTE to explicit pointer), 2026-11-09 (owner decision record). Codebase architecture and dependency graph (`capability.toml:4,19`). code-intelligence is contextual, so activation separates, and no provides term is shared; exclusions empty (`:23`), so S2 (was S1). Token-heavy multi-agent run (`manifest.yaml:27-28`), so C1. Score 50 reaches PRIMARY only on paper: the cap and explicit activation keep it out of every row."
+flags = ["e", "o"]
+digest = "f2bb8963b6bcccf2166b69471e6119e33c2af97f6cfa0a4f4e6c492ab3b3b2b5"

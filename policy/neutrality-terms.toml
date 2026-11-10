@@ -1,0 +1,116 @@
+# Neutrality term list (manifest spec 5.1, RULES A7).
+# Names of specific harnesses, agents, model vendors and model names.
+# This file and policy/privacy-allow.toml are the only places such names may
+# appear in the product repo; the zones file marks them exempt.
+#   word-ci  case-insensitive, whole word
+#   word-cs  case-sensitive, whole word (ambiguous common words such as a
+#            product name that is also an ordinary noun or a bare acronym)
+# "Whole word" = not adjacent to an ASCII letter or digit, so GPT-4 and
+# CLAUDE.md match while 'Piping' does not match Pi.
+# Seeded from a read-only census of the repository text plus the well-known
+# names of the same kinds; extend deliberately when a new host or model
+# family appears.
+
+[[terms]]
+term = "claude"
+mode = "word-ci"
+
+[[terms]]
+term = "anthropic"
+mode = "word-ci"
+
+[[terms]]
+term = "codex"
+mode = "word-ci"
+
+[[terms]]
+term = "openai"
+mode = "word-ci"
+
+[[terms]]
+term = "chatgpt"
+mode = "word-ci"
+
+[[terms]]
+term = "copilot"
+mode = "word-ci"
+
+[[terms]]
+term = "opencode"
+mode = "word-ci"
+
+[[terms]]
+term = "openclaw"
+mode = "word-ci"
+
+[[terms]]
+term = "windsurf"
+mode = "word-ci"
+
+[[terms]]
+term = "aider"
+mode = "word-ci"
+
+[[terms]]
+term = "deepseek"
+mode = "word-ci"
+
+[[terms]]
+term = "ollama"
+mode = "word-ci"
+
+[[terms]]
+term = "qwen"
+mode = "word-ci"
+
+[[terms]]
+term = "herdr"
+mode = "word-ci"
+
+[[terms]]
+term = "gpt"
+mode = "word-ci"
+
+[[terms]]
+term = "gemma"
+mode = "word-ci"
+
+[[terms]]
+term = "Gemini"
+mode = "word-cs"
+
+[[terms]]
+term = "Pi"
+mode = "word-cs"
+
+[[terms]]
+term = "Opus"
+mode = "word-cs"
+
+[[terms]]
+term = "Sonnet"
+mode = "word-cs"
+
+[[terms]]
+term = "Haiku"
+mode = "word-cs"
+
+[[terms]]
+term = "Mistral"
+mode = "word-cs"
+
+[[terms]]
+term = "Llama"
+mode = "word-cs"
+
+[[terms]]
+term = "Cline"
+mode = "word-cs"
+
+[[terms]]
+term = "Grok"
+mode = "word-cs"
+
+[[terms]]
+term = "Cursor"
+mode = "word-cs"

@@ -1,0 +1,56 @@
+schema = 1
+id = "code-intelligence"
+kind = "judgment"
+type = "skill"
+category = "engineering"
+# contextual (model-invoked): explore on code is inferred from task text
+# (taxonomy A3 semantic_code cues "find references", "who calls", "find the
+# declaration"); explicit would drop the SUPPORTING attach it replaces.
+activation = "contextual"
+# low: read-only queries; writes nothing; installs nothing (SKILL.md Stop).
+risk = "low"
+priority = "normal"
+version = "0.1.0"
+# One release only. Kept so the frozen router's name detector still routes the
+# old name; registry/migrations.toml holds the permanent record (validator:
+# a live alias is allowed only when its owner equals the resolved target).
+aliases = ["serena-code-intelligence"]
+
+# debug cell dropped (coherence plan section 1: ineligible, no procedure);
+# debug work may still call on this for tracing via the router.
+task_types = ["explore"]
+
+[routing]
+provides = ["semantic-navigation", "reference-tracing", "symbol-overview", "labelled-findings"]
+# Authored from capability text; no
+# source phrasing. Avoids neighbour terms: code-understanding, knowledge
+# graph, dependency analysis, impact analysis, root cause.
+intents = ["find symbol references callers", "find a declaration or impl", "trace code structure", "list diagnostics for a file"]
+phrases = ["find references", "find callers", "symbol overview", "go to definition"]
+# limit 2: the cell's negated condition (exact_text) and editing (implement).
+exclusions = ["exact string", "editing code"]
+requires = []
+
+[cost]
+latency = "low"
+
+[access]  # unreviewed placeholder (manifest spec 11.2); enforcement arrives with P5
+# shell write: the adapter's checkout-scoped launcher may start a local server
+# on demand and stops the one it started (rubric C2); queries are read-only.
+fs = "read"
+network = "none"
+shell = "write"
+secrets = "none"
+privilege = "none"
+
+[provenance]
+disposition = "ORIGINAL"
+# Original text (2026-11-09) under a neutral facade id; replaces our own
+# 2026-10-03 text (already MIT, no upstream). Mechanisms from active idea
+# cards aspec-02 and pstack-03 (mechanisms only). Tool invocation moved to
+# adapters/serena/README.md. No inspired_by: no upstream text or skill was
+# used, so no disposition field is required.
+origin = "original"
+license = "MIT"
+verified = "2026-11-09"
+notes_ref = "ev:note:t2-b1"

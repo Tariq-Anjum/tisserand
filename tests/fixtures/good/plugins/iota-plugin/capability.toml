@@ -1,0 +1,24 @@
+name = "Iota Plugin"
+description = "Fixture plugin pointer entry."
+schema = 1
+id = "iota-plugin"
+kind = "reference"
+type = "plugin"
+category = "testing"
+activation = "explicit"
+risk = "medium"
+
+[routing]
+provides = ["fixture-plugin"]
+intents = ["use-fixture-plugin"]
+
+[cost]
+latency = "low"
+
+[access]
+fs = "read"
+
+[provenance]
+origin = "original"
+license = "MIT"
+verified = "2026-11-05"

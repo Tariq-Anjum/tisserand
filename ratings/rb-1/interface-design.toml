@@ -1,0 +1,23 @@
+id = "interface-design"
+version = "0.1.1"
+tt = "tt-1.1.0"
+rb = "rb-1.1.0"
+revision = 6
+rater = "source-proposal"
+date = "2026-11-10"
+source = "ev:rate:h-hygiene"
+metadata_digest = "4867171ad3de8ab33bd5d3dcdfb8eb612a14877470ac0154d7299eb2f6e76178"
+
+[[cell]]
+task_type = "design"
+scope = ["interface"]
+when = {}
+F = 4
+B = 2
+S = 3
+C = 2
+raw = 30
+score = 75
+evidence = "Description names deciding an interface's shape before building, for UI, screen, TUI or theme (`SKILL.md:3`); steps 1-7 produce brief, check plan and status (`:28-64`); Boundaries (`:18-24`) match the design NOT-this plus implement, verify, review, plan, non-interface design; artifact-scoped F4 as integrating setup [agent]. v1 caps B at 2. Mechanisms: surface and inputs first (`:28-30`), reuse inventory (`:31-32`), full state list, sizes, reduced motion, per-theme values (`:33-35`), one named conformance level, unconfirmed stays open (`:36-38`), method, threshold, failure sign per check (`:39-41`), RUN only with a named tool, else JUDGED (`:40-49`), JUDGED needs criteria and decider, else UNTESTABLE (`:50-52`), scratch baseline (`:53-55`), total fail-closed status, unconfirmed bar or assumption is OPEN (`:56-64`), not proof, count continued (`:66-68`), section 10/11 correction ladder (`:72-78`), authorship rule (`:21-24`). Alone in the cell: bmad [code], context-design [agent], openspec UNSCORED; exclusions at `capability.toml:31`; no shared trigger, so S3. 4656 B, writes only its brief and scratch probes; network read for bounded research only (`capability.toml:42`), so C2. T2 b2 patch: CRITICAL escalation wording (`:82-84`) and network declaration; values unchanged. H2 (2026-11-10): ladder citation now policy/correction-ladder.md, same lines; values unchanged."
+flags = []
+digest = "c4fcd1aa480290b65f925fea879a18419e5a44ca819f1d836797699d5b0b172e"

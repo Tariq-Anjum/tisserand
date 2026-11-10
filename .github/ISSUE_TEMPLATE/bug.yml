@@ -1,0 +1,40 @@
+name: Bug in a check, script or skill
+description: Something reports a pass it did not establish, fails on a valid input, or a skill gives wrong instructions.
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: File or command
+      description: The skill id, script or `skillkit` command involved.
+      placeholder: "python -m skillkit check"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands from a fresh clone, with their unedited output.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit and Python version
+      placeholder: "commit abc1234, Python 3.12"
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: The output above contains no secrets, private paths or personal data.
+          required: true
