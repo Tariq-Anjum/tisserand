@@ -1,6 +1,6 @@
 ---
 name: context-design
-description: Design what an agent loads, when and at what cost: a load map giving each context source a tier, trigger, budget and check. USE WHEN designing or tracing context loading. NOT FOR installs, app code or UI.
+description: "Design what an agent loads, when and at what cost: a load map giving each context source a tier, trigger, budget and check. USE WHEN designing or tracing context loading. NOT FOR installs, app code or UI."
 disable-model-invocation: false
 ---
 

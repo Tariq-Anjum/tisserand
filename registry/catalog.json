@@ -316,7 +316,7 @@
       "aliases": [
         "context-fundamentals"
       ],
-      "body_bytes": 2927,
+      "body_bytes": 2929,
       "category": "meta",
       "cost": {
         "latency": "low"
@@ -378,7 +378,7 @@
         ],
         "requires": []
       },
-      "sha256": "ccb4ef8be8c70d7325b9cd4eb2768c6431a552b56f35fa3d3ef1c3b7f3278822",
+      "sha256": "5261b74f2e9dd91b79c6201767c567c1494fe965d26a68c389d1fb3376e0b992",
       "type": "skill",
       "version": "0.1.0"
     },
@@ -745,7 +745,7 @@
       },
       "activation": "contextual",
       "aliases": [],
-      "body_bytes": 4892,
+      "body_bytes": 4894,
       "category": "engineering",
       "cost": {
         "latency": "low"
@@ -810,7 +810,7 @@
         ],
         "requires": []
       },
-      "sha256": "0840ddd90f457013c8876275bcca11fc28d450a51fa9014b0b03d72a9a4acee7",
+      "sha256": "9b83568fb2f75fe7701509a7b450efca35186f519a12ed67d19cc3259d5a554c",
       "type": "skill",
       "version": "0.1.0"
     },
@@ -955,7 +955,7 @@
       },
       "activation": "contextual",
       "aliases": [],
-      "body_bytes": 4608,
+      "body_bytes": 4610,
       "category": "engineering",
       "cost": {
         "latency": "low"
@@ -1007,7 +1007,7 @@
         ],
         "requires": []
       },
-      "sha256": "c4fcd1aa480290b65f925fea879a18419e5a44ca819f1d836797699d5b0b172e",
+      "sha256": "3008654e9be626118e231fc57008fbe088d1affdac071409cb1698ca329f3616",
       "type": "skill",
       "version": "0.1.1"
     },

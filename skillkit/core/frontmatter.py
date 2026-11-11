@@ -20,6 +20,14 @@ def _value(raw):
     return raw
 
 
+def _needs_quotes(raw):
+    """True when an unquoted value would not be a plain YAML scalar (strict YAML parsers reject it)."""
+    raw = raw.strip()
+    if len(raw) >= 2 and raw[0] == raw[-1] and raw[0] in ("'", '"'):
+        return False
+    return ": " in raw or " #" in raw or raw.endswith(":") or (raw[:1] in tuple("[]{}&*!|>%@`,'\"#"))
+
+
 def parse(text):
     """Return (data, errors, body_start) where body_start is the 0-based line
     index of the first line after the closing delimiter."""
@@ -47,6 +55,8 @@ def parse(text):
             errors.append("line %d: unknown key '%s'" % (offset, key))
         elif key in data:
             errors.append("line %d: duplicate key '%s'" % (offset, key))
+        elif _needs_quotes(raw):
+            errors.append("line %d: value for '%s' must be quoted (contains ': ', ' #' or a leading YAML indicator)" % (offset, key))
         else:
             data[key] = _value(raw)
     if errors:

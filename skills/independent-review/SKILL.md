@@ -1,6 +1,6 @@
 ---
 name: independent-review
-description: Judge finished work or a done claim: test each claim against evidence, track coverage, confirm findings before rating, rule-based verdict. USE WHEN asked if work is ready. NOT FOR your own change, debug or fixing.
+description: "Judge finished work or a done claim: test each claim against evidence, track coverage, confirm findings before rating, rule-based verdict. USE WHEN asked if work is ready. NOT FOR your own change, debug or fixing."
 disable-model-invocation: false
 ---
 

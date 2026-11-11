@@ -2,7 +2,7 @@ import unittest
 
 from skillkit.core import frontmatter as fm, legacy, yamlout
 
-GOOD = "---\nname: a-b\ndescription: Some text, with: colon.\ndisable-model-invocation: false\n---\n\n# T\n"
+GOOD = "---\nname: a-b\ndescription: \"Some text, with: colon.\"\ndisable-model-invocation: false\n---\n\n# T\n"
 
 
 class FrontmatterTests(unittest.TestCase):
@@ -12,6 +12,13 @@ class FrontmatterTests(unittest.TestCase):
         self.assertEqual(data, {"name": "a-b", "description": "Some text, with: colon.",
                                 "disable-model-invocation": False})
         self.assertEqual(body, 5)
+
+    def test_unquoted_yaml_indicators_rejected(self):
+        # Strict YAML parsers used by other harnesses reject these plain scalars.
+        for value in ("Some text, with: colon.", "text # comment", "ends with:", "[list", "'half"):
+            _, errors, _ = fm.parse("---\nname: a\ndescription: %s\n---\n" % value)
+            self.assertEqual(len(errors), 1, value)
+            self.assertIn("must be quoted", errors[0])
 
     def test_quotes_and_bool(self):
         data, errors, _ = fm.parse("---\nname: 'x'\ndescription: \"true\"\ndisable-model-invocation: true\n---\n")

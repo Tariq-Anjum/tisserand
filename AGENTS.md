@@ -6,7 +6,7 @@
 - **Source/runtime:** edit asset files under `skills/` or `guidance/`; `catalog.yaml` is generated and `skills/installed` is output.
 - **Routing:** read `INDEX.md`, then only the smallest matching asset set.
 - **Preserve:** reconcile drift before generation; do not overwrite unique runtime content or promote external assets blindly.
-- **Validation:** run `build_registry.py`, `scripts/validate.sh`, and `scripts/doctor.sh` with a safe test root when possible.
+- **Validation:** `python3 -m skillkit gen`, `check`, `lint`, the unit tests, then `scripts/validate.sh` and `scripts/doctor.sh` with a safe test root.
 - **Safety:** never put secrets or machine-specific runtime state in this repository; preserve external/vendor ownership.
 - **Stop:** obtain clarification when source provenance, ownership, or rollback is unclear.
 
@@ -17,10 +17,12 @@ Do not load every skill. Use the registry to identify the smallest relevant set,
 `explicit` and `manual` skills are user-invoked. Do not infer them.
 
 When changing registry structure or metadata:
-1. edit the asset files, not `catalog.yaml`;
-2. run `python3 build_registry.py`;
-3. run `./scripts/validate.sh`;
-4. run `./scripts/doctor.sh` against a test `AI_TOOLS_ROOT` when possible.
+1. edit the asset files, never generated output (`catalog.yaml`, `registry/*.json`);
+2. regenerate with `python3 -m skillkit gen` (`build_registry.py` is a compatibility wrapper);
+3. check with `python3 -m skillkit check`, `python3 -m skillkit gen --check`,
+   `python3 -m skillkit lint <neutrality|privacy|portability|commits>` and
+   `python3 -m unittest discover -s tests -t .`;
+4. run `./scripts/validate.sh`, and `./scripts/doctor.sh` against a test `AI_TOOLS_ROOT` when possible.
 
 Keep external workflows/plugins as pointers unless there is a deliberate decision to curate an independent skill from them.
 

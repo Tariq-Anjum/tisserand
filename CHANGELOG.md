@@ -5,6 +5,10 @@
 ### Removed
 - **grill-with-docs** old-name alias retired. Name decision-interview and ask for record mode instead.
 
+### Fixed
+- **Skill frontmatter parses in strict YAML harnesses:** three descriptions containing `: ` are now quoted, and the
+  frontmatter check rejects unquoted values that strict YAML parsers refuse (`: `, ` #`, leading indicators).
+
 ## Unreleased: typed routing and skill rewrite (G1 + G2)
 
 Experimental; not activated. Behavioural benefit unmeasured.

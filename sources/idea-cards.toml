@@ -553,13 +553,13 @@ reuse = "mechanism"
 
 [[text]]
 path = "skills/independent-review/SKILL.md"
-digest = "0840ddd90f457013c8876275bcca11fc28d450a51fa9014b0b03d72a9a4acee7"
+digest = "9b83568fb2f75fe7701509a7b450efca35186f519a12ed67d19cc3259d5a554c"
 idea_cards = ["tob-01", "tob-02", "tob-03", "mattpocock-03", "addy-06", "ondrej-02"]
 reuse = "mechanism"
 
 [[text]]
 path = "skills/interface-design/SKILL.md"
-digest = "c4fcd1aa480290b65f925fea879a18419e5a44ca819f1d836797699d5b0b172e"
+digest = "3008654e9be626118e231fc57008fbe088d1affdac071409cb1698ca329f3616"
 idea_cards = ["ifd-01", "ifd-02", "ifd-03", "ifd-04"]
 reuse = "mechanism"
 
@@ -571,7 +571,7 @@ reuse = "mechanism"
 
 [[text]]
 path = "skills/context-design/SKILL.md"
-digest = "ccb4ef8be8c70d7325b9cd4eb2768c6431a552b56f35fa3d3ef1c3b7f3278822"
+digest = "5261b74f2e9dd91b79c6201767c567c1494fe965d26a68c389d1fb3376e0b992"
 idea_cards = ["aspec-01", "aspec-02", "pwf-01"]
 reuse = "mechanism"
 

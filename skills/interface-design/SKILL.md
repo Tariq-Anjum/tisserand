@@ -1,6 +1,6 @@
 ---
 name: interface-design
-description: Decide a user interface's shape before building: states, layout, input paths, and a check plan of run and judged items. USE WHEN designing a UI, screen, TUI or theme. NOT FOR building, proving or reviewing it.
+description: "Decide a user interface's shape before building: states, layout, input paths, and a check plan of run and judged items. USE WHEN designing a UI, screen, TUI or theme. NOT FOR building, proving or reviewing it."
 disable-model-invocation: false
 ---
 
