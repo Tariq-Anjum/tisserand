@@ -112,7 +112,7 @@
   },
   "outputs": {
     "CREDITS.md": "c8adcab1a46f4e99004abd47a9539ea7b00aaab211015ac72ad8b472babc3340",
-    "INDEX.md": "0a56e58a39f565f780d78ef9e86f0fbfd2378c08935c956061e8f3956ae3ad8c",
+    "INDEX.md": "c3dbcd1ccb9c07528aae7676e679163c877ce4ebd4aec92e49e8b42a81f97f15",
     "THIRD_PARTY_NOTICES": "9114852674889aff299c6cde41337c1f4edd5152664a39d8fcf7ade50e503602",
     "capabilities.md": "2fe595f4518fedaeef39496c1a909a35502c8d44247ff7c776e08a003c9e17e1",
     "catalog.yaml": "683e6558b633d9cfea07b7b7f9dc552631a5f0a2ad28f7b2cf87c323a64b6200",
@@ -126,6 +126,8 @@
     "ratings/INDEX.md": "e2c0ed0319cd266c4ec82e5eba8263f3cdc0311a7735d2c18ec5b58c9e1ba669",
     "registry/catalog.json": "53799d098d82de89b2841de58082a241f62e994fb99504cc074c66c00b1f6391",
     "registry/graph.json": "fae301bffa58d08b1bd5f89d42a04aea8e0d186db1a491bf0587d81a379d60cd",
-    "registry/index.json": "6a0256127b3fbf0ce40433eb937b6c810abff5624492aa8002b0edc06d1bb0e4"
+    "registry/index.json": "6a0256127b3fbf0ce40433eb937b6c810abff5624492aa8002b0edc06d1bb0e4",
+    "skills/skill-router/decision-table.json": "4eecc32756f776782e7808de7d1b61a3b5b0b056d251193d864b18de3d527de3",
+    "skills/skill-router/taxonomy/tt-1.toml": "301e80ce7953b245dea13c6fe3e8944d8d37050a6ec6595b8d239c823f2df6c9"
   }
 }

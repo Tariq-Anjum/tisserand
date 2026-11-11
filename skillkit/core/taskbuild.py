@@ -5,6 +5,7 @@ from .model import finding
 TAXONOMY = 'taxonomy/tt-1.toml'
 RUBRIC = 'ratings/rb-1/rubric.toml'
 PROVENANCE = 'sources/idea-cards.toml'
+ROUTER_DIR = 'skills/skill-router/'
 RATING_LINK = '\n[Ratings](ratings/INDEX.md)\n'
 
 
@@ -63,7 +64,7 @@ def load(repo, sources_root=None, provenance_mode='public', evidence_map=None):
             for c in collisions:
                 if c['kind'] == 'primary':
                     findings.append(finding('', 'task-primary-collision', 'error', 'decision-table.json', str(c)))
-            data = {'tt': tt, 'cues': cues, 'rb': rb, 'cells': cells, 'caps': entries, 'collisions': collisions}
+            data = {'tt_bytes': inputs[TAXONOMY], 'tt': tt, 'cues': cues, 'rb': rb, 'cells': cells, 'caps': entries, 'collisions': collisions}
         elif (root / 'ratings/rb-1').exists():
             raise taskdata.DataError('ratings require a taxonomy')
     except (ValueError, KeyError, TypeError, AttributeError) as exc:
@@ -116,5 +117,10 @@ def outputs(data):
         vals += [str(c[k]) for k in ('F', 'B', 'S', 'C', 'raw', 'score')]
         vals += ['P —', ', '.join(c['flags']) or '—']
         lines.append('| ' + ' | '.join(vals) + ' |')
-    return {'decision-table.json': jsonout.encode(table),
+    encoded = jsonout.encode(table)
+    # The router reads these at step 4; ship copies inside its own skill folder so the
+    # installed runtime (skills/installed/skill-router/) carries them without the source tree.
+    return {'decision-table.json': encoded,
+            ROUTER_DIR + 'decision-table.json': encoded,
+            ROUTER_DIR + TAXONOMY: data['tt_bytes'],
             'ratings/INDEX.md': ('\n'.join(lines) + '\n').encode('utf-8')}

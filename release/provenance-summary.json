@@ -263,7 +263,7 @@
       "sources_compared": 0
     }
   ],
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "evidence": [
     {
       "id": "ev:card:addy-osmani-agent-skills",
@@ -440,7 +440,7 @@
     "CODE_OF_CONDUCT.md": "6d441a2f8573a00f678125efe9ac887c448352c06e83ff6bb4931d1d067707d6",
     "CONTRIBUTING.md": "dc28a6a2442b75bf269f3b4619d4d383f0e3c4047a8507e93616a3e15e402578",
     "CREDITS.md": "c8adcab1a46f4e99004abd47a9539ea7b00aaab211015ac72ad8b472babc3340",
-    "INDEX.md": "0a56e58a39f565f780d78ef9e86f0fbfd2378c08935c956061e8f3956ae3ad8c",
+    "INDEX.md": "c3dbcd1ccb9c07528aae7676e679163c877ce4ebd4aec92e49e8b42a81f97f15",
     "LICENSE": "9a1c7380ba1612e71189d926a1970abbaebc339ecd1d2e666536be4f219167a3",
     "README.md": "e2ec4eaaf918ecd8c4cee57387e5fd26aebed261d8fac0dd2ccd44b61c8a62ec",
     "SECURITY.md": "c3291728730bd9f1bdb9c80db3bea71515c1e3674c57d6e9dbd27a9db4451cee",
@@ -613,7 +613,7 @@
     "registry/catalog.json": "53799d098d82de89b2841de58082a241f62e994fb99504cc074c66c00b1f6391",
     "registry/graph.json": "fae301bffa58d08b1bd5f89d42a04aea8e0d186db1a491bf0587d81a379d60cd",
     "registry/index.json": "6a0256127b3fbf0ce40433eb937b6c810abff5624492aa8002b0edc06d1bb0e4",
-    "registry/manifest.lock.json": "e66c4edab70ec2b6635195e032965001ab3f75b1a4210d043ff0ebaca52886dc",
+    "registry/manifest.lock.json": "47777c3b8b9b198b5a75d885bf683a44301ff7e0bc0f6cecfd30cebe589f5c7d",
     "registry/migrations.toml": "d6c58c4f7ceeee6b485f37c5e8250e36c09b8043a517f5cfd126b57c18f60d54",
     "requirements.txt": "b4603b9468ade4d639d2c6f73b89d50e1fa5d227c73ab15be0382cca478513e6",
     "schema/capability.schema.json": "91e2fcca50ef68bd6623b209dcdf7bc4cfeed768d8beb9eae5cfe689e04c6bf8",
@@ -645,7 +645,7 @@
     "skillkit/cli.py": "3413fe06b432d69d0781797c2837c8112d363a6faadf722cf381aa011dd5e6a9",
     "skillkit/core/__init__.py": "ad1726347f21e09ff4ec7342115a3245622e995c129504cc122aa421c9db8ea1",
     "skillkit/core/baseline.py": "e3061fe2eb6445b2d7769fc41937f47b5e145c55b1ef6ecc2f75354046cec74d",
-    "skillkit/core/compat.py": "5de40acc13b806ba980b18edb5f1a507e7a1d266cb4e5a17563b1854d1a7fe28",
+    "skillkit/core/compat.py": "8764251f27ae6bb6675d34b9a24255503c9c996f96d9b2831f6d75870408170d",
     "skillkit/core/credits.py": "a073b701d9b30ba38e1016414b2bbf19cd43471289f1484eaf4a09019479df9e",
     "skillkit/core/frontmatter.py": "a4b52695abd1d7231ffd004ec4cc51b7bf63468ace1e9c0f7bf9aed2448ae565",
     "skillkit/core/generate.py": "4a6858a10d8b26eb809ce8f7bd38c8cdb647e0f2becfb2a4333a6d7c9dacad5f",
@@ -675,7 +675,7 @@
     "skillkit/core/rules.py": "552454b7381fc356db0b3adae42e802a9222150d5813c6bebefda4dc3e8d60d1",
     "skillkit/core/scan.py": "c75e2a7b5ed8120d048a6b9f23680de42f7224c08640138e536d41b26e5632b1",
     "skillkit/core/schemacheck.py": "8097602cda7c756c8678fd2239159d05112b151f8cb74f68bfca4067fee09616",
-    "skillkit/core/taskbuild.py": "5be6d036d3709a2885ad2e28171f0d5e6808d1811666983cfe25744c8b3f66bf",
+    "skillkit/core/taskbuild.py": "5a792a68f3e701cee364d908e7683144d43cdcf977b15956654e59619c094c64",
     "skillkit/core/taskdata.py": "58538ab16151c0f9eb3e5924272dba8fc437ea1819be41bfd17c90199b6871ca",
     "skillkit/core/taskmetrics.py": "8b33a2b9b956517bbb91a7bd4ab2c928a2fe51cb0452a3db82e7d51b8f399fac",
     "skillkit/core/tomlio.py": "eed0c40b560237e0142b636f8954b6cccf66fccdedc5034b9ad66931c7bd2d5e",
@@ -717,6 +717,8 @@
     "skills/session-reconcile/capability.toml": "111b7249aa47f6902969ede9f2877ea5de8294eea0c7b367fdc2e414d0034785",
     "skills/skill-router/SKILL.md": "21d322bd3e739aaa258df5ead96e56493a67b5e48c6f848ea6d66a07beb07b86",
     "skills/skill-router/capability.toml": "4af630dbea4e7dd94c27c92e45434d51d831fb03d630660d17adcadaaef87a07",
+    "skills/skill-router/decision-table.json": "4eecc32756f776782e7808de7d1b61a3b5b0b056d251193d864b18de3d527de3",
+    "skills/skill-router/taxonomy/tt-1.toml": "301e80ce7953b245dea13c6fe3e8944d8d37050a6ec6595b8d239c823f2df6c9",
     "skills/terse-output/SKILL.md": "691b6b43a579a7de74c8eb8bc3cf2d40dfae9d9e7f1c20f41c63eb382b170ffb",
     "skills/terse-output/capability.toml": "abf2b18fd2cdcda49d953c9e0544b565a5f9718e903cab60a79e87d80b052f08",
     "skills/thin-slice/SKILL.md": "6ca7f8bd01a57d41d74bddfd2353e0a1880c4a4fae8365b69d75155444fcf3ef",
@@ -795,7 +797,7 @@
     "tests/fixtures/bad-unknown-requires/skills/target/SKILL.md": "e5536f6cbb7befa0f88c121b866aeb3b250bd037ce1c2dff094bd3c56b94f8d1",
     "tests/fixtures/bad-unknown-requires/skills/target/capability.toml": "0451e912279a3a30fdc0f7799a64a292bf2e94463c2ab76bb61ac31a44f54fd2",
     "tests/fixtures/good/CREDITS.md": "ecad6fea311fab49d2e5cc8e1197e9a692882dd6bc2f43bccb2236663eef980c",
-    "tests/fixtures/good/INDEX.md": "31ba9d763320b906f8bc15be18dba21123e44d2aeff2b1b2f544fdc29a7f9a39",
+    "tests/fixtures/good/INDEX.md": "82734c2f72b609247c83b07c855f1922b44885dcfdec57f6326518fda2336664",
     "tests/fixtures/good/THIRD_PARTY_NOTICES": "9114852674889aff299c6cde41337c1f4edd5152664a39d8fcf7ade50e503602",
     "tests/fixtures/good/capabilities.md": "5baaf0aabe0e20be8f96f4762f2cd3b5dafa970ae74c0235addbc70eb011bfce",
     "tests/fixtures/good/catalog.yaml": "b74f3061791d70588cf84b46782b56c25ddc7d1a873b26054a1f4b800f972191",
@@ -814,7 +816,7 @@
     "tests/fixtures/good/registry/catalog.json": "28f9b55a214b4eb3ee4f90188ba21e960769eae95ca10a840c159f8af951291b",
     "tests/fixtures/good/registry/graph.json": "239ead0883b77d41fa3126462ade6c640ed1b7a70aaf9e00ae6237b950adce85",
     "tests/fixtures/good/registry/index.json": "024e5f70de25b39ca2572b908398b2b0f4813c8ebd35cb54ecabfa9185fda2da",
-    "tests/fixtures/good/registry/manifest.lock.json": "804171e2352dc5923826d67ab62d837ce7d7c7de3b4ffc69d4a3c8b6db93d774",
+    "tests/fixtures/good/registry/manifest.lock.json": "a69f2a94b9fa592c06fee02f5171b63dfc3259069332855703a837b9aa19087b",
     "tests/fixtures/good/skills/alpha-research/SKILL.md": "ef65764a20ffb071e75c34ff95838acc880e7a367c1034146de40f69a501bc50",
     "tests/fixtures/good/skills/alpha-research/capability.toml": "993d4f89c25ccae89f62b7c6863ade8c30458339357d85652f06be25d8b4b1ba",
     "tests/fixtures/good/skills/beta-explicit/SKILL.md": "e5240149cdb2030b759539cdffef9daef1484866cb45a9b2979ae54dc70aa5b4",
@@ -866,8 +868,8 @@
   "schema": 1,
   "state": "COMPLETE",
   "tool": {
-    "python": "3.14.8",
+    "python": "3.14.10",
     "skillkit_schema": 2
   },
-  "tree": "3eda2030d3f646c3c954011dce89b2235e61e2b9"
+  "tree": "426296b095600ec3114222cb363be6dbe2a173d6"
 }

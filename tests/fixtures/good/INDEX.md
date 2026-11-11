@@ -28,7 +28,7 @@ Use `$AI_TOOLS_ROOT/guidance/INDEX.md` for coding/task guidance.
 
 ## Canonical curation and exposure
 
-Authored curated source: `$AI_TOOLS_ROOT/tisserand/skills/`.
+Authored curated source: `$AI_TOOLS_ROOT/tisserand/repo/skills/`.
 Generated shared runtime: `$AI_TOOLS_ROOT/skills/installed/`; do not hand-edit it.
 Harness skill roots are thin links to that runtime where supported.
 Externally derived copies in user-level skill roots are separate; do not auto-promote, overwrite, or remove them.

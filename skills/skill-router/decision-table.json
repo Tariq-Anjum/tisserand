@@ -1,0 +1,1189 @@
+{
+  "rb": "rb-1.1.0",
+  "revision": 4,
+  "rows": [
+    {
+      "artifact": "code",
+      "primary": "intent-contract",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "clarify",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": "intent-contract",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "clarify",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": "intent-contract",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "clarify",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "intent-contract",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "clarify",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": "intent-contract",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "clarify",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": "intent-contract",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "clarify",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "design",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": "interface-design",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "design",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "design",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "context-design",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "design",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "design",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "design",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "plan",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "plan",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "plan",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "plan",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "plan",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "plan",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "plan",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "plan",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "plan",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "plan",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "plan",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": "bounded-plan",
+      "status": "ok",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "plan",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": "thin-slice",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "implement",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": "thin-slice",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "implement",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": "thin-slice",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "implement",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "thin-slice",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "implement",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": "thin-slice",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "implement",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": "thin-slice",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "implement",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": "fault-loop",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "debug",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": "fault-loop",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "debug",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": "fault-loop",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "debug",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "fault-loop",
+      "status": "ok",
+      "supporting": [
+        "context-design"
+      ],
+      "task_type": "debug",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": "fault-loop",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "debug",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": "fault-loop",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "debug",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": "proof-gate",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "verify",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": "proof-gate",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "verify",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": "proof-gate",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "verify",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "proof-gate",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "verify",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": "proof-gate",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "verify",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": "proof-gate",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "verify",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": "independent-review",
+      "status": "ok",
+      "supporting": [
+        "final-audit"
+      ],
+      "task_type": "review",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": "independent-review",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "review",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": "independent-review",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "review",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "independent-review",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "review",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": "independent-review",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "review",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": "independent-review",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "review",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "deliver",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "deliver",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "deliver",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "deliver",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "deliver",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "deliver",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": false
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": true
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": false
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": true
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": false
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": true
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": false
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": "session-reconcile",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": true
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": false
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": "session-reconcile",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": true
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": false
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "document",
+      "when": {
+        "drift_check": true
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": "research-first",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "research",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": "research-first",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "research",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": "research-first",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "research",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "research-first",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "research",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": "research-first",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "research",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": "research-first",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "research",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [
+        "code-intelligence"
+      ],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": false,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": false
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "explore",
+      "when": {
+        "exact_text": true,
+        "semantic_code": true
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "setup",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "setup",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "setup",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": "integrating-agent-capabilities",
+      "status": "ok",
+      "supporting": [],
+      "task_type": "setup",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "setup",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "setup",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [],
+      "task_type": "handoff",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "handoff",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [],
+      "task_type": "handoff",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "handoff",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [],
+      "task_type": "handoff",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "handoff",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [],
+      "task_type": "handoff",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "handoff",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [],
+      "task_type": "handoff",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "handoff",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [],
+      "task_type": "handoff",
+      "when": {
+        "long_running": false
+      }
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "named-only",
+      "supporting": [
+        "file-based-planning"
+      ],
+      "task_type": "handoff",
+      "when": {
+        "long_running": true
+      }
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "answer",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "answer",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "answer",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "answer",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "answer",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "none",
+      "supporting": [],
+      "task_type": "answer",
+      "when": {}
+    },
+    {
+      "artifact": "code",
+      "primary": null,
+      "status": "needs_information",
+      "supporting": [],
+      "task_type": "unclear",
+      "when": {}
+    },
+    {
+      "artifact": "interface",
+      "primary": null,
+      "status": "needs_information",
+      "supporting": [],
+      "task_type": "unclear",
+      "when": {}
+    },
+    {
+      "artifact": "system",
+      "primary": null,
+      "status": "needs_information",
+      "supporting": [],
+      "task_type": "unclear",
+      "when": {}
+    },
+    {
+      "artifact": "agent",
+      "primary": null,
+      "status": "needs_information",
+      "supporting": [],
+      "task_type": "unclear",
+      "when": {}
+    },
+    {
+      "artifact": "docs",
+      "primary": null,
+      "status": "needs_information",
+      "supporting": [],
+      "task_type": "unclear",
+      "when": {}
+    },
+    {
+      "artifact": "none",
+      "primary": null,
+      "status": "needs_information",
+      "supporting": [],
+      "task_type": "unclear",
+      "when": {}
+    }
+  ],
+  "tt": "tt-1.1.0"
+}
